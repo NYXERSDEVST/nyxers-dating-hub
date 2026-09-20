@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1"/>
-<meta name="nyxlink-build" content="v6-2026-09-20"/>
 <meta name="theme-color" content="#0b0f14"/>
+<meta name="nyxlink-build" content="v7-mega"/>
 <title>NYXLINK — fiction social</title>
 <link rel="manifest" href="manifest.webmanifest"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700&display=swap" rel="stylesheet"/>
@@ -159,33 +159,88 @@ img{display:block;max-width:100%}
 .who-react .r{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
 .who-react .r img{width:36px;height:36px;border-radius:50%;object-fit:cover}
 .eventlog{font-size:.75rem;color:var(--muted);line-height:1.5;max-height:120px;overflow:auto}
+
+/* v7-mega: call + profile + photoset + picker */
+.call-modal{position:absolute;inset:0;z-index:60;background:#0b0f14f2;display:none;flex-direction:column;align-items:center;justify-content:center;padding:20px}
+.call-modal.open{display:flex}
+.call-modal .sim{font-size:.68rem;letter-spacing:.06em;color:#7dd3fc;margin-bottom:12px;text-align:center}
+.call-modal .stage-v{width:100%;max-width:360px;aspect-ratio:3/4;border-radius:18px;overflow:hidden;position:relative;background:#111;border:1px solid var(--line)}
+.call-modal .stage-v img{width:100%;height:100%;object-fit:cover}
+.call-modal .live-pulse{position:absolute;top:12px;left:12px;display:flex;align-items:center;gap:6px;background:#0008;padding:4px 10px;border-radius:999px;font-size:.7rem;color:#f87171}
+.call-modal .live-pulse i{width:8px;height:8px;border-radius:50%;background:#ef4444;animation:pulse 1.2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.call-modal .timer{position:absolute;top:12px;right:12px;background:#0008;padding:4px 10px;border-radius:999px;font-size:.75rem}
+.call-modal .stage-a{width:100%;max-width:320px;text-align:center;padding:30px 0}
+.call-modal .stage-a img{width:120px;height:120px;border-radius:50%;object-fit:cover;margin:0 auto 16px;border:3px solid #25d36655}
+.call-modal .wave{display:flex;gap:3px;justify-content:center;height:40px;align-items:flex-end;margin:16px 0}
+.call-modal .wave span{width:4px;background:#25d366;border-radius:2px;animation:wave 1s ease-in-out infinite}
+.call-modal .wave span:nth-child(2){animation-delay:.1s}.call-modal .wave span:nth-child(3){animation-delay:.2s}
+.call-modal .wave span:nth-child(4){animation-delay:.3s}.call-modal .wave span:nth-child(5){animation-delay:.15s}
+.call-modal .wave span:nth-child(6){animation-delay:.25s}.call-modal .wave span:nth-child(7){animation-delay:.05s}
+@keyframes wave{0%,100%{height:8px}50%{height:36px}}
+.call-modal .ctrls{display:flex;gap:18px;margin-top:22px;align-items:center}
+.call-modal .ctrls button{width:56px;height:56px;border-radius:50%;background:#ffffff18;display:grid;place-items:center;cursor:pointer;font-size:1.2rem;border:1px solid var(--line)}
+.call-modal .ctrls button.end{background:#ef4444;border-color:#ef4444}
+.call-modal .ctrls button.off{opacity:.45;outline:2px solid #f87171}
+.call-modal .who{font-family:Outfit,sans-serif;font-size:1.2rem;margin-top:8px}
+.call-modal .kind{font-size:.75rem;color:var(--muted);margin-top:4px}
+.profile-sheet .hero{width:100%;aspect-ratio:1;object-fit:cover;background:#111}
+.profile-sheet .pinfo{padding:14px}
+.profile-sheet .pinfo .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.profile-sheet .pinfo .tag{font-size:.65rem;padding:3px 8px;border-radius:999px;background:#ffffff10;color:var(--muted)}
+.profile-sheet .pinfo .tag.status{background:#3b82f622;color:#93c5fd}
+.profile-sheet .pinfo .tag.role{background:#8b5cf622;color:#c4b5fd}
+.profile-sheet .links{padding:0 14px 10px;font-size:.78rem;color:var(--muted);line-height:1.5}
+.profile-sheet .pset{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;padding:0 0 20px}
+.profile-sheet .pset button{padding:0;cursor:pointer}
+.profile-sheet .pset img{width:100%;aspect-ratio:1;object-fit:cover}
+.profile-sheet .pactions{display:flex;gap:8px;padding:0 14px 14px;flex-wrap:wrap}
+.profile-sheet .pactions button{flex:1;min-width:90px;padding:10px;border-radius:999px;background:#ffffff10;border:1px solid var(--line);cursor:pointer;font-size:.78rem;font-weight:600}
+.profile-sheet .pactions button.pri{background:linear-gradient(135deg,#3b82f6,#8b5cf6);border:0}
+.react-picker{position:absolute;z-index:45;background:#1f2937;border:1px solid var(--line);border-radius:14px;padding:8px;display:none;gap:4px;flex-wrap:wrap;max-width:280px;box-shadow:0 8px 24px #0008}
+.react-picker.open{display:flex}
+.react-picker button{font-size:1.25rem;padding:6px 8px;border-radius:10px;cursor:pointer}
+.react-picker button:hover,.react-picker button.on{background:#ffffff18}
+.lang-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:10px}
+.lang-grid button{padding:8px;border-radius:10px;background:#ffffff0a;border:1px solid var(--line);cursor:pointer;font-size:.8rem;text-align:left}
+.lang-grid button.on{outline:1px solid #60a5fa;background:#3b82f622}
+.plist .tag.ex{background:#ef444422;color:#fca5a5}
+.plist .tag.werk,.plist .tag.collega{background:#22c55e22;color:#86efac}
+.plist .tag.affaire-hint,.plist .tag.affaire_hint{background:#ec489922;color:#f9a8d4}
+.lightbox{position:absolute;inset:0;z-index:70;background:#000e;display:none;align-items:center;justify-content:center;padding:16px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:100%;max-height:90%;object-fit:contain;border-radius:8px}
+.lightbox .x{position:absolute;top:12px;right:16px;font-size:1.4rem;cursor:pointer}
+.wa-head .callbtns{margin-left:auto;display:flex;gap:6px}
+.wa-head .callbtns button{width:34px;height:34px;border-radius:50%;background:#ffffff22;cursor:pointer;font-size:.9rem}
+
 </style>
 </head>
 <body>
 <div id="gate">
   <div class="gate-card">
     <h1>NYXLINK</h1>
-    <p>Fictief social platform (Pulse · Gram · Clips · Wire). 21+ · AI_SYNTHETIC · <b>geen</b> echte Facebook/Instagram/WhatsApp/TikTok-accounts — alles speelt hier op de site.</p>
-    <button class="btn btn-p" id="yes">Ik ben 21+</button>
-    <button class="btn btn-g" id="no">Verlaten</button>
+    <p id="gateBody" data-i18n="gate_body">Fictief social platform (Pulse · Gram · Clips · Wire). 21+ · AI_SYNTHETIC · <b>geen</b> echte Facebook/Instagram/WhatsApp/TikTok-accounts — alles speelt hier op de site.</p>
+    <button class="btn btn-p" id="yes" data-i18n="gate_yes">Ik ben 21+</button>
+    <button class="btn btn-g" id="no" data-i18n="gate_no">Verlaten</button>
   </div>
 </div>
 
 <div class="shell" id="app" style="visibility:hidden">
-  <div class="banner">SIMULATED SOCIAL · fiction cast · <b>geen echte logins</b> · chat met bots via dit platform</div>
+  <div class="banner" id="simBanner" data-i18n="banner">SIMULATED SOCIAL · fiction cast · <b>geen echte logins</b> · chat met bots via dit platform</div>
   <header class="appbar">
     <div>
       <div class="brand" id="appTitle">Pulse</div>
       <div class="sub" id="appSub">facebook-style feed · fiction</div>
     </div>
     <div style="display:flex;gap:6px;align-items:center">
-      <button class="abtn" id="btnFriends" type="button">Vrienden</button>
+      <button class="abtn" id="btnFriends" type="button" data-i18n="friends">Vrienden</button>
       <a href="../" style="font-size:.75rem;color:#7dd3fc;text-decoration:none">← VELVET</a>
     </div>
   </header>
   <div class="stage">
     <section class="view on" id="v-pulse">
-      <div class="composer"><img id="meAv" src="../assets/generated/kayla_hub_cast.png" alt=""/><input id="pulsePost" placeholder="Deel iets in Haus Velvet…" maxlength="280"/><button id="pulseSend" style="color:#60a5fa;font-weight:600;padding:0 8px;cursor:pointer">Post</button></div>
+      <div class="composer"><img id="meAv" src="../assets/generated/kayla_hub_cast.png" alt=""/><input id="pulsePost" placeholder="Deel iets in Haus Velvet…" data-i18n-ph="post_ph" maxlength="280"/><button id="pulseSend" style="color:#60a5fa;font-weight:600;padding:0 8px;cursor:pointer" data-i18n="post">Post</button></div>
       <div class="stories" id="stories"></div>
       <div id="feed"></div>
     </section>
@@ -202,9 +257,9 @@ img{display:block;max-width:100%}
       <div class="wa-head"><b>Wire</b><span style="opacity:.8;font-size:.75rem;margin-left:auto">whatsapp-style · fiction · ≠ WA</span></div>
       <div class="wa-list" id="waList"></div>
       <div id="waRoom">
-        <div class="wa-head"><button id="waBack" style="cursor:pointer">←</button><img id="waAv" style="width:36px;height:36px;border-radius:50%;object-fit:cover" alt=""/><b id="waName"></b></div>
+        <div class="wa-head"><button id="waBack" style="cursor:pointer">←</button><img id="waAv" style="width:36px;height:36px;border-radius:50%;object-fit:cover;cursor:pointer" alt="" title="Profiel"/><b id="waName" style="cursor:pointer"></b><div class="callbtns"><button type="button" id="waAudio" title="Audio-call">📞</button><button type="button" id="waVideo" title="Video-call">📹</button></div></div>
         <div class="msgs" id="waMsgs"></div>
-        <div class="wa-in"><input id="waInput" placeholder="Bericht…" maxlength="400"/><button id="waSend">➤</button></div>
+        <div class="wa-in"><input id="waInput" placeholder="Bericht…" maxlength="400" data-i18n-ph="msg_ph"/><button id="waSend">➤</button></div>
       </div>
     </section>
     <section class="view" id="v-me">
@@ -220,13 +275,19 @@ img{display:block;max-width:100%}
           <button class="link" type="button" data-list="followers">Volgers</button>
           <button class="link" type="button" data-list="following">Volgend</button>
         </div>
+
+        <div class="card">
+          <b data-i18n="settings">Instellingen</b>
+          <p style="color:var(--muted);font-size:.8rem;margin-top:6px" data-i18n="lang">Taal</p>
+          <div class="lang-grid" id="langGrid"></div>
+        </div>
         <div class="card">
           <b>Drama-log (local)</b>
           <div class="eventlog" id="eventLog">Nog geen events.</div>
         </div>
         <div class="card">
           <b>Apps in deze shell</b>
-          <p style="color:var(--muted);font-size:.85rem;margin-top:6px;line-height:1.45">Pulse ≈ Facebook feed<br/>Gram ≈ Instagram grid<br/>Clips ≈ TikTok vertical<br/>Wire ≈ WhatsApp chats<br/><br/>Geen OAuth. Geen echte accounts. Data = localStorage op dit device.</p>
+          <p style="color:var(--muted);font-size:.85rem;margin-top:6px;line-height:1.45">Pulse ≈ Facebook feed<br/>Gram ≈ Instagram grid<br/>Clips ≈ TikTok vertical<br/>Wire ≈ WhatsApp chats<br/>Calls = gesimuleerd (geen echte telefonie)<br/><br/>Geen OAuth. Geen echte accounts. Data = localStorage op dit device.</p>
         </div>
         <div class="card">
           <b>Links</b>
@@ -274,12 +335,49 @@ img{display:block;max-width:100%}
     <button data-v="me"><span class="ic me">☺</span>Me</button>
   </nav>
 </div>
+
+<!-- Profile sheet -->
+<div class="sheet profile-sheet" id="profileSheet">
+  <div class="sh"><button type="button" id="profBack" style="cursor:pointer;font-size:1.1rem">←</button><b id="profTitle" data-i18n="profile">Profiel</b></div>
+  <div class="body" id="profBody" style="padding:0"></div>
+</div>
+
+<!-- Call modal -->
+<div class="call-modal" id="callModal">
+  <div class="sim" id="callSimLabel">SIMULATED CALL · geen echte telefonie</div>
+  <div id="callVideoStage" class="stage-v" style="display:none">
+    <img id="callVideoImg" alt=""/>
+    <div class="live-pulse"><i></i> LIVE · fake</div>
+    <div class="timer" id="callTimerV">0:00</div>
+  </div>
+  <div id="callAudioStage" class="stage-a" style="display:none">
+    <img id="callAudioImg" alt=""/>
+    <div class="who" id="callAudioName"></div>
+    <div class="kind" id="callAudioKind">Audio-call</div>
+    <div class="wave" id="callWave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="timer" id="callTimerA" style="position:static;display:inline-block;margin-top:8px">0:00</div>
+  </div>
+  <div class="who" id="callName" style="display:none"></div>
+  <div class="ctrls">
+    <button type="button" id="callMute" title="Mute">🔇</button>
+    <button type="button" id="callCam" title="Camera">📷</button>
+    <button type="button" class="end" id="callEnd" title="End">📵</button>
+  </div>
+</div>
+
+<!-- Photoset lightbox -->
+<div class="lightbox" id="lightbox"><button type="button" class="x" id="lbClose">✕</button><img id="lbImg" alt=""/></div>
+
+<!-- Floating reaction picker -->
+<div class="react-picker" id="reactPicker"></div>
+
 <div class="toast" id="toast"></div>
 <script>
-const EMOJIS=['❤️','😂','😮','😢','😡'];
+const EMOJIS=['❤️','😂','😮','😢','😡','🔥','👏','💯','🤢','🙈'];
 let PEOPLE=[], FEED_ITEMS=[], NPC=[], PROFILE={name:'René',handle:'@rene',followers:2847,following:312,friends:186,bio:''};
 let REPLIES={}, DRAMA={}, MOODS={}, FOLLOWERS_SAMPLE=[];
-const LS={age:'nyxlink_age21',feed:'nyxlink_feed_v3',chats:'nyxlink_chats_v3',comments:'nyxlink_comments_v3',reactions:'nyxlink_react_v3',events:'nyxlink_events_v3',clips:'nyxlink_clips_v3',seenStories:'nyxlink_stories_seen'};
+const LS={age:'nyxlink_age21',feed:'nyxlink_feed_v4',chats:'nyxlink_chats_v3',comments:'nyxlink_comments_v3',reactions:'nyxlink_react_v3',events:'nyxlink_events_v3',clips:'nyxlink_clips_v3',seenStories:'nyxlink_stories_seen',lang:'nyxlink_lang'};
+let I18N={default:'nl',languages:{},strings:{}}; let LANG='nl'; let ROLE_REACTIONS={};
 const $=s=>document.querySelector(s);
 const $$=s=>[...document.querySelectorAll(s)];
 const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200)};
@@ -318,7 +416,41 @@ async function loadData(){
     DRAMA=n.drama||{};
     MOODS=n.moods||{};
     FOLLOWERS_SAMPLE=n.followers_sample||[];
+    ROLE_REACTIONS=n.role_reactions||{};
+    if(Array.isArray(n.emoji_reactions)&&n.emoji_reactions.length){ EMOJIS.length=0; n.emoji_reactions.forEach(e=>EMOJIS.push(e)); }
   }catch(e){console.warn('npc',e)}
+  try{
+    const r3=await fetch('data/i18n.json',{cache:'no-store'});
+    I18N=await r3.json();
+    LANG=localStorage.getItem(LS.lang)||I18N.default||'nl';
+  }catch(e){console.warn('i18n',e)}
+}
+
+function t(key){
+  const s=(I18N.strings&&I18N.strings[key])||{};
+  return s[LANG]||s.nl||s.en||key;
+}
+function applyI18n(){
+  $$('[data-i18n]').forEach(el=>{ const k=el.getAttribute('data-i18n'); if(k) el.textContent=t(k); });
+  $$('[data-i18n-ph]').forEach(el=>{ const k=el.getAttribute('data-i18n-ph'); if(k) el.setAttribute('placeholder',t(k)); });
+  const banner=$('#simBanner'); if(banner) banner.innerHTML=t('banner').replace(/geen echte logins|no real logins/i, m=>'<b>'+m+'</b>');
+  const dir=(I18N.languages&&I18N.languages[LANG]&&I18N.languages[LANG].dir)||'ltr';
+  document.documentElement.lang=LANG; document.documentElement.dir=dir;
+  // dock labels
+  const dockMap={pulse:'nav_pulse',gram:'nav_gram',clips:'nav_clips',wire:'nav_wire',me:'nav_me'};
+  $$('.dock button').forEach(b=>{
+    const k=dockMap[b.dataset.v]; if(!k)return;
+    const ic=b.querySelector('.ic'); const badge=b.querySelector('.badge');
+    const label=t(k);
+    b.innerHTML=''; if(ic)b.appendChild(ic); b.appendChild(document.createTextNode(label)); if(badge)b.appendChild(badge);
+  });
+  titles.pulse=[t('nav_pulse'),t('sub_pulse')];
+  titles.gram=[t('nav_gram'),t('sub_gram')];
+  titles.clips=[t('nav_clips'),t('sub_clips')];
+  titles.wire=[t('nav_wire'),t('sub_wire')];
+  titles.me=[t('nav_me'),t('sub_me')];
+  const on=document.querySelector('.dock button.on'); if(on){ const [tt,ss]=titles[on.dataset.v]||['','']; $('#appTitle').textContent=tt; $('#appSub').textContent=ss; }
+  if($('#callSimLabel')) $('#callSimLabel').textContent=t('call_sim');
 }
 
 function personByName(name){
@@ -364,13 +496,16 @@ function extractInvolved(p){
 }
 
 function buildReactors(seed,pid){
-  const pool=NPC.filter(n=>n.role==='friend').slice(0,12);
+  const pool=NPC.filter(n=>['friend','vriendin','collega','ex','affaire-hint'].includes(n.role)).slice(0,18);
   const out={};
   const n=3+Math.floor(seeded(seed+99)*5);
   for(let i=0;i<n;i++){
     const who=pool[Math.floor(seeded(seed*17+i)*pool.length)%pool.length];
     if(!who)continue;
-    const em=EMOJIS[Math.floor(seeded(seed*31+i+3)*EMOJIS.length)%EMOJIS.length];
+    const roleKey=(who.role==='friend'?'vriendin':who.role);
+    const pack=ROLE_REACTIONS[roleKey]||{};
+    const styleEmojis=(pack.emojis&&pack.emojis.length)?pack.emojis:EMOJIS;
+    const em=styleEmojis[Math.floor(seeded(seed*31+i+3)*styleEmojis.length)%styleEmojis.length];
     out[who.id]=em;
   }
   return out;
@@ -405,7 +540,7 @@ function renderFeed(){
     const my=p.myReaction;
     const clist=cm[p.id]||[];
     return `<article class="post" data-id="${p.id}">
-      <div class="ph"><img src="${p.avatar}" alt=""/><div><b>${escapeHtml(p.name)}</b><small>${p.time} · ${p.nsfw||'soft'} · fiction</small></div></div>
+      <div class="ph" data-uid="${p.uid}" style="cursor:pointer"><img src="${p.avatar}" alt=""/><div><b>${escapeHtml(p.name)}</b><small>${p.time} · ${p.nsfw||'soft'} · fiction · ${(p.status||'')}</small></div></div>
       <img class="media" src="${p.media}" alt=""/>
       <div class="acts">
         <button type="button" data-toggle-react="${p.id}" title="Reageer">${my||'🤍'}</button>
@@ -428,7 +563,7 @@ function renderFeed(){
 
 function countReactions(p){
   const c={};EMOJIS.forEach(e=>c[e]=0);
-  Object.values(p.reactors||{}).forEach(e=>{if(c[e]!=null)c[e]++});
+  Object.values(p.reactors||{}).forEach(e=>{c[e]=(c[e]||0)+1});
   if(p.myReaction)c[p.myReaction]=(c[p.myReaction]||0)+1;
   return c;
 }
@@ -444,8 +579,7 @@ function onFeedClick(e){
   const re=e.target.closest('[data-react]');
   if(re){setReaction(re.dataset.react,re.dataset.emoji);return}
   const tr=e.target.closest('[data-toggle-react]');
-  if(tr){const id=tr.dataset.toggleReact;const feed=load(LS.feed,[]);const item=feed.find(x=>x.id===id);if(!item)return;
-    if(item.myReaction){setReaction(id,null)}else{setReaction(id,'❤️')}return}
+  if(tr){ openReactPicker(tr, tr.dataset.toggleReact); return }
   const sh=e.target.closest('[data-share]');
   if(sh){toast('Gedeeld in Wire — geen echte Facebook');maybeDrama(sh.dataset.share,'share');return}
   const cs=e.target.closest('[data-cmt-send]');
@@ -479,10 +613,12 @@ async function sendComment(postId){
   const mood=(item&&item.mood)||detectMood(item&&item.text)||'supportive';
   const wait=1000+Math.floor(Math.random()*2000);
   await delay(wait);
-  const pool=NPC.filter(n=>n.role==='friend'||n.role==='family');
+  const pool=NPC.filter(n=>['friend','family','vriendin','familie','collega','werk','ex','affaire-hint'].includes(n.role));
   const bias=pool.filter(n=>n.mood_bias===mood);
   const npc=pick(bias.length?bias:pool,Date.now());
-  const templates=REPLIES[mood]||REPLIES.supportive||['Nice!'];
+  const roleKey=(npc.role==='friend'?'vriendin':npc.role==='family'?'familie':npc.role);
+  const rolePack=ROLE_REACTIONS[roleKey]||ROLE_REACTIONS[npc.role]||{};
+  const templates=(rolePack.replies&&rolePack.replies.length?rolePack.replies:null)||REPLIES[mood]||REPLIES.supportive||['Nice!'];
   let reply=pick(templates,Date.now()+7);
   const other=(item&&item.involved&&item.involved[0])||'haar';
   reply=reply.replace(/\{other\}/g,other).replace(/\{author\}/g,item?item.name:'');
@@ -551,22 +687,50 @@ function maybeDrama(postId,kind){
   const tpls=((DRAMA.templates||{})[type])||['Alles oké?'];
   let msg=pick(tpls,seed+21).replace(/\{author\}/g,author).replace(/\{other\}/g,oth);
 
+  // Prefer NPCs linked to author/other when available
+  function linkedTo(name){
+    const node=NPC.find(n=>n.name===name||n.id===(name||'').toLowerCase());
+    if(!node||!node.links)return [];
+    return node.links.map(l=>NPC.find(n=>n.id===l.to)).filter(Boolean);
+  }
+  const linked=linkedTo(author).concat(linkedTo(oth));
+
   if(type==='wire_jealous'){
-    const jealous=NPC.filter(n=>n.mood_bias==='jealous'||n.role==='friend');
+    const jealous=(linked.filter(n=>n.mood_bias==='jealous'||n.role==='vriendin'||n.role==='friend')).concat(NPC.filter(n=>n.mood_bias==='jealous'||n.role==='vriendin'||n.role==='friend'));
     const who=pick(jealous,seed+5);
     pushWire(who.id,msg,true);
-    logEvent('Wire DM van '+who.name+' (jaloers)');
+    logEvent('Wire DM van '+who.name+' (jaloers · '+ (who.status||who.role)+')');
     bumpWireBadge();
   }else if(type==='friend_tag'){
-    const friends=NPC.filter(n=>n.role==='friend'&&n.mood_bias==='gossip');
+    const friends=(linked.filter(n=>n.mood_bias==='gossip')).concat(NPC.filter(n=>(n.role==='vriendin'||n.role==='friend')&&n.mood_bias==='gossip'));
     const who=pick(friends.length?friends:NPC,seed+8);
     const cm=getComments();cm[postId]=cm[postId]||[];
     cm[postId].push({name:who.name,text:msg,npc:true,ts:Date.now()});
     setComments(cm);
     if($('#v-pulse').classList.contains('on'))renderFeed();
     logEvent(who.name+' commentte: tag-drama');
+  }else if(type==='ex_spicy'){
+    const exes=NPC.filter(n=>n.role==='ex'||n.status==='ex');
+    const who=pick(exes.length?exes:NPC.filter(n=>n.mood_bias==='jealous'),seed+13);
+    pushWire(who.id,msg,true);
+    logEvent(who.name+' (ex) spicy Wire');
+    bumpWireBadge();
+  }else if(type==='werk_note'){
+    const werk=NPC.filter(n=>n.role==='collega'||n.role==='werk'||n.status==='werk');
+    const who=pick(werk.length?werk:NPC,seed+15);
+    const cm=getComments();cm[postId]=cm[postId]||[];
+    cm[postId].push({name:who.name,text:msg,npc:true,ts:Date.now()});
+    setComments(cm);
+    if($('#v-pulse').classList.contains('on'))renderFeed();
+    logEvent(who.name+' werk-note');
+  }else if(type==='affaire_hint'){
+    const aff=NPC.filter(n=>n.role==='affaire-hint'||n.status==='affaire_hint');
+    const who=pick(aff.length?aff:NPC.filter(n=>n.mood_bias==='gossip'),seed+17);
+    pushWire(who.id,msg,true);
+    logEvent(who.name+' affaire-hint DM');
+    bumpWireBadge();
   }else{
-    const fam=NPC.filter(n=>n.role==='family'||n.mood_bias==='worried');
+    const fam=NPC.filter(n=>n.role==='familie'||n.role==='family'||n.mood_bias==='worried');
     const who=pick(fam.length?fam:NPC,seed+11);
     pushWire(who.id,msg,true);
     logEvent(who.name+' checkt in: alles oké?');
@@ -780,8 +944,8 @@ function openList(kind){
   $('#listTitle').textContent=title;
   let rows=[];
   if(kind==='friends'){
-    rows=NPC.filter(n=>n.role==='friend'||n.role==='family').map(n=>({
-      name:n.name,img:n.img,sub:(n.group||n.role)+' · '+n.age+'+',tag:n.group||n.role,id:n.id
+    rows=NPC.filter(n=>['friend','family','vriendin','familie','collega','werk','ex','affaire-hint'].includes(n.role)).map(n=>({
+      name:n.name,img:n.img,sub:(n.status||n.role)+' · '+(n.group||'')+' · '+n.age+'+',tag:n.role||n.group,id:n.id
     }));
   }else if(kind==='followers'){
     const extra=FOLLOWERS_SAMPLE.map((name,i)=>({
@@ -802,9 +966,7 @@ function openList(kind){
   $('#listBody').onclick=e=>{
     const b=e.target.closest('[data-open-wire]');if(!b||!b.dataset.openWire)return;
     $('#listSheet').classList.remove('open');
-    if(NPC.some(n=>n.id===b.dataset.openWire)||PEOPLE.some(p=>p.id===b.dataset.openWire)){
-      openWa(b.dataset.openWire);nav('wire');
-    }
+    openProfile(b.dataset.openWire);
   };
   $('#listSheet').classList.add('open');
 }
@@ -813,12 +975,19 @@ function renderMe(){
   $('#meName').textContent=(PROFILE.name||'René')+' · regisseur';
   $('#meBio').textContent=PROFILE.bio||$('#meBio').textContent;
   $('#meStats').innerHTML=`
-    <div data-list="friends"><b>${PROFILE.friends||NPC.length}</b><span>vrienden</span></div>
-    <div data-list="followers"><b>${(PROFILE.followers||0).toLocaleString('nl-NL')}</b><span>volgers</span></div>
-    <div data-list="following"><b>${PROFILE.following||0}</b><span>volgend</span></div>`;
+    <div data-list="friends"><b>${PROFILE.friends||NPC.length}</b><span>${t('friends').toLowerCase()}</span></div>
+    <div data-list="followers"><b>${(PROFILE.followers||0).toLocaleString(LANG==='nl'?'nl-NL':LANG)}</b><span>${t('followers').toLowerCase()}</span></div>
+    <div data-list="following"><b>${PROFILE.following||0}</b><span>${t('following').toLowerCase()}</span></div>`;
   $('#meStats').onclick=e=>{const d=e.target.closest('[data-list]');if(d)openList(d.dataset.list)};
   $$('#v-me [data-list]').forEach(b=>b.onclick=()=>openList(b.dataset.list));
+  const lg=$('#langGrid');
+  if(lg){
+    const langs=I18N.languages||{};
+    lg.innerHTML=Object.entries(langs).map(([code,meta])=>`<button type="button" class="${code===LANG?'on':''}" data-lang="${code}">${meta.label||code} <small style="opacity:.6">${code}</small></button>`).join('');
+    lg.onclick=e=>{const b=e.target.closest('[data-lang]');if(!b)return;LANG=b.dataset.lang;localStorage.setItem(LS.lang,LANG);applyI18n();renderMe();toast(t('lang')+': '+(langs[LANG]?.label||LANG))};
+  }
   renderEventLog();
+  applyI18n();
 }
 
 function nav(name){
@@ -829,6 +998,8 @@ function nav(name){
   $('#listSheet').classList.remove('open');
   $('#reactSheet').classList.remove('open');
   $('#gramDetail').classList.remove('open');
+  const ps=$('#profileSheet'); if(ps) ps.classList.remove('open');
+  const rp=$('#reactPicker'); if(rp) rp.classList.remove('open');
   if(name==='pulse')renderFeed();
   if(name==='gram')renderGram();
   if(name==='clips')renderClips();
@@ -840,11 +1011,12 @@ function nav(name){
 async function boot(){
   await loadData();
   // migrate once
-  if(!localStorage.getItem('nyxlink_feed_v3_seeded')){
+  if(!localStorage.getItem('nyxlink_feed_v4_seeded')){
     localStorage.removeItem('nyxlink_feed');
     localStorage.removeItem('nyxlink_feed_v2');
+    localStorage.removeItem('nyxlink_feed_v3');
     localStorage.removeItem(LS.feed);
-    localStorage.setItem('nyxlink_feed_v3_seeded','1');
+    localStorage.setItem('nyxlink_feed_v4_seeded','1');
   }
   const meImg=PEOPLE.find(p=>p.id==='rene')?.img||PEOPLE[0]?.img;
   if(meImg)$('#meAv').src=meImg;
@@ -866,9 +1038,151 @@ async function boot(){
   $('#storyClose').onclick=closeStory;
   $('#storyPrev').onclick=()=>{storyIdx--;showStory()};
   $('#storyNext').onclick=()=>{storyIdx++;showStory()};
+  // v7-mega wiring
+  applyI18n();
+  const profBack=$('#profBack'); if(profBack) profBack.onclick=()=>$('#profileSheet').classList.remove('open');
+  const lbClose=$('#lbClose'); if(lbClose) lbClose.onclick=()=>$('#lightbox').classList.remove('open');
+  const lb=$('#lightbox'); if(lb) lb.onclick=e=>{if(e.target===lb)$('#lightbox').classList.remove('open')};
+  const waAudio=$('#waAudio'); if(waAudio) waAudio.onclick=()=>{if(activeWa)startCall(activeWa,'audio')};
+  const waVideo=$('#waVideo'); if(waVideo) waVideo.onclick=()=>{if(activeWa)startCall(activeWa,'video')};
+  const waAv=$('#waAv'); if(waAv) waAv.onclick=()=>{if(activeWa)openProfile(activeWa)};
+  const waName=$('#waName'); if(waName) waName.onclick=()=>{if(activeWa)openProfile(activeWa)};
+  const callEnd=$('#callEnd'); if(callEnd) callEnd.onclick=()=>endCall(false);
+  const callMute=$('#callMute'); if(callMute) callMute.onclick=()=>{callState.muted=!callState.muted; callMute.classList.toggle('off',callState.muted); toast(callState.muted?'Mute · sim':'Unmute · sim')};
+  const callCam=$('#callCam'); if(callCam) callCam.onclick=()=>{callState.camOff=!callState.camOff; callCam.classList.toggle('off',callState.camOff); if(callState.mode==='video'){ $('#callVideoImg').style.filter=callState.camOff?'grayscale(1)brightness(.3)':''; toast(callState.camOff?'Cam off · sim':'Cam on · sim')}};
+  // click avatar on feed header → profile
+  document.addEventListener('click',e=>{
+    const ph=e.target.closest('.post .ph img, .post .ph b');
+    if(ph){ const art=ph.closest('[data-id]'); if(!art)return; const feed=load(LS.feed,[]); const item=feed.find(x=>x.id===art.dataset.id); if(item&&item.uid) openProfile(item.uid); }
+  });
   const hash=(location.hash||'#pulse').slice(1);
   if(['pulse','gram','clips','wire','me'].includes(hash)) nav(hash);
 }
+
+
+/* ===== v7-mega: profile + photoset + calls + react picker ===== */
+let callState={open:false,mode:null,uid:null,t0:0,timer:null,muted:false,camOff:false};
+
+function npcFull(id){
+  return NPC.find(n=>n.id===id)||PEOPLE.find(p=>p.id===id)||null;
+}
+
+function openProfile(id){
+  const n=npcFull(id); if(!n){toast('Onbekend profiel');return}
+  const npc=NPC.find(x=>x.id===n.id)||n;
+  const photoset=(npc.photoset&&npc.photoset.length)?npc.photoset:[npc.img||n.img];
+  const links=(npc.links||[]).map(l=>{
+    const t=npcFull(l.to); return (t?t.name:l.to)+' · '+l.type;
+  });
+  $('#profTitle').textContent=npc.name||n.name;
+  $('#profBody').innerHTML=`
+    <img class="hero" src="${photoset[0]}" alt=""/>
+    <div class="pinfo">
+      <b style="font-size:1.15rem">${escapeHtml(npc.name||n.name)}</b>
+      <div class="tags">
+        <span class="tag role">${escapeHtml(npc.role||'vriendin')}</span>
+        <span class="tag status">${escapeHtml(npc.status||'single')}</span>
+        <span class="tag">${escapeHtml(npc.group||'core')} · ${(npc.age||21)}+</span>
+      </div>
+      <p style="color:var(--muted);font-size:.8rem;margin-top:8px">FICTION 21+ · first-name alias · staging</p>
+    </div>
+    <div class="links">${links.length?('<b style="color:var(--text)">Links</b><br/>'+links.map(escapeHtml).join('<br/>')):'Geen graph-links'}</div>
+    <div class="pactions">
+      <button type="button" class="pri" data-pwire="${npc.id}">Wire</button>
+      <button type="button" data-paudio="${npc.id}">📞 ${t('call_audio')}</button>
+      <button type="button" data-pvideo="${npc.id}">📹 ${t('call_video')}</button>
+    </div>
+    <div style="padding:0 14px 6px;font-size:.75rem;color:var(--muted)" data-i18n-keep>${t('photoset')} · ${photoset.length}</div>
+    <div class="pset">${photoset.map((src,i)=>`<button type="button" data-lb="${i}"><img src="${src}" alt="FICTION 21+"/></button>`).join('')}</div>`;
+  $('#profBody')._photoset=photoset;
+  $('#profBody').onclick=e=>{
+    const lb=e.target.closest('[data-lb]');
+    if(lb){ $('#lbImg').src=photoset[+lb.dataset.lb]; $('#lightbox').classList.add('open'); return }
+    const w=e.target.closest('[data-pwire]'); if(w){ $('#profileSheet').classList.remove('open'); openWa(w.dataset.pwire); nav('wire'); return }
+    const a=e.target.closest('[data-paudio]'); if(a){ startCall(a.dataset.paudio,'audio'); return }
+    const v=e.target.closest('[data-pvideo]'); if(v){ startCall(v.dataset.pvideo,'video'); return }
+  };
+  $('#profileSheet').classList.add('open');
+}
+
+function openReactPicker(anchor, postId){
+  const box=$('#reactPicker');
+  box.innerHTML=EMOJIS.map(e=>`<button type="button" data-pick="${e}">${e}</button>`).join('')+`<button type="button" data-pick="">✕</button>`;
+  box.classList.add('open');
+  const r=anchor.getBoundingClientRect();
+  const shell=$('.shell').getBoundingClientRect();
+  box.style.left=Math.min(Math.max(8,r.left-shell.left), shell.width-260)+'px';
+  box.style.top=Math.max(8,r.top-shell.top-56)+'px';
+  box.onclick=ev=>{
+    const b=ev.target.closest('[data-pick]'); if(!b)return;
+    const em=b.dataset.pick;
+    if(em===''){ /* clear */ setReaction(postId,null); }
+    else setReaction(postId, em);
+    box.classList.remove('open');
+  };
+}
+
+function fmtCallTime(sec){
+  const m=Math.floor(sec/60), s=sec%60;
+  return m+':'+String(s).padStart(2,'0');
+}
+
+function startCall(uid, mode){
+  const p=npcFull(uid); if(!p)return;
+  const npc=NPC.find(n=>n.id===uid)||p;
+  const photoset=(npc.photoset&&npc.photoset.length)?npc.photoset:[npc.img||p.img];
+  callState={open:true,mode,uid,t0:Date.now(),timer:null,muted:false,camOff:false,photoset,photoIdx:0};
+  $('#callModal').classList.add('open');
+  $('#callSimLabel').textContent=t('call_sim');
+  if(mode==='video'){
+    $('#callVideoStage').style.display='block';
+    $('#callAudioStage').style.display='none';
+    $('#callVideoImg').src=photoset[0];
+    $('#callCam').style.display='grid';
+  }else{
+    $('#callVideoStage').style.display='none';
+    $('#callAudioStage').style.display='block';
+    $('#callAudioImg').src=npc.img||p.img;
+    $('#callAudioName').textContent=npc.name||p.name;
+    $('#callAudioKind').textContent=t('call_audio');
+    $('#callCam').style.display='none';
+  }
+  $('#callMute').classList.remove('off');
+  $('#callCam').classList.remove('off');
+  const tick=()=>{
+    const sec=Math.floor((Date.now()-callState.t0)/1000);
+    const ft=fmtCallTime(sec);
+    const tv=$('#callTimerV'), ta=$('#callTimerA');
+    if(tv)tv.textContent=ft; if(ta)ta.textContent=ft;
+    // fake live: cycle photoset every 8s on video
+    if(callState.mode==='video'&&callState.photoset.length>1&&sec>0&&sec%8===0){
+      callState.photoIdx=(callState.photoIdx+1)%callState.photoset.length;
+      $('#callVideoImg').src=callState.photoset[callState.photoIdx];
+    }
+  };
+  tick();
+  callState.timer=setInterval(tick,1000);
+  toast(t('call_sim'));
+}
+
+function endCall(missed){
+  if(!callState.open)return;
+  const uid=callState.uid;
+  const sec=Math.floor((Date.now()-callState.t0)/1000);
+  const dur=fmtCallTime(Math.max(sec,1));
+  clearInterval(callState.timer);
+  $('#callModal').classList.remove('open');
+  const p=npcFull(uid);
+  const label=missed? t('call_missed') : (t('call_ended')+' · '+dur);
+  if(uid){
+    pushWire(uid, label+' · SIMULATED', true);
+    bumpWireBadge();
+    if($('#waRoom').classList.contains('open')&&activeWa===uid) renderThread();
+  }
+  logEvent((p?p.name:'Call')+': '+label);
+  callState={open:false,mode:null,uid:null,t0:0,timer:null};
+}
+
 
 function unlock(){$('#gate').classList.add('hidden');$('#app').style.visibility='visible';boot()}
 if(localStorage.getItem(LS.age)==='1')unlock();

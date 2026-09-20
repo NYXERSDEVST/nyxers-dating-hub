@@ -1,45 +1,1056 @@
 {
-  "version": "1.0",
+  "version": "7-mega",
   "updated": "2026-09-20",
-  "gates": ["21+", "fiction_only", "no_real_social_accounts", "staging"],
-  "note": "Fiction NPC roster for Pulse/Gram/Clips drama. Wire ≠ WhatsApp. First names only, all 21+.",
+  "build": "nyxlink-build-v7-mega",
+  "gates": [
+    "21+",
+    "fiction_only",
+    "no_real_social_accounts",
+    "staging",
+    "no_auto_canon"
+  ],
+  "note": "Fiction NPC roster for Pulse/Gram/Clips/Wire/Call drama. Wire ≠ WhatsApp. First names only, all 21+. No real FB/IG/WA/TikTok. No real porn stars.",
   "profile": {
     "name": "René",
     "handle": "@rene",
-    "followers": 2847,
-    "following": 312,
-    "friends": 186,
-    "bio": "Regisseur · Haus Velvet · fiction only"
+    "followers": 3120,
+    "following": 348,
+    "friends": 214,
+    "bio": "Regisseur · Haus Velvet · fiction only · staging"
   },
   "npcs": [
-    {"id": "lianne", "name": "Lianne", "role": "friend", "group": "core", "mood_bias": "supportive", "age": 28, "img": "../assets/generated/velvet/velvet_lianne_neon_sisters.png"},
-    {"id": "siobhan", "name": "Siobhán", "role": "friend", "group": "core", "mood_bias": "jealous", "age": 27, "img": "../assets/generated/velvet/velvet_siobhan_discover.png"},
-    {"id": "lara", "name": "Lára", "role": "friend", "group": "eurotik", "mood_bias": "supportive", "age": 26, "img": "../assets/generated/velvet/velvet_lara_discover.png"},
-    {"id": "kass", "name": "Kass", "role": "friend", "group": "eurotik", "mood_bias": "gossip", "age": 29, "img": "../assets/generated/velvet/velvet_kass_discover.png"},
-    {"id": "bela", "name": "Běla", "role": "friend", "group": "eurotik", "mood_bias": "supportive", "age": 31, "img": "../assets/generated/velvet/velvet_bela_discover.png"},
-    {"id": "lina", "name": "Lina", "role": "friend", "group": "eurotik", "mood_bias": "gossip", "age": 25, "img": "../assets/generated/velvet/velvet_lina_discover.png"},
-    {"id": "christel", "name": "Christel", "role": "friend", "group": "eurotik", "mood_bias": "worried", "age": 34, "img": "../assets/generated/velvet/velvet_christel_discover.png"},
-    {"id": "mara", "name": "Mara", "role": "friend", "group": "eurotik", "mood_bias": "supportive", "age": 33, "img": "../assets/generated/velvet/velvet_mara_discover.png"},
-    {"id": "heike", "name": "Heike", "role": "friend", "group": "eurotik", "mood_bias": "jealous", "age": 30, "img": "../assets/generated/velvet/velvet_heike_discover.png"},
-    {"id": "saskia", "name": "Saskia", "role": "friend", "group": "eurotik", "mood_bias": "gossip", "age": 28, "img": "../assets/generated/velvet/velvet_saskia_discover.png"},
-    {"id": "sabine", "name": "Sabine", "role": "friend", "group": "core", "mood_bias": "supportive", "age": 32, "img": "../assets/generated/sabine_discover.png"},
-    {"id": "fatima", "name": "Fatima", "role": "friend", "group": "core", "mood_bias": "worried", "age": 27, "img": "../assets/generated/fatima_discover.png"},
-    {"id": "severina", "name": "Severina", "role": "friend", "group": "core", "mood_bias": "jealous", "age": 29, "img": "../assets/generated/velvet/placeholders/heike_placeholder.png"},
-    {"id": "anastasia", "name": "Anastasia", "role": "friend", "group": "core", "mood_bias": "gossip", "age": 28, "img": "../assets/generated/velvet/placeholders/mara_placeholder.png"},
-    {"id": "lotte", "name": "Lotte", "role": "friend", "group": "core", "mood_bias": "supportive", "age": 26, "img": "../assets/generated/velvet/placeholders/lina_placeholder.png"},
-    {"id": "romy", "name": "Romy", "role": "friend", "group": "core", "mood_bias": "gossip", "age": 24, "img": "../assets/generated/velvet/placeholders/romy_placeholder.png"},
-    {"id": "kim", "name": "Kim", "role": "friend", "group": "core", "mood_bias": "supportive", "age": 25, "img": "../assets/generated/velvet/placeholders/freya_placeholder.png"},
-    {"id": "mila", "name": "Mila", "role": "friend", "group": "core", "mood_bias": "jealous", "age": 23, "img": "../assets/generated/velvet/placeholders/nora_placeholder.png"},
-    {"id": "dana", "name": "Zus Dana", "role": "family", "group": "family", "mood_bias": "worried", "age": 31, "img": "../assets/generated/velvet/placeholders/freya_placeholder.png"},
-    {"id": "jens", "name": "Maat Jens", "role": "family", "group": "family", "mood_bias": "supportive", "age": 35, "img": "../assets/generated/kayla_hub_cast.png"},
-    {"id": "anke", "name": "Anke", "role": "friend", "group": "family", "mood_bias": "worried", "age": 42, "img": "../assets/generated/velvet/placeholders/heike_placeholder.png"},
-    {"id": "merel", "name": "Merel", "role": "friend", "group": "core", "mood_bias": "gossip", "age": 27, "img": "../assets/generated/velvet/placeholders/nora_placeholder.png"}
+    {
+      "id": "lianne",
+      "name": "Lianne",
+      "role": "vriendin",
+      "group": "core",
+      "mood_bias": "supportive",
+      "age": 28,
+      "status": "geopend",
+      "img": "../assets/generated/velvet/velvet_lianne_neon_sisters.png",
+      "photoset": [
+        "../assets/generated/velvet/velvet_lianne_neon_sisters.png",
+        "../assets/generated/lianne_discover.png",
+        "../assets/generated/lianne_discover_v2.png",
+        "../assets/generated/lianne_gallery_1.png",
+        "../assets/generated/lianne_gallery_v2_1.png",
+        "../assets/generated/lianne_v2_closeup.png"
+      ],
+      "links": [
+        {
+          "to": "siobhan",
+          "type": "vriendin"
+        },
+        {
+          "to": "sabine",
+          "type": "vriendin"
+        },
+        {
+          "to": "mila",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "siobhan",
+      "name": "Siobhán",
+      "role": "vriendin",
+      "group": "core",
+      "mood_bias": "jealous",
+      "age": 27,
+      "status": "affaire_hint",
+      "img": "../assets/generated/velvet/velvet_siobhan_discover.png",
+      "photoset": [
+        "../assets/generated/velvet/velvet_siobhan_discover.png",
+        "../assets/generated/velvet/velvet_siobhan_bedroom.png",
+        "../assets/generated/velvet/velvet_siobhan_golf_street.png",
+        "../assets/generated/velvet/velvet_siobhan_pink_neon.png",
+        "../assets/generated/velvet/velvet_caoimhe_niamh_sisters.png"
+      ],
+      "links": [
+        {
+          "to": "lianne",
+          "type": "vriendin"
+        },
+        {
+          "to": "lotte",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "lara",
+      "name": "Lára",
+      "role": "vriendin",
+      "group": "eurotik",
+      "mood_bias": "supportive",
+      "age": 26,
+      "status": "single",
+      "img": "../assets/generated/velvet/velvet_lara_discover.png",
+      "photoset": [
+        "../assets/generated/velvet/velvet_lara_discover.png",
+        "../assets/generated/velvet/placeholders/lara_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%237c3aed%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231e3a5f%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EL%C3%A1ra%20%C2%B7%20soft%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23a78bfa%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23312e81%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EL%C3%A1ra%20%C2%B7%20spa%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "kass",
+          "type": "vriendin"
+        },
+        {
+          "to": "bela",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "kass",
+      "name": "Kass",
+      "role": "vriendin",
+      "group": "eurotik",
+      "mood_bias": "gossip",
+      "age": 29,
+      "status": "relatie",
+      "img": "../assets/generated/velvet/velvet_kass_discover.png",
+      "photoset": [
+        "../assets/generated/velvet/velvet_kass_discover.png",
+        "../assets/generated/velvet/placeholders/kass_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23db2777%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231e1b4b%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EKass%20%C2%B7%20night%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23f472b6%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%234c1d95%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EKass%20%C2%B7%20crew%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "lara",
+          "type": "vriendin"
+        },
+        {
+          "to": "lina",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "bela",
+      "name": "Běla",
+      "role": "vriendin",
+      "group": "eurotik",
+      "mood_bias": "supportive",
+      "age": 31,
+      "status": "single",
+      "img": "../assets/generated/velvet/velvet_bela_discover.png",
+      "photoset": [
+        "../assets/generated/velvet/velvet_bela_discover.png",
+        "../assets/generated/velvet/placeholders/bela_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230ea5e9%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231e3a5f%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EB%C4%9Bla%20%C2%B7%20spa%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2338bdf8%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EB%C4%9Bla%20%C2%B7%20soft%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "mara",
+          "type": "vriendin"
+        },
+        {
+          "to": "lara",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "lina",
+      "name": "Lina",
+      "role": "vriendin",
+      "group": "eurotik",
+      "mood_bias": "gossip",
+      "age": 25,
+      "status": "geopend",
+      "img": "../assets/generated/velvet/velvet_lina_discover.png",
+      "photoset": [
+        "../assets/generated/velvet/velvet_lina_discover.png",
+        "../assets/generated/velvet/placeholders/lina_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2322d3ee%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23164e63%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ELina%20%C2%B7%20neon%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2367e8f9%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23083344%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ELina%20%C2%B7%20weekend%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "kass",
+          "type": "vriendin"
+        },
+        {
+          "to": "heike",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "christel",
+      "name": "Christel",
+      "role": "collega",
+      "group": "eurotik",
+      "mood_bias": "worried",
+      "age": 34,
+      "status": "werk",
+      "img": "../assets/generated/velvet/velvet_christel_discover.png",
+      "photoset": [
+        "../assets/generated/velvet/velvet_christel_discover.png",
+        "../assets/generated/velvet/placeholders/christel_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23f59e0b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23422006%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EChristel%20%C2%B7%20DE%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23fbbf24%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2378350f%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EChristel%20%C2%B7%20soft%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "saskia",
+          "type": "collega"
+        },
+        {
+          "to": "anke",
+          "type": "collega"
+        }
+      ]
+    },
+    {
+      "id": "mara",
+      "name": "Mara",
+      "role": "vriendin",
+      "group": "eurotik",
+      "mood_bias": "supportive",
+      "age": 33,
+      "status": "relatie",
+      "img": "../assets/generated/velvet/velvet_mara_discover.png",
+      "photoset": [
+        "../assets/generated/velvet/velvet_mara_discover.png",
+        "../assets/generated/velvet/placeholders/mara_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2310b981%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23064e3b%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EMara%20%C2%B7%20street%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2334d399%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23065f46%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EMara%20%C2%B7%20spa%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "bela",
+          "type": "vriendin"
+        },
+        {
+          "to": "heike",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "heike",
+      "name": "Heike",
+      "role": "ex",
+      "group": "eurotik",
+      "mood_bias": "jealous",
+      "age": 30,
+      "status": "ex",
+      "img": "../assets/generated/velvet/velvet_heike_discover.png",
+      "photoset": [
+        "../assets/generated/velvet/velvet_heike_discover.png",
+        "../assets/generated/velvet/placeholders/heike_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23ef4444%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23450a0a%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EHeike%20%C2%B7%20boutique%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23f87171%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%237f1d1d%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EHeike%20%C2%B7%20soft%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "lina",
+          "type": "vriendin"
+        },
+        {
+          "to": "saskia",
+          "type": "ex"
+        }
+      ]
+    },
+    {
+      "id": "saskia",
+      "name": "Saskia",
+      "role": "collega",
+      "group": "eurotik",
+      "mood_bias": "gossip",
+      "age": 28,
+      "status": "werk",
+      "img": "../assets/generated/velvet/velvet_saskia_discover.png",
+      "photoset": [
+        "../assets/generated/velvet/velvet_saskia_discover.png",
+        "../assets/generated/velvet/placeholders/saskia_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%238b5cf6%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%232e1065%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ESaskia%20%C2%B7%20cinema%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23c4b5fd%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%234c1d95%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ESaskia%20%C2%B7%20crew%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "christel",
+          "type": "collega"
+        },
+        {
+          "to": "heike",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "sabine",
+      "name": "Sabine",
+      "role": "vriendin",
+      "group": "core",
+      "mood_bias": "supportive",
+      "age": 32,
+      "status": "geopend",
+      "img": "../assets/generated/sabine_discover.png",
+      "photoset": [
+        "../assets/generated/sabine_discover.png",
+        "../assets/generated/sabine_gallery_1.png",
+        "../assets/generated/sabine_gallery_2.png",
+        "../assets/generated/sabine_gallery_3.png",
+        "../assets/generated/sabine_chat_bg.png"
+      ],
+      "links": [
+        {
+          "to": "lianne",
+          "type": "vriendin"
+        },
+        {
+          "to": "fatima",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "fatima",
+      "name": "Fatima",
+      "role": "vriendin",
+      "group": "core",
+      "mood_bias": "worried",
+      "age": 27,
+      "status": "single",
+      "img": "../assets/generated/fatima_discover.png",
+      "photoset": [
+        "../assets/generated/fatima_discover.png",
+        "../assets/generated/fatima_gallery_1.png",
+        "../assets/generated/fatima_gallery_2.png",
+        "../assets/generated/fatima_gallery_3.png",
+        "../assets/generated/fatima_chat_bg.png"
+      ],
+      "links": [
+        {
+          "to": "sabine",
+          "type": "vriendin"
+        },
+        {
+          "to": "merel",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "severina",
+      "name": "Severina",
+      "role": "affaire-hint",
+      "group": "core",
+      "mood_bias": "jealous",
+      "age": 29,
+      "status": "affaire_hint",
+      "img": "../assets/generated/velvet/placeholders/heike_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/heike_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23be185d%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231e1b4b%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ESeverina%20%C2%B7%20night%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23ec4899%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23831843%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ESeverina%20%C2%B7%20soft%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23f9a8d4%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23500724%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ESeverina%20%C2%B7%20spa%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "anastasia",
+          "type": "vriendin"
+        },
+        {
+          "to": "romy",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "anastasia",
+      "name": "Anastasia",
+      "role": "werk",
+      "group": "core",
+      "mood_bias": "gossip",
+      "age": 28,
+      "status": "werk",
+      "img": "../assets/generated/velvet/placeholders/mara_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/mara_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%236366f1%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231e1b4b%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EAnastasia%20%C2%B7%20schedule%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23818cf8%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23312e81%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EAnastasia%20%C2%B7%20soft%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23a5b4fc%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231e3a8a%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EAnastasia%20%C2%B7%20crew%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "severina",
+          "type": "collega"
+        },
+        {
+          "to": "christel",
+          "type": "collega"
+        }
+      ]
+    },
+    {
+      "id": "lotte",
+      "name": "Lotte",
+      "role": "vriendin",
+      "group": "core",
+      "mood_bias": "supportive",
+      "age": 26,
+      "status": "single",
+      "img": "../assets/generated/velvet/placeholders/lina_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/lina_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2306b6d4%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230e7490%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ELotte%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230e7490%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306b6d4%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ELotte%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306b6d4%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ELotte%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "siobhan",
+          "type": "vriendin"
+        },
+        {
+          "to": "romy",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "romy",
+      "name": "Romy",
+      "role": "vriendin",
+      "group": "core",
+      "mood_bias": "gossip",
+      "age": 24,
+      "status": "single",
+      "img": "../assets/generated/velvet/placeholders/romy_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/romy_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23f43f5e%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%239f1239%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ERomy%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%239f1239%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23f43f5e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ERomy%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23f43f5e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ERomy%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "lotte",
+          "type": "vriendin"
+        },
+        {
+          "to": "kim",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "kim",
+      "name": "Kim",
+      "role": "vriendin",
+      "group": "core",
+      "mood_bias": "supportive",
+      "age": 25,
+      "status": "relatie",
+      "img": "../assets/generated/velvet/placeholders/freya_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/freya_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23a855f7%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%236b21a8%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EKim%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%236b21a8%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23a855f7%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EKim%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23a855f7%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EKim%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "romy",
+          "type": "vriendin"
+        },
+        {
+          "to": "mila",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "mila",
+      "name": "Mila",
+      "role": "vriendin",
+      "group": "core",
+      "mood_bias": "jealous",
+      "age": 23,
+      "status": "single",
+      "img": "../assets/generated/velvet/placeholders/nora_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/nora_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23ec4899%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%239d174d%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EMila%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%239d174d%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23ec4899%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EMila%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23ec4899%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EMila%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "lianne",
+          "type": "vriendin"
+        },
+        {
+          "to": "kim",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "dana",
+      "name": "Zus Dana",
+      "role": "familie",
+      "group": "family",
+      "mood_bias": "worried",
+      "age": 31,
+      "status": "relatie",
+      "img": "../assets/generated/velvet/placeholders/dana_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/dana_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23f59e0b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2392400e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EDana%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2392400e%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23f59e0b%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EDana%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23f59e0b%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EDana%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "jens",
+          "type": "familie"
+        },
+        {
+          "to": "anke",
+          "type": "familie"
+        }
+      ]
+    },
+    {
+      "id": "jens",
+      "name": "Maat Jens",
+      "role": "familie",
+      "group": "family",
+      "mood_bias": "supportive",
+      "age": 35,
+      "status": "relatie",
+      "img": "../assets/generated/kayla_hub_cast.png",
+      "photoset": [
+        "../assets/generated/kayla_hub_cast.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23334155%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f172a%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EJens%20%C2%B7%20check-in%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23475569%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231e293b%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EJens%20%C2%B7%20weekend%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "dana",
+          "type": "familie"
+        }
+      ]
+    },
+    {
+      "id": "anke",
+      "name": "Anke",
+      "role": "familie",
+      "group": "family",
+      "mood_bias": "worried",
+      "age": 42,
+      "status": "werk",
+      "img": "../assets/generated/velvet/placeholders/anke_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/anke_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2378716c%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2344403c%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EAnke%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2344403c%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2378716c%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EAnke%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2378716c%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EAnke%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "dana",
+          "type": "familie"
+        },
+        {
+          "to": "christel",
+          "type": "collega"
+        }
+      ]
+    },
+    {
+      "id": "merel",
+      "name": "Merel",
+      "role": "vriendin",
+      "group": "core",
+      "mood_bias": "gossip",
+      "age": 27,
+      "status": "geopend",
+      "img": "../assets/generated/velvet/placeholders/merel_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/merel_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2314b8a6%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230f766e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EMerel%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230f766e%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2314b8a6%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EMerel%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2314b8a6%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EMerel%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "fatima",
+          "type": "vriendin"
+        },
+        {
+          "to": "noa",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "noa",
+      "name": "Noa",
+      "role": "vriendin",
+      "group": "core",
+      "mood_bias": "gossip",
+      "age": 26,
+      "status": "single",
+      "img": "../assets/generated/velvet/placeholders/noa_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/noa_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%236366f1%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23312e81%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ENoa%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23312e81%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%236366f1%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ENoa%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%236366f1%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ENoa%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "merel",
+          "type": "vriendin"
+        },
+        {
+          "to": "fenja",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "fenja",
+      "name": "Fenja",
+      "role": "vriendin",
+      "group": "core",
+      "mood_bias": "supportive",
+      "age": 28,
+      "status": "relatie",
+      "img": "../assets/generated/velvet/placeholders/fenja_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/fenja_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%238b5cf6%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%234c1d95%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EFenja%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%234c1d95%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%238b5cf6%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EFenja%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%238b5cf6%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EFenja%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "noa",
+          "type": "vriendin"
+        },
+        {
+          "to": "jule",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "jule",
+      "name": "Jule",
+      "role": "collega",
+      "group": "eurotik",
+      "mood_bias": "worried",
+      "age": 29,
+      "status": "werk",
+      "img": "../assets/generated/velvet/placeholders/jule_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/jule_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230ea5e9%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230c4a6e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EJule%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230c4a6e%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230ea5e9%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EJule%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230ea5e9%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EJule%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "britta",
+          "type": "collega"
+        },
+        {
+          "to": "christel",
+          "type": "collega"
+        }
+      ]
+    },
+    {
+      "id": "britta",
+      "name": "Britta",
+      "role": "collega",
+      "group": "eurotik",
+      "mood_bias": "gossip",
+      "age": 33,
+      "status": "werk",
+      "img": "../assets/generated/velvet/placeholders/britta_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/britta_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23f97316%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%237c2d12%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EBritta%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%237c2d12%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23f97316%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EBritta%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23f97316%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EBritta%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "jule",
+          "type": "collega"
+        },
+        {
+          "to": "imke",
+          "type": "collega"
+        }
+      ]
+    },
+    {
+      "id": "imke",
+      "name": "Imke",
+      "role": "werk",
+      "group": "eurotik",
+      "mood_bias": "supportive",
+      "age": 31,
+      "status": "werk",
+      "img": "../assets/generated/velvet/placeholders/imke_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/imke_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2384cc16%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23365314%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EImke%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23365314%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2384cc16%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EImke%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2384cc16%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EImke%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "britta",
+          "type": "collega"
+        },
+        {
+          "to": "saskia",
+          "type": "collega"
+        }
+      ]
+    },
+    {
+      "id": "nora",
+      "name": "Nora",
+      "role": "vriendin",
+      "group": "core",
+      "mood_bias": "jealous",
+      "age": 25,
+      "status": "geopend",
+      "img": "../assets/generated/velvet/placeholders/nora_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/nora_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23e11d48%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23881337%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ENora%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23881337%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23e11d48%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ENora%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23e11d48%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ENora%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "freya",
+          "type": "vriendin"
+        },
+        {
+          "to": "mila",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "freya",
+      "name": "Freya",
+      "role": "vriendin",
+      "group": "core",
+      "mood_bias": "supportive",
+      "age": 27,
+      "status": "single",
+      "img": "../assets/generated/velvet/placeholders/freya_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/freya_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23d946ef%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2386198f%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EFreya%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2386198f%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23d946ef%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EFreya%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23d946ef%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EFreya%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "nora",
+          "type": "vriendin"
+        },
+        {
+          "to": "eva",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "sanne",
+      "name": "Sanne",
+      "role": "ex",
+      "group": "core",
+      "mood_bias": "jealous",
+      "age": 30,
+      "status": "ex",
+      "img": "../assets/generated/velvet/placeholders/romy_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/romy_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23ef4444%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%237f1d1d%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ESanne%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%237f1d1d%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23ef4444%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ESanne%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23ef4444%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ESanne%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "heike",
+          "type": "vriendin"
+        },
+        {
+          "to": "eva",
+          "type": "ex"
+        }
+      ]
+    },
+    {
+      "id": "eva",
+      "name": "Eva",
+      "role": "affaire-hint",
+      "group": "core",
+      "mood_bias": "gossip",
+      "age": 28,
+      "status": "affaire_hint",
+      "img": "../assets/generated/velvet/placeholders/heike_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/heike_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23f43f5e%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%239f1239%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EEva%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%239f1239%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23f43f5e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EEva%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23f43f5e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EEva%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "sanne",
+          "type": "vriendin"
+        },
+        {
+          "to": "severina",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "isa",
+      "name": "Isa",
+      "role": "vriendin",
+      "group": "core",
+      "mood_bias": "supportive",
+      "age": 24,
+      "status": "single",
+      "img": "../assets/generated/velvet/placeholders/lina_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/lina_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2306b6d4%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23155e75%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EIsa%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23155e75%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306b6d4%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EIsa%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306b6d4%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EIsa%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "femke",
+          "type": "vriendin"
+        },
+        {
+          "to": "lotte",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "femke",
+      "name": "Femke",
+      "role": "vriendin",
+      "group": "core",
+      "mood_bias": "gossip",
+      "age": 26,
+      "status": "relatie",
+      "img": "../assets/generated/velvet/placeholders/merel_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/merel_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2322c55e%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2314532d%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EFemke%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2314532d%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2322c55e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EFemke%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2322c55e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EFemke%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "isa",
+          "type": "vriendin"
+        },
+        {
+          "to": "yara",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "yara",
+      "name": "Yara",
+      "role": "collega",
+      "group": "eurotik",
+      "mood_bias": "worried",
+      "age": 32,
+      "status": "werk",
+      "img": "../assets/generated/velvet/placeholders/saskia_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/saskia_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23eab308%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23713f12%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EYara%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23713f12%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23eab308%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EYara%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23eab308%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EYara%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "femke",
+          "type": "vriendin"
+        },
+        {
+          "to": "nadja",
+          "type": "collega"
+        }
+      ]
+    },
+    {
+      "id": "nadja",
+      "name": "Nadja",
+      "role": "werk",
+      "group": "eurotik",
+      "mood_bias": "supportive",
+      "age": 35,
+      "status": "werk",
+      "img": "../assets/generated/velvet/placeholders/mara_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/mara_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2364748b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231e293b%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ENadja%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2364748b%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ENadja%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2364748b%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ENadja%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "yara",
+          "type": "collega"
+        },
+        {
+          "to": "pia",
+          "type": "collega"
+        }
+      ]
+    },
+    {
+      "id": "pia",
+      "name": "Pia",
+      "role": "vriendin",
+      "group": "eurotik",
+      "mood_bias": "jealous",
+      "age": 29,
+      "status": "geopend",
+      "img": "../assets/generated/velvet/placeholders/bela_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/bela_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23a855f7%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23581c87%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EPia%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23581c87%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23a855f7%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EPia%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23a855f7%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EPia%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "nadja",
+          "type": "vriendin"
+        },
+        {
+          "to": "caro",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "caro",
+      "name": "Caro",
+      "role": "vriendin",
+      "group": "core",
+      "mood_bias": "gossip",
+      "age": 27,
+      "status": "single",
+      "img": "../assets/generated/velvet/placeholders/kass_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/kass_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23fb7185%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%239f1239%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ECaro%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%239f1239%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23fb7185%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ECaro%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23fb7185%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ECaro%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "pia",
+          "type": "vriendin"
+        },
+        {
+          "to": "lieke",
+          "type": "vriendin"
+        }
+      ]
+    },
+    {
+      "id": "lieke",
+      "name": "Lieke",
+      "role": "familie",
+      "group": "family",
+      "mood_bias": "worried",
+      "age": 36,
+      "status": "relatie",
+      "img": "../assets/generated/velvet/placeholders/anke_placeholder.png",
+      "photoset": [
+        "../assets/generated/velvet/placeholders/anke_placeholder.png",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23fbbf24%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2378350f%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ELieke%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2378350f%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23fbbf24%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ELieke%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
+        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23fbbf24%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ELieke%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+      ],
+      "links": [
+        {
+          "to": "caro",
+          "type": "vriendin"
+        },
+        {
+          "to": "dana",
+          "type": "familie"
+        }
+      ]
+    }
   ],
   "moods": {
-    "supportive": ["soft", "spa", "crew", "laugh", "opening", "weekend", "hoodie", "bank"],
-    "jealous": ["sisters", "neon", "rough", "houd", "tag", "crew", "spa", "private"],
-    "worried": ["nacht", "DE", "carmeet", "LED", "onderweg", "street", "tracksuit"],
-    "gossip": ["teaser", "cinema", "champagne", "boutique", "merch", "soft", "skin"]
+    "supportive": [
+      "soft",
+      "spa",
+      "crew",
+      "laugh",
+      "opening",
+      "weekend",
+      "hoodie",
+      "bank"
+    ],
+    "jealous": [
+      "sisters",
+      "neon",
+      "rough",
+      "houd",
+      "tag",
+      "crew",
+      "spa",
+      "private"
+    ],
+    "worried": [
+      "nacht",
+      "DE",
+      "carmeet",
+      "LED",
+      "onderweg",
+      "street",
+      "tracksuit"
+    ],
+    "gossip": [
+      "teaser",
+      "cinema",
+      "champagne",
+      "boutique",
+      "merch",
+      "soft",
+      "skin"
+    ]
   },
   "replies": {
     "supportive": [
@@ -75,9 +1086,101 @@
       "Dit gaat rond in de groupchat 😂"
     ]
   },
+  "role_reactions": {
+    "familie": {
+      "emojis": [
+        "😢",
+        "🙏",
+        "❤️",
+        "😮"
+      ],
+      "replies": [
+        "Alles oké daar?",
+        "Bel even als ’t later wordt",
+        "Niet te gek doen hè",
+        "Zus-modus: laat weten dat je veilig bent"
+      ]
+    },
+    "vriendin": {
+      "emojis": [
+        "🔥",
+        "🙈",
+        "❤️",
+        "💯"
+      ],
+      "replies": [
+        "Oh? En ik dan? 😏",
+        "Spill. Nu.",
+        "Hmm later Wire?",
+        "Nice — had ik ook bij willen zijn"
+      ]
+    },
+    "collega": {
+      "emojis": [
+        "👏",
+        "💯",
+        "😮",
+        "❤️"
+      ],
+      "replies": [
+        "Professioneel gezien: netjes.",
+        "Goede vibe voor de crew.",
+        "Zet ’t in de schedule?",
+        "Sterk shot — fiction stil."
+      ]
+    },
+    "werk": {
+      "emojis": [
+        "👏",
+        "💯",
+        "😮"
+      ],
+      "replies": [
+        "Noted voor de planning.",
+        "Haus Velvet look ✓",
+        "Kan in de moodboard.",
+        "Houd ’t staging — no auto-canon."
+      ]
+    },
+    "ex": {
+      "emojis": [
+        "🔥",
+        "🤢",
+        "🙈",
+        "😡"
+      ],
+      "replies": [
+        "Serieus? 😒",
+        "Interessant timing.",
+        "Wire only: waarom like je dát?",
+        "Oké dan. Praat later."
+      ]
+    },
+    "affaire-hint": {
+      "emojis": [
+        "🔥",
+        "🙈",
+        "❤️",
+        "💯"
+      ],
+      "replies": [
+        "Shh — later privé?",
+        "Die still… 👀",
+        "Alleen via Wire hè",
+        "Niet te openbaar, schat"
+      ]
+    }
+  },
   "drama": {
     "chance": 0.55,
-    "types": ["wire_jealous", "friend_tag", "family_ok"],
+    "types": [
+      "wire_jealous",
+      "friend_tag",
+      "family_ok",
+      "ex_spicy",
+      "werk_note",
+      "affaire_hint"
+    ],
     "templates": {
       "wire_jealous": [
         "Zag je like op {author}’s post… met {other}? Serieus?",
@@ -96,9 +1199,59 @@
         "Hé, even checken — alles goed?",
         "Maat, laat even weten als ’t weekend oké loopt.",
         "Zus-modus: alles oké? Geen gekke shit hè."
+      ],
+      "ex_spicy": [
+        "Grappig dat je {author} liked. Classic.",
+        "Ex-radar: zag je reactie. Geen comment.",
+        "Met {other}? Oké. Wire later — of niet.",
+        "Interessant timing na alles 🔥"
+      ],
+      "werk_note": [
+        "Voor de schedule: nice still van {author}.",
+        "Werk-modus: houd ’t staging, geen auto-canon.",
+        "Crew note — {author} looks good for moodboard.",
+        "Collega-check: past dit bij Haus Velvet weekend?"
+      ],
+      "affaire_hint": [
+        "Shh — zag je like. Later privé?",
+        "Niet te openbaar met {author}… 👀",
+        "Alleen Wire. Geen Pulse-tags.",
+        "{other} mag ’t niet zien — snap je?"
       ]
     }
   },
-  "followers_sample": ["Noa", "Fenja", "Jule", "Britta", "Imke", "Nora", "Freya", "Caoimhe", "Niamh"],
-  "emoji_reactions": ["❤️", "😂", "😮", "😢", "😡"]
+  "followers_sample": [
+    "Noa",
+    "Fenja",
+    "Jule",
+    "Britta",
+    "Imke",
+    "Nora",
+    "Freya",
+    "Caoimhe",
+    "Niamh",
+    "Sanne",
+    "Eva",
+    "Isa",
+    "Femke",
+    "Yara",
+    "Nadja",
+    "Pia",
+    "Caro",
+    "Lieke",
+    "Tessa",
+    "Maren"
+  ],
+  "emoji_reactions": [
+    "❤️",
+    "😂",
+    "😮",
+    "😢",
+    "😡",
+    "🔥",
+    "👏",
+    "💯",
+    "🤢",
+    "🙈"
+  ]
 }

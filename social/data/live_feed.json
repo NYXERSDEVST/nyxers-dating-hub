@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "7-mega",
   "updated": "2026-09-20",
   "gates": [
     "21+",
@@ -108,6 +108,101 @@
       "id": "haus",
       "name": "Haus",
       "img": "../assets/generated/velvet/velvet_lara_discover.png"
+    },
+    {
+      "id": "dana",
+      "name": "Dana",
+      "img": "../assets/generated/velvet/placeholders/dana_placeholder.png"
+    },
+    {
+      "id": "anke",
+      "name": "Anke",
+      "img": "../assets/generated/velvet/placeholders/anke_placeholder.png"
+    },
+    {
+      "id": "merel",
+      "name": "Merel",
+      "img": "../assets/generated/velvet/placeholders/merel_placeholder.png"
+    },
+    {
+      "id": "noa",
+      "name": "Noa",
+      "img": "../assets/generated/velvet/placeholders/noa_placeholder.png"
+    },
+    {
+      "id": "fenja",
+      "name": "Fenja",
+      "img": "../assets/generated/velvet/placeholders/fenja_placeholder.png"
+    },
+    {
+      "id": "jule",
+      "name": "Jule",
+      "img": "../assets/generated/velvet/placeholders/jule_placeholder.png"
+    },
+    {
+      "id": "britta",
+      "name": "Britta",
+      "img": "../assets/generated/velvet/placeholders/britta_placeholder.png"
+    },
+    {
+      "id": "imke",
+      "name": "Imke",
+      "img": "../assets/generated/velvet/placeholders/imke_placeholder.png"
+    },
+    {
+      "id": "nora",
+      "name": "Nora",
+      "img": "../assets/generated/velvet/placeholders/nora_placeholder.png"
+    },
+    {
+      "id": "freya",
+      "name": "Freya",
+      "img": "../assets/generated/velvet/placeholders/freya_placeholder.png"
+    },
+    {
+      "id": "sanne",
+      "name": "Sanne",
+      "img": "../assets/generated/velvet/placeholders/romy_placeholder.png"
+    },
+    {
+      "id": "eva",
+      "name": "Eva",
+      "img": "../assets/generated/velvet/placeholders/heike_placeholder.png"
+    },
+    {
+      "id": "isa",
+      "name": "Isa",
+      "img": "../assets/generated/velvet/placeholders/lina_placeholder.png"
+    },
+    {
+      "id": "femke",
+      "name": "Femke",
+      "img": "../assets/generated/velvet/placeholders/merel_placeholder.png"
+    },
+    {
+      "id": "yara",
+      "name": "Yara",
+      "img": "../assets/generated/velvet/placeholders/saskia_placeholder.png"
+    },
+    {
+      "id": "nadja",
+      "name": "Nadja",
+      "img": "../assets/generated/velvet/placeholders/mara_placeholder.png"
+    },
+    {
+      "id": "pia",
+      "name": "Pia",
+      "img": "../assets/generated/velvet/placeholders/bela_placeholder.png"
+    },
+    {
+      "id": "caro",
+      "name": "Caro",
+      "img": "../assets/generated/velvet/placeholders/kass_placeholder.png"
+    },
+    {
+      "id": "lieke",
+      "name": "Lieke",
+      "img": "../assets/generated/velvet/placeholders/anke_placeholder.png"
     }
   ],
   "items": [
@@ -409,7 +504,40 @@
       "nsfw": "soft",
       "beat": "WhatsApp map mirror",
       "source": "WhatsApp Chat Map Structure title"
+    },
+    {
+      "id": "mega-rel-noa-01",
+      "channel": "pulse",
+      "type": "post",
+      "author": "Noa",
+      "caption": "Vriendin-modus met Merel — soft spa night. Relatie: single · fiction 21+",
+      "media": "../assets/generated/velvet/placeholders/noa_placeholder.png",
+      "location": "Haus Velvet",
+      "nsfw": "soft",
+      "beat": "relationship graph vriendin"
+    },
+    {
+      "id": "mega-werk-jule-01",
+      "channel": "gram",
+      "type": "post",
+      "author": "Jule",
+      "caption": "Collega-still · werk schedule met Britta. Staging / no auto-canon.",
+      "media": "../assets/generated/velvet/placeholders/jule_placeholder.png",
+      "location": "Studio DE",
+      "nsfw": "soft",
+      "beat": "werk collega"
+    },
+    {
+      "id": "mega-ex-sanne-01",
+      "channel": "story",
+      "type": "story",
+      "author": "Sanne",
+      "caption": "Ex-radar off vandaag. Fiction only.",
+      "media": "../assets/generated/velvet/placeholders/romy_placeholder.png",
+      "nsfw": "soft",
+      "beat": "ex status"
     }
   ],
-  "note": "Batch A CORE + Batch B Eurotik (NX-B01–B10 soft, first-name aliases) + NX-C bed662eb fiction (Severina/Anastasia/Lotte). Wire≠WA. Staging, no auto-canon."
+  "note": "Batch A CORE + Batch B Eurotik (NX-B01–B10 soft, first-name aliases) + NX-C bed662eb fiction (Severina/Anastasia/Lotte). Wire≠WA. Staging, no auto-canon.",
+  "build": "nyxlink-build-v7-mega"
 }

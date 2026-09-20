@@ -1,0 +1,611 @@
+{
+  "default": "nl",
+  "languages": {
+    "nl": {
+      "label": "Nederlands",
+      "dir": "ltr"
+    },
+    "en": {
+      "label": "English",
+      "dir": "ltr"
+    },
+    "de": {
+      "label": "Deutsch",
+      "dir": "ltr"
+    },
+    "fr": {
+      "label": "Français",
+      "dir": "ltr"
+    },
+    "es": {
+      "label": "Español",
+      "dir": "ltr"
+    },
+    "it": {
+      "label": "Italiano",
+      "dir": "ltr"
+    },
+    "pl": {
+      "label": "Polski",
+      "dir": "ltr"
+    },
+    "pt": {
+      "label": "Português",
+      "dir": "ltr"
+    },
+    "tr": {
+      "label": "Türkçe",
+      "dir": "ltr"
+    },
+    "ar": {
+      "label": "العربية",
+      "dir": "rtl"
+    }
+  },
+  "strings": {
+    "nav_pulse": {
+      "nl": "Pulse",
+      "en": "Pulse",
+      "de": "Pulse",
+      "fr": "Pulse",
+      "es": "Pulse",
+      "it": "Pulse",
+      "pl": "Pulse",
+      "pt": "Pulse",
+      "tr": "Pulse",
+      "ar": "Pulse"
+    },
+    "nav_gram": {
+      "nl": "Gram",
+      "en": "Gram",
+      "de": "Gram",
+      "fr": "Gram",
+      "es": "Gram",
+      "it": "Gram",
+      "pl": "Gram",
+      "pt": "Gram",
+      "tr": "Gram",
+      "ar": "Gram"
+    },
+    "nav_clips": {
+      "nl": "Clips",
+      "en": "Clips",
+      "de": "Clips",
+      "fr": "Clips",
+      "es": "Clips",
+      "it": "Clips",
+      "pl": "Clips",
+      "pt": "Clips",
+      "tr": "Clips",
+      "ar": "Clips"
+    },
+    "nav_wire": {
+      "nl": "Wire",
+      "en": "Wire",
+      "de": "Wire",
+      "fr": "Wire",
+      "es": "Wire",
+      "it": "Wire",
+      "pl": "Wire",
+      "pt": "Wire",
+      "tr": "Wire",
+      "ar": "Wire"
+    },
+    "nav_me": {
+      "nl": "Me",
+      "en": "Me",
+      "de": "Ich",
+      "fr": "Moi",
+      "es": "Yo",
+      "it": "Io",
+      "pl": "Ja",
+      "pt": "Eu",
+      "tr": "Ben",
+      "ar": "أنا"
+    },
+    "sub_pulse": {
+      "nl": "facebook-style feed · fiction",
+      "en": "facebook-style feed · fiction",
+      "de": "Facebook-Stil Feed · Fiktion",
+      "fr": "fil Facebook · fiction",
+      "es": "feed estilo Facebook · ficción",
+      "it": "feed stile Facebook · fiction",
+      "pl": "feed w stylu FB · fikcja",
+      "pt": "feed estilo Facebook · ficção",
+      "tr": "Facebook tarzı akış · kurgu",
+      "ar": "خلاصة بأسلوب فيسبوك · خيال"
+    },
+    "sub_gram": {
+      "nl": "instagram-style · fiction",
+      "en": "instagram-style · fiction",
+      "de": "Instagram-Stil · Fiktion",
+      "fr": "style Instagram · fiction",
+      "es": "estilo Instagram · ficción",
+      "it": "stile Instagram · fiction",
+      "pl": "styl Instagram · fikcja",
+      "pt": "estilo Instagram · ficção",
+      "tr": "Instagram tarzı · kurgu",
+      "ar": "بأسلوب إنستغرام · خيال"
+    },
+    "sub_clips": {
+      "nl": "tiktok-style · fiction",
+      "en": "tiktok-style · fiction",
+      "de": "TikTok-Stil · Fiktion",
+      "fr": "style TikTok · fiction",
+      "es": "estilo TikTok · ficción",
+      "it": "stile TikTok · fiction",
+      "pl": "styl TikTok · fikcja",
+      "pt": "estilo TikTok · ficção",
+      "tr": "TikTok tarzı · kurgu",
+      "ar": "بأسلوب تيك توك · خيال"
+    },
+    "sub_wire": {
+      "nl": "whatsapp-style · fiction",
+      "en": "whatsapp-style · fiction",
+      "de": "WhatsApp-Stil · Fiktion · ≠ WA",
+      "fr": "style WhatsApp · fiction · ≠ WA",
+      "es": "estilo WhatsApp · ficción · ≠ WA",
+      "it": "stile WhatsApp · fiction · ≠ WA",
+      "pl": "styl WhatsApp · fikcja · ≠ WA",
+      "pt": "estilo WhatsApp · ficção · ≠ WA",
+      "tr": "WhatsApp tarzı · kurgu · ≠ WA",
+      "ar": "بأسلوب واتساب · خيال · ≠ WA"
+    },
+    "sub_me": {
+      "nl": "jouw regie-profiel",
+      "en": "your director profile",
+      "de": "dein Regie-Profil",
+      "fr": "ton profil régie",
+      "es": "tu perfil de dirección",
+      "it": "il tuo profilo regia",
+      "pl": "twój profil reżysera",
+      "pt": "teu perfil de direção",
+      "tr": "yönetmen profilin",
+      "ar": "ملفّك كمخرج"
+    },
+    "banner": {
+      "nl": "SIMULATED SOCIAL · fiction cast · geen echte logins · chat met bots via dit platform",
+      "en": "SIMULATED SOCIAL · fiction cast · no real logins · chat with bots on this site",
+      "de": "SIMULATED SOCIAL · Fiktion · keine echten Logins · Bots nur hier",
+      "fr": "SIMULATED SOCIAL · fiction · pas de vrais comptes · bots sur ce site",
+      "es": "SIMULATED SOCIAL · ficción · sin logins reales · bots aquí",
+      "it": "SIMULATED SOCIAL · fiction · nessun login reale · bot qui",
+      "pl": "SIMULATED SOCIAL · fikcja · bez prawdziwych logowań · boty tu",
+      "pt": "SIMULATED SOCIAL · ficção · sem logins reais · bots neste site",
+      "tr": "SIMULATED SOCIAL · kurgu · gerçek giriş yok · botlar burada",
+      "ar": "SIMULATED SOCIAL · خيال · بلا تسجيل حقيقي · الدردشة هنا فقط"
+    },
+    "gate_title": {
+      "nl": "NYXLINK",
+      "en": "NYXLINK",
+      "de": "NYXLINK",
+      "fr": "NYXLINK",
+      "es": "NYXLINK",
+      "it": "NYXLINK",
+      "pl": "NYXLINK",
+      "pt": "NYXLINK",
+      "tr": "NYXLINK",
+      "ar": "NYXLINK"
+    },
+    "gate_body": {
+      "nl": "Fictief social platform (Pulse · Gram · Clips · Wire). 21+ · AI_SYNTHETIC · geen echte Facebook/Instagram/WhatsApp/TikTok-accounts — alles speelt hier op de site.",
+      "en": "Fiction social platform (Pulse · Gram · Clips · Wire). 21+ · AI_SYNTHETIC · no real Facebook/Instagram/WhatsApp/TikTok accounts — everything stays on this site.",
+      "de": "Fiktive Social-Plattform (Pulse · Gram · Clips · Wire). 21+ · AI_SYNTHETIC · keine echten FB/IG/WA/TikTok-Accounts — alles nur hier.",
+      "fr": "Plateforme sociale fiction (Pulse · Gram · Clips · Wire). 21+ · AI_SYNTHETIC · pas de vrais comptes FB/IG/WA/TikTok — tout reste ici.",
+      "es": "Plataforma social de ficción (Pulse · Gram · Clips · Wire). 21+ · AI_SYNTHETIC · sin cuentas reales de FB/IG/WA/TikTok — todo aquí.",
+      "it": "Piattaforma social fiction (Pulse · Gram · Clips · Wire). 21+ · AI_SYNTHETIC · nessun account reale FB/IG/WA/TikTok — tutto qui.",
+      "pl": "Fikcyjna platforma społecznościowa (Pulse · Gram · Clips · Wire). 21+ · AI_SYNTHETIC · brak prawdziwych kont FB/IG/WA/TikTok — wszystko tu.",
+      "pt": "Plataforma social de ficção (Pulse · Gram · Clips · Wire). 21+ · AI_SYNTHETIC · sem contas reais de FB/IG/WA/TikTok — tudo neste site.",
+      "tr": "Kurgu sosyal platform (Pulse · Gram · Clips · Wire). 21+ · AI_SYNTHETIC · gerçek FB/IG/WA/TikTok hesabı yok — her şey bu sitede.",
+      "ar": "منصة اجتماعية خيالية (Pulse · Gram · Clips · Wire). ‎21+ · AI_SYNTHETIC · بلا حسابات فيسبوك/إنستغرام/واتساب/تيك توك حقيقية — كل شيء هنا."
+    },
+    "gate_yes": {
+      "nl": "Ik ben 21+",
+      "en": "I am 21+",
+      "de": "Ich bin 21+",
+      "fr": "J’ai 21+",
+      "es": "Tengo 21+",
+      "it": "Ho 21+",
+      "pl": "Mam 21+",
+      "pt": "Tenho 21+",
+      "tr": "21+ yaşındayım",
+      "ar": "عمري ‎21+"
+    },
+    "gate_no": {
+      "nl": "Verlaten",
+      "en": "Leave",
+      "de": "Verlassen",
+      "fr": "Quitter",
+      "es": "Salir",
+      "it": "Esci",
+      "pl": "Wyjdź",
+      "pt": "Sair",
+      "tr": "Çık",
+      "ar": "مغادرة"
+    },
+    "friends": {
+      "nl": "Vrienden",
+      "en": "Friends",
+      "de": "Freunde",
+      "fr": "Amis",
+      "es": "Amigos",
+      "it": "Amici",
+      "pl": "Przyjaciele",
+      "pt": "Amigos",
+      "tr": "Arkadaşlar",
+      "ar": "أصدقاء"
+    },
+    "followers": {
+      "nl": "Volgers",
+      "en": "Followers",
+      "de": "Follower",
+      "fr": "Abonnés",
+      "es": "Seguidores",
+      "it": "Follower",
+      "pl": "Obserwujący",
+      "pt": "Seguidores",
+      "tr": "Takipçiler",
+      "ar": "متابعون"
+    },
+    "following": {
+      "nl": "Volgend",
+      "en": "Following",
+      "de": "Folgt",
+      "fr": "Abonnements",
+      "es": "Siguiendo",
+      "it": "Seguiti",
+      "pl": "Obserwowane",
+      "pt": "A seguir",
+      "tr": "Takip",
+      "ar": "أتابع"
+    },
+    "post": {
+      "nl": "Post",
+      "en": "Post",
+      "de": "Posten",
+      "fr": "Publier",
+      "es": "Publicar",
+      "it": "Pubblica",
+      "pl": "Opublikuj",
+      "pt": "Publicar",
+      "tr": "Paylaş",
+      "ar": "نشر"
+    },
+    "post_ph": {
+      "nl": "Deel iets in Haus Velvet…",
+      "en": "Share something in Haus Velvet…",
+      "de": "Teile etwas in Haus Velvet…",
+      "fr": "Partage quelque chose dans Haus Velvet…",
+      "es": "Comparte algo en Haus Velvet…",
+      "it": "Condividi qualcosa in Haus Velvet…",
+      "pl": "Udostępnij coś w Haus Velvet…",
+      "pt": "Partilha algo no Haus Velvet…",
+      "tr": "Haus Velvet’te bir şey paylaş…",
+      "ar": "شارك شيئًا في Haus Velvet…"
+    },
+    "comment_ph": {
+      "nl": "Schrijf een reactie…",
+      "en": "Write a comment…",
+      "de": "Schreib einen Kommentar…",
+      "fr": "Écris un commentaire…",
+      "es": "Escribe un comentario…",
+      "it": "Scrivi un commento…",
+      "pl": "Napisz komentarz…",
+      "pt": "Escreve um comentário…",
+      "tr": "Yorum yaz…",
+      "ar": "اكتب تعليقًا…"
+    },
+    "place": {
+      "nl": "Plaats",
+      "en": "Post",
+      "de": "Posten",
+      "fr": "Publier",
+      "es": "Publicar",
+      "it": "Pubblica",
+      "pl": "Opublikuj",
+      "pt": "Publicar",
+      "tr": "Gönder",
+      "ar": "انشر"
+    },
+    "msg_ph": {
+      "nl": "Bericht…",
+      "en": "Message…",
+      "de": "Nachricht…",
+      "fr": "Message…",
+      "es": "Mensaje…",
+      "it": "Messaggio…",
+      "pl": "Wiadomość…",
+      "pt": "Mensagem…",
+      "tr": "Mesaj…",
+      "ar": "رسالة…"
+    },
+    "reactions": {
+      "nl": "Reacties",
+      "en": "Reactions",
+      "de": "Reaktionen",
+      "fr": "Réactions",
+      "es": "Reacciones",
+      "it": "Reazioni",
+      "pl": "Reakcje",
+      "pt": "Reações",
+      "tr": "Tepkiler",
+      "ar": "تفاعلات"
+    },
+    "toast_posted": {
+      "nl": "Gepost in Pulse",
+      "en": "Posted to Pulse",
+      "de": "In Pulse gepostet",
+      "fr": "Publié sur Pulse",
+      "es": "Publicado en Pulse",
+      "it": "Pubblicato su Pulse",
+      "pl": "Opublikowano na Pulse",
+      "pt": "Publicado no Pulse",
+      "tr": "Pulse’ta paylaşıldı",
+      "ar": "نُشر على Pulse"
+    },
+    "toast_shared_wire": {
+      "nl": "Gedeeld in Wire — geen echte Facebook",
+      "en": "Shared to Wire — no real Facebook",
+      "de": "In Wire geteilt — kein echtes Facebook",
+      "fr": "Partagé dans Wire — pas de vrai Facebook",
+      "es": "Compartido en Wire — sin Facebook real",
+      "it": "Condiviso su Wire — nessun Facebook reale",
+      "pl": "Udostępniono w Wire — bez prawdziwego FB",
+      "pt": "Partilhado no Wire — sem Facebook real",
+      "tr": "Wire’da paylaşıldı — gerçek Facebook yok",
+      "ar": "تمت المشاركة في Wire — بلا فيسبوك حقيقي"
+    },
+    "toast_shared_ig": {
+      "nl": "Gedeeld in Wire — geen echte Instagram",
+      "en": "Shared to Wire — no real Instagram",
+      "de": "In Wire geteilt — kein echtes Instagram",
+      "fr": "Partagé dans Wire — pas de vrai Instagram",
+      "es": "Compartido en Wire — sin Instagram real",
+      "it": "Condiviso su Wire — nessun Instagram reale",
+      "pl": "Udostępniono w Wire — bez prawdziwego IG",
+      "pt": "Partilhado no Wire — sem Instagram real",
+      "tr": "Wire’da paylaşıldı — gerçek Instagram yok",
+      "ar": "تمت المشاركة في Wire — بلا إنستغرام حقيقي"
+    },
+    "toast_shared_tt": {
+      "nl": "Gedeeld in Wire — geen echte TikTok",
+      "en": "Shared to Wire — no real TikTok",
+      "de": "In Wire geteilt — kein echtes TikTok",
+      "fr": "Partagé dans Wire — pas de vrai TikTok",
+      "es": "Compartido en Wire — sin TikTok real",
+      "it": "Condiviso su Wire — nessun TikTok reale",
+      "pl": "Udostępniono w Wire — bez prawdziwego TikTok",
+      "pt": "Partilhado no Wire — sem TikTok real",
+      "tr": "Wire’da paylaşıldı — gerçek TikTok yok",
+      "ar": "تمت المشاركة في Wire — بلا تيك توك حقيقي"
+    },
+    "call_sim": {
+      "nl": "SIMULATED CALL · geen echte telefonie",
+      "en": "SIMULATED CALL · no real telephony",
+      "de": "SIMULATED CALL · keine echte Telefonie",
+      "fr": "APPEL SIMULÉ · pas de vraie téléphonie",
+      "es": "LLAMADA SIMULADA · sin telefonía real",
+      "it": "CHIAMATA SIMULATA · nessuna telefonia reale",
+      "pl": "SYMULOWANE POŁĄCZENIE · bez prawdziwej telefonii",
+      "pt": "CHAMADA SIMULADA · sem telefonia real",
+      "tr": "SIMÜLE ARAMA · gerçek telefon yok",
+      "ar": "مكالمة محاكاة · بلا هاتف حقيقي"
+    },
+    "call_audio": {
+      "nl": "Audio-call",
+      "en": "Audio call",
+      "de": "Audioanruf",
+      "fr": "Appel audio",
+      "es": "Llamada de audio",
+      "it": "Chiamata audio",
+      "pl": "Rozmowa audio",
+      "pt": "Chamada de áudio",
+      "tr": "Sesli arama",
+      "ar": "مكالمة صوتية"
+    },
+    "call_video": {
+      "nl": "Video-call",
+      "en": "Video call",
+      "de": "Videoanruf",
+      "fr": "Appel vidéo",
+      "es": "Videollamada",
+      "it": "Videochiamata",
+      "pl": "Wideorozmowa",
+      "pt": "Chamada de vídeo",
+      "tr": "Görüntülü arama",
+      "ar": "مكالمة فيديو"
+    },
+    "call_end": {
+      "nl": "Beëindigen",
+      "en": "End",
+      "de": "Beenden",
+      "fr": "Raccrocher",
+      "es": "Colgar",
+      "it": "Termina",
+      "pl": "Zakończ",
+      "pt": "Desligar",
+      "tr": "Bitir",
+      "ar": "إنهاء"
+    },
+    "call_mute": {
+      "nl": "Mute",
+      "en": "Mute",
+      "de": "Stumm",
+      "fr": "Muet",
+      "es": "Silencio",
+      "it": "Muto",
+      "pl": "Wycisz",
+      "pt": "Mudo",
+      "tr": "Sessiz",
+      "ar": "كتم"
+    },
+    "call_cam": {
+      "nl": "Camera",
+      "en": "Camera",
+      "de": "Kamera",
+      "fr": "Caméra",
+      "es": "Cámara",
+      "it": "Fotocamera",
+      "pl": "Kamera",
+      "pt": "Câmara",
+      "tr": "Kamera",
+      "ar": "كاميرا"
+    },
+    "call_missed": {
+      "nl": "Gemiste call",
+      "en": "Missed call",
+      "de": "Verpasster Anruf",
+      "fr": "Appel manqué",
+      "es": "Llamada perdida",
+      "it": "Chiamata persa",
+      "pl": "Nieodebrane",
+      "pt": "Chamada perdida",
+      "tr": "Cevapsız arama",
+      "ar": "مكالمة فائتة"
+    },
+    "call_ended": {
+      "nl": "Call beëindigd",
+      "en": "Call ended",
+      "de": "Anruf beendet",
+      "fr": "Appel terminé",
+      "es": "Llamada finalizada",
+      "it": "Chiamata terminata",
+      "pl": "Połączenie zakończone",
+      "pt": "Chamada terminada",
+      "tr": "Arama bitti",
+      "ar": "انتهت المكالمة"
+    },
+    "lang": {
+      "nl": "Taal",
+      "en": "Language",
+      "de": "Sprache",
+      "fr": "Langue",
+      "es": "Idioma",
+      "it": "Lingua",
+      "pl": "Język",
+      "pt": "Idioma",
+      "tr": "Dil",
+      "ar": "اللغة"
+    },
+    "settings": {
+      "nl": "Instellingen",
+      "en": "Settings",
+      "de": "Einstellungen",
+      "fr": "Réglages",
+      "es": "Ajustes",
+      "it": "Impostazioni",
+      "pl": "Ustawienia",
+      "pt": "Definições",
+      "tr": "Ayarlar",
+      "ar": "الإعدادات"
+    },
+    "profile": {
+      "nl": "Profiel",
+      "en": "Profile",
+      "de": "Profil",
+      "fr": "Profil",
+      "es": "Perfil",
+      "it": "Profilo",
+      "pl": "Profil",
+      "pt": "Perfil",
+      "tr": "Profil",
+      "ar": "الملف"
+    },
+    "photoset": {
+      "nl": "Photoset",
+      "en": "Photoset",
+      "de": "Fotoserie",
+      "fr": "Photoset",
+      "es": "Photoset",
+      "it": "Photoset",
+      "pl": "Zestaw zdjęć",
+      "pt": "Photoset",
+      "tr": "Foto seti",
+      "ar": "مجموعة صور"
+    },
+    "status": {
+      "nl": "Status",
+      "en": "Status",
+      "de": "Status",
+      "fr": "Statut",
+      "es": "Estado",
+      "it": "Stato",
+      "pl": "Status",
+      "pt": "Estado",
+      "tr": "Durum",
+      "ar": "الحالة"
+    },
+    "drama_log": {
+      "nl": "Drama-log (local)",
+      "en": "Drama log (local)",
+      "de": "Drama-Log (lokal)",
+      "fr": "Journal drama (local)",
+      "es": "Registro drama (local)",
+      "it": "Log drama (locale)",
+      "pl": "Dziennik dramatu (lokalny)",
+      "pt": "Registo drama (local)",
+      "tr": "Drama günlüğü (yerel)",
+      "ar": "سجل الدراما (محلي)"
+    },
+    "no_events": {
+      "nl": "Nog geen events.",
+      "en": "No events yet.",
+      "de": "Noch keine Events.",
+      "fr": "Pas encore d’événements.",
+      "es": "Aún no hay eventos.",
+      "it": "Nessun evento ancora.",
+      "pl": "Brak wydarzeń.",
+      "pt": "Ainda sem eventos.",
+      "tr": "Henüz olay yok.",
+      "ar": "لا أحداث بعد."
+    },
+    "apps_in_shell": {
+      "nl": "Apps in deze shell",
+      "en": "Apps in this shell",
+      "de": "Apps in dieser Shell",
+      "fr": "Apps dans cette coque",
+      "es": "Apps en este shell",
+      "it": "App in questa shell",
+      "pl": "Aplikacje w tej powłoce",
+      "pt": "Apps nesta shell",
+      "tr": "Bu kabuktaki uygulamalar",
+      "ar": "التطبيقات في هذه الواجهة"
+    },
+    "apps_body": {
+      "nl": "Pulse ≈ Facebook feed\nGram ≈ Instagram grid\nClips ≈ TikTok vertical\nWire ≈ WhatsApp chats\nCalls = gesimuleerd (geen echte telefonie)\n\nGeen OAuth. Geen echte accounts. Data = localStorage op dit device.",
+      "en": "Pulse ≈ Facebook feed\nGram ≈ Instagram grid\nClips ≈ TikTok vertical\nWire ≈ WhatsApp chats\nCalls = simulated (no real telephony)\n\nNo OAuth. No real accounts. Data = localStorage on this device.",
+      "de": "Pulse ≈ Facebook-Feed\nGram ≈ Instagram-Raster\nClips ≈ TikTok vertikal\nWire ≈ WhatsApp-Chats\nCalls = simuliert (keine echte Telefonie)\n\nKein OAuth. Keine echten Accounts. Daten = localStorage auf diesem Gerät.",
+      "fr": "Pulse ≈ fil Facebook\nGram ≈ grille Instagram\nClips ≈ TikTok vertical\nWire ≈ chats WhatsApp\nAppels = simulés (pas de vraie téléphonie)\n\nPas d’OAuth. Pas de vrais comptes. Données = localStorage sur cet appareil.",
+      "es": "Pulse ≈ feed de Facebook\nGram ≈ cuadrícula Instagram\nClips ≈ TikTok vertical\nWire ≈ chats de WhatsApp\nLlamadas = simuladas (sin telefonía real)\n\nSin OAuth. Sin cuentas reales. Datos = localStorage en este dispositivo.",
+      "it": "Pulse ≈ feed Facebook\nGram ≈ griglia Instagram\nClips ≈ TikTok verticale\nWire ≈ chat WhatsApp\nChiamate = simulate (nessuna telefonia reale)\n\nNiente OAuth. Nessun account reale. Dati = localStorage su questo dispositivo.",
+      "pl": "Pulse ≈ feed Facebook\nGram ≈ siatka Instagram\nClips ≈ TikTok pionowy\nWire ≈ czaty WhatsApp\nPołączenia = symulowane (bez telefonii)\n\nBez OAuth. Bez prawdziwych kont. Dane = localStorage na tym urządzeniu.",
+      "pt": "Pulse ≈ feed do Facebook\nGram ≈ grelha Instagram\nClips ≈ TikTok vertical\nWire ≈ chats WhatsApp\nChamadas = simuladas (sem telefonia real)\n\nSem OAuth. Sem contas reais. Dados = localStorage neste dispositivo.",
+      "tr": "Pulse ≈ Facebook akışı\nGram ≈ Instagram ızgarası\nClips ≈ TikTok dikey\nWire ≈ WhatsApp sohbetleri\nAramalar = simüle (gerçek telefon yok)\n\nOAuth yok. Gerçek hesap yok. Veri = bu cihazda localStorage.",
+      "ar": "Pulse ≈ خلاصة فيسبوك\nGram ≈ شبكة إنستغرام\nClips ≈ تيك توك عمودي\nWire ≈ محادثات واتساب\nالمكالمات = محاكاة (بلا هاتف حقيقي)\n\nبلا OAuth. بلا حسابات حقيقية. البيانات = localStorage على هذا الجهاز."
+    },
+    "velvet_back": {
+      "nl": "← VELVET",
+      "en": "← VELVET",
+      "de": "← VELVET",
+      "fr": "← VELVET",
+      "es": "← VELVET",
+      "it": "← VELVET",
+      "pl": "← VELVET",
+      "pt": "← VELVET",
+      "tr": "← VELVET",
+      "ar": "← VELVET"
+    },
+    "start_call": {
+      "nl": "Bellen",
+      "en": "Call",
+      "de": "Anrufen",
+      "fr": "Appeler",
+      "es": "Llamar",
+      "it": "Chiama",
+      "pl": "Zadzwoń",
+      "pt": "Ligar",
+      "tr": "Ara",
+      "ar": "اتصل"
+    }
+  }
+}
