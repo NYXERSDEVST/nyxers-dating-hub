@@ -1,0 +1,104 @@
+{
+  "version": "1.0",
+  "updated": "2026-09-20",
+  "gates": ["21+", "fiction_only", "no_real_social_accounts", "staging"],
+  "note": "Fiction NPC roster for Pulse/Gram/Clips drama. Wire ≠ WhatsApp. First names only, all 21+.",
+  "profile": {
+    "name": "René",
+    "handle": "@rene",
+    "followers": 2847,
+    "following": 312,
+    "friends": 186,
+    "bio": "Regisseur · Haus Velvet · fiction only"
+  },
+  "npcs": [
+    {"id": "lianne", "name": "Lianne", "role": "friend", "group": "core", "mood_bias": "supportive", "age": 28, "img": "../assets/generated/velvet/velvet_lianne_neon_sisters.png"},
+    {"id": "siobhan", "name": "Siobhán", "role": "friend", "group": "core", "mood_bias": "jealous", "age": 27, "img": "../assets/generated/velvet/velvet_siobhan_discover.png"},
+    {"id": "lara", "name": "Lára", "role": "friend", "group": "eurotik", "mood_bias": "supportive", "age": 26, "img": "../assets/generated/velvet/velvet_lara_discover.png"},
+    {"id": "kass", "name": "Kass", "role": "friend", "group": "eurotik", "mood_bias": "gossip", "age": 29, "img": "../assets/generated/velvet/velvet_kass_discover.png"},
+    {"id": "bela", "name": "Běla", "role": "friend", "group": "eurotik", "mood_bias": "supportive", "age": 31, "img": "../assets/generated/velvet/velvet_bela_discover.png"},
+    {"id": "lina", "name": "Lina", "role": "friend", "group": "eurotik", "mood_bias": "gossip", "age": 25, "img": "../assets/generated/velvet/velvet_lina_discover.png"},
+    {"id": "christel", "name": "Christel", "role": "friend", "group": "eurotik", "mood_bias": "worried", "age": 34, "img": "../assets/generated/velvet/velvet_christel_discover.png"},
+    {"id": "mara", "name": "Mara", "role": "friend", "group": "eurotik", "mood_bias": "supportive", "age": 33, "img": "../assets/generated/velvet/velvet_mara_discover.png"},
+    {"id": "heike", "name": "Heike", "role": "friend", "group": "eurotik", "mood_bias": "jealous", "age": 30, "img": "../assets/generated/velvet/velvet_heike_discover.png"},
+    {"id": "saskia", "name": "Saskia", "role": "friend", "group": "eurotik", "mood_bias": "gossip", "age": 28, "img": "../assets/generated/velvet/velvet_saskia_discover.png"},
+    {"id": "sabine", "name": "Sabine", "role": "friend", "group": "core", "mood_bias": "supportive", "age": 32, "img": "../assets/generated/sabine_discover.png"},
+    {"id": "fatima", "name": "Fatima", "role": "friend", "group": "core", "mood_bias": "worried", "age": 27, "img": "../assets/generated/fatima_discover.png"},
+    {"id": "severina", "name": "Severina", "role": "friend", "group": "core", "mood_bias": "jealous", "age": 29, "img": "../assets/generated/velvet/placeholders/heike_placeholder.png"},
+    {"id": "anastasia", "name": "Anastasia", "role": "friend", "group": "core", "mood_bias": "gossip", "age": 28, "img": "../assets/generated/velvet/placeholders/mara_placeholder.png"},
+    {"id": "lotte", "name": "Lotte", "role": "friend", "group": "core", "mood_bias": "supportive", "age": 26, "img": "../assets/generated/velvet/placeholders/lina_placeholder.png"},
+    {"id": "romy", "name": "Romy", "role": "friend", "group": "core", "mood_bias": "gossip", "age": 24, "img": "../assets/generated/velvet/placeholders/romy_placeholder.png"},
+    {"id": "kim", "name": "Kim", "role": "friend", "group": "core", "mood_bias": "supportive", "age": 25, "img": "../assets/generated/velvet/placeholders/freya_placeholder.png"},
+    {"id": "mila", "name": "Mila", "role": "friend", "group": "core", "mood_bias": "jealous", "age": 23, "img": "../assets/generated/velvet/placeholders/nora_placeholder.png"},
+    {"id": "dana", "name": "Zus Dana", "role": "family", "group": "family", "mood_bias": "worried", "age": 31, "img": "../assets/generated/velvet/placeholders/freya_placeholder.png"},
+    {"id": "jens", "name": "Maat Jens", "role": "family", "group": "family", "mood_bias": "supportive", "age": 35, "img": "../assets/generated/kayla_hub_cast.png"},
+    {"id": "anke", "name": "Anke", "role": "friend", "group": "family", "mood_bias": "worried", "age": 42, "img": "../assets/generated/velvet/placeholders/heike_placeholder.png"},
+    {"id": "merel", "name": "Merel", "role": "friend", "group": "core", "mood_bias": "gossip", "age": 27, "img": "../assets/generated/velvet/placeholders/nora_placeholder.png"}
+  ],
+  "moods": {
+    "supportive": ["soft", "spa", "crew", "laugh", "opening", "weekend", "hoodie", "bank"],
+    "jealous": ["sisters", "neon", "rough", "houd", "tag", "crew", "spa", "private"],
+    "worried": ["nacht", "DE", "carmeet", "LED", "onderweg", "street", "tracksuit"],
+    "gossip": ["teaser", "cinema", "champagne", "boutique", "merch", "soft", "skin"]
+  },
+  "replies": {
+    "supportive": [
+      "Ziet er top uit 🔥",
+      "Yesss, geniet ervan!",
+      "Lekker weekend vibes ✨",
+      "Dit is zo jij haha",
+      "Mooi shot — hou vol 🖤",
+      "Fijn om te zien dat ’t goed gaat"
+    ],
+    "jealous": [
+      "Oh? En ik dan? 😏",
+      "Waarom tag je {other} niet?",
+      "Interessant… wie was er nog meer?",
+      "Nice. Had ik ook wel bij willen zijn.",
+      "Hmm. Later Wire?",
+      "Ziet er gezellig uit — zonder mij blijkbaar"
+    ],
+    "worried": [
+      "Alles oké?",
+      "Laat even weten als je thuis bent 🙏",
+      "Niet te gek doen hè",
+      "Bel even als ’t later wordt",
+      "Wees voorzichtig daar",
+      "Ma, euh Anke vraagt ook of ’t goed gaat"
+    ],
+    "gossip": [
+      "Wacht wacht — details? 👀",
+      "Spill. Nu.",
+      "Wie was dat naast je?",
+      "Ik hoorde al iets via Wire…",
+      "Zeg, was {other} er ook?",
+      "Dit gaat rond in de groupchat 😂"
+    ]
+  },
+  "drama": {
+    "chance": 0.55,
+    "types": ["wire_jealous", "friend_tag", "family_ok"],
+    "templates": {
+      "wire_jealous": [
+        "Zag je like op {author}’s post… met {other}? Serieus?",
+        "Hmm. {author} + {other}. En jij liked. Oké dan.",
+        "Wire only: waarom like je dát? 😒",
+        "Ik zag ’t. {other} stond er ook op. Praat later?"
+      ],
+      "friend_tag": [
+        "waarom tag je {other} niet?",
+        "Eh {author} — en {other} dan? 👀",
+        "Tag {other} ook even, anders wordt ’t drama",
+        "{other} zit vast te wachten op een tag haha"
+      ],
+      "family_ok": [
+        "Alles oké daar? Zag je post langskomen.",
+        "Hé, even checken — alles goed?",
+        "Maat, laat even weten als ’t weekend oké loopt.",
+        "Zus-modus: alles oké? Geen gekke shit hè."
+      ]
+    }
+  },
+  "followers_sample": ["Noa", "Fenja", "Jule", "Britta", "Imke", "Nora", "Freya", "Caoimhe", "Niamh"],
+  "emoji_reactions": ["❤️", "😂", "😮", "😢", "😡"]
+}

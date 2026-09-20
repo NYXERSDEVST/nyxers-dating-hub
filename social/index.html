@@ -21,14 +21,15 @@ img{display:block;max-width:100%}
 .gate-card{width:100%;max-width:360px;padding:26px;border-radius:22px;background:#151b24;border:1px solid var(--line);text-align:center}
 .gate-card h1{font-family:Outfit,sans-serif;font-size:1.8rem;margin-bottom:8px}
 .gate-card p{color:var(--muted);font-size:.9rem;line-height:1.45;margin-bottom:18px}
-.btn{width:100%;padding:13px;border-radius:999px;font-weight:600;margin:5px 0}
+.btn{width:100%;padding:13px;border-radius:999px;font-weight:600;margin:5px 0;cursor:pointer}
 .btn-p{background:linear-gradient(135deg,#3b82f6,#8b5cf6);color:#fff}
 .btn-g{background:#ffffff10;border:1px solid var(--line)}
-.appbar{flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-bottom:1px solid var(--line);background:#0f141c}
+.appbar{flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-bottom:1px solid var(--line);background:#0f141c;gap:8px}
 .appbar .brand{font-family:Outfit,sans-serif;font-weight:700;font-size:1.15rem}
 .appbar .sub{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.appbar .abtn{font-size:.75rem;color:#7dd3fc;padding:6px 8px;border-radius:8px;background:#ffffff08;cursor:pointer}
 .dock{flex-shrink:0;display:grid;grid-template-columns:repeat(5,1fr);gap:2px;padding:6px 6px calc(6px + var(--safe));border-top:1px solid var(--line);background:#0f141cee;backdrop-filter:blur(10px)}
-.dock button{display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 2px;font-size:.62rem;color:var(--muted)}
+.dock button{display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 2px;font-size:.62rem;color:var(--muted);cursor:pointer;position:relative}
 .dock button.on{color:#fff}
 .dock .ic{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;font-size:.95rem;background:#ffffff08}
 .dock button.on .ic.fb{background:#3b82f633;color:#60a5fa}
@@ -36,61 +37,127 @@ img{display:block;max-width:100%}
 .dock button.on .ic.tt{background:#00f2ea22;color:#5eead4}
 .dock button.on .ic.wa{background:#25d36622;color:#4ade80}
 .dock button.on .ic.me{background:#8b5cf633;color:#c4b5fd}
+.dock .badge{position:absolute;top:2px;right:12px;min-width:16px;height:16px;border-radius:8px;background:#ef4444;color:#fff;font-size:.55rem;display:grid;place-items:center;padding:0 4px;font-weight:700}
 .stage{flex:1;min-height:0;position:relative;overflow:hidden}
 .view{position:absolute;inset:0;overflow:auto;opacity:0;pointer-events:none;transform:translateY(6px);transition:.2s}
 .view.on{opacity:1;pointer-events:auto;transform:none}
 /* FEED */
 .stories{display:flex;gap:10px;padding:12px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line)}
 .stories::-webkit-scrollbar{display:none}
-.st{flex:0 0 auto;width:64px;text-align:center}
+.st{flex:0 0 auto;width:64px;text-align:center;cursor:pointer}
 .st img{width:56px;height:56px;border-radius:50%;object-fit:cover;padding:2px;border:2px solid #3b82f6;margin:0 auto}
+.st.seen img{border-color:#4b5563}
 .st span{display:block;font-size:.65rem;color:var(--muted);margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .post{border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:4px}
 .post .ph{display:flex;align-items:center;gap:10px;padding:10px 12px}
 .post .ph img{width:36px;height:36px;border-radius:50%;object-fit:cover}
 .post .ph b{font-size:.9rem}.post .ph small{display:block;color:var(--muted);font-size:.7rem}
 .post .media{width:100%;aspect-ratio:1;object-fit:cover;background:#1a2330}
-.post .acts{display:flex;gap:14px;padding:8px 12px;font-size:1.15rem}
+.post .acts{display:flex;gap:10px;padding:8px 12px;font-size:1.15rem;align-items:center;flex-wrap:wrap}
+.post .acts button{cursor:pointer;padding:2px 4px}
+.post .react-bar{display:flex;gap:4px;padding:0 12px 6px}
+.post .react-bar button{font-size:1.05rem;padding:4px 6px;border-radius:999px;background:#ffffff0a;cursor:pointer}
+.post .react-bar button.on{background:#3b82f633;outline:1px solid #60a5fa55}
 .post .cap{padding:0 12px 6px;font-size:.88rem;line-height:1.4;color:#e5e7eb}
 .post .cap b{margin-right:6px}
-.post .meta{padding:0 12px;font-size:.75rem;color:var(--muted)}
+.post .meta{padding:0 12px;font-size:.75rem;color:var(--muted);cursor:pointer}
+.post .meta:hover{color:#c7d2fe}
+.post .comments{padding:8px 12px;display:flex;flex-direction:column;gap:6px}
+.post .cmt{font-size:.82rem;line-height:1.35}
+.post .cmt .who{font-weight:600;margin-right:6px}
+.post .cmt .npc{color:#a5b4fc}
+.post .cmt-in{display:flex;gap:6px;margin-top:4px}
+.post .cmt-in input{flex:1;background:#ffffff0c;border:1px solid var(--line);border-radius:999px;padding:8px 12px;outline:none;font-size:.82rem}
+.post .cmt-in button{color:#60a5fa;font-weight:600;font-size:.8rem;cursor:pointer;padding:0 6px}
 /* GRAM */
 .ig-top{display:flex;justify-content:space-between;align-items:center;padding:8px 12px}
+.ig-stats{display:flex;gap:16px;padding:4px 12px 10px;font-size:.78rem;color:var(--muted)}
+.ig-stats b{color:var(--text)}
 .ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.ig-grid button{padding:0;cursor:pointer;position:relative}
 .ig-grid img{width:100%;aspect-ratio:1;object-fit:cover}
+.ig-grid .ov{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:flex-end;padding:4px;font-size:.65rem;color:#fff;text-shadow:0 1px 2px #000;pointer-events:none}
 /* CLIPS */
 .clips{height:100%;scroll-snap-type:y mandatory;overflow-y:auto}
 .clip{height:100%;scroll-snap-align:start;position:relative;background:#000}
 .clip img{width:100%;height:100%;object-fit:cover}
-.clip .shade{position:absolute;inset:0;background:linear-gradient(transparent 50%,#000c 95%)}
-.clip .info{position:absolute;left:12px;right:70px;bottom:24px}
+.clip .shade{position:absolute;inset:0;background:linear-gradient(transparent 45%,#000d 95%)}
+.clip .info{position:absolute;left:12px;right:70px;bottom:28px}
 .clip .info b{font-size:1rem}.clip .info p{font-size:.85rem;margin-top:6px;color:#e5e7eb}
-.clip .side{position:absolute;right:10px;bottom:80px;display:flex;flex-direction:column;gap:16px;align-items:center}
-.clip .side button{width:44px;height:44px;border-radius:50%;background:#ffffff22;display:grid;place-items:center}
+.clip .side{position:absolute;right:10px;bottom:90px;display:flex;flex-direction:column;gap:18px;align-items:center}
+.clip .side button{width:48px;height:48px;border-radius:50%;background:#ffffff22;display:grid;place-items:center;cursor:pointer;font-size:1.2rem}
+.clip .side small{font-size:.65rem;color:#ddd;margin-top:-12px}
+.clip .playui{position:absolute;top:14px;left:14px;font-size:.7rem;background:#0008;padding:4px 8px;border-radius:6px;color:#5eead4;letter-spacing:.04em}
+.clip .prog{position:absolute;top:8px;left:10px;right:10px;height:3px;background:#ffffff22;border-radius:2px;overflow:hidden}
+.clip .prog i{display:block;height:100%;width:35%;background:#5eead4;animation:clipbar 8s linear infinite}
+@keyframes clipbar{0%{width:0}100%{width:100%}}
 /* WIRE */
 .wa-head{background:#075e54;padding:12px 14px;display:flex;align-items:center;gap:10px}
-.wa-list .row{display:flex;gap:12px;padding:12px;border-bottom:1px solid var(--line);align-items:center;width:100%;text-align:left}
+.wa-list .row{display:flex;gap:12px;padding:12px;border-bottom:1px solid var(--line);align-items:center;width:100%;text-align:left;cursor:pointer}
 .wa-list .row img{width:48px;height:48px;border-radius:50%;object-fit:cover}
 .wa-list .row .t{flex:1;min-width:0}
 .wa-list .row .t b{display:block}.wa-list .row .t span{display:block;color:var(--muted);font-size:.8rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wa-list .row .unread{background:#25d366;color:#053;font-size:.65rem;font-weight:700;min-width:18px;height:18px;border-radius:9px;display:grid;place-items:center;padding:0 5px}
 #waRoom{display:none;flex-direction:column;position:absolute;inset:0;z-index:20;background:#0b141a}
 #waRoom.open{display:flex}
 #waRoom .msgs{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:8px;background:#0b141a url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" opacity=".04"><circle cx="2" cy="2" r="1" fill="%23fff"/></svg>')}
 .bubble{max-width:78%;padding:8px 12px;border-radius:12px;font-size:.9rem;line-height:1.35}
 .bubble.them{align-self:flex-start;background:#1f2c34}
 .bubble.me{align-self:flex-end;background:#005c4b}
+.bubble .ts{display:block;font-size:.65rem;opacity:.55;margin-top:4px;text-align:right}
 .wa-in{display:flex;gap:8px;padding:8px 10px calc(8px + var(--safe));background:#1f2c34}
 .wa-in input{flex:1;background:#2a3942;border-radius:999px;padding:10px 14px;outline:none}
-.wa-in button{padding:0 14px;border-radius:999px;background:var(--wa);color:#053;font-weight:700}
+.wa-in button{padding:0 14px;border-radius:999px;background:var(--wa);color:#053;font-weight:700;cursor:pointer}
 /* ME */
 .me{padding:16px}
 .me .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:10px}
-.me a{color:#7dd3fc;text-decoration:none}
-.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(12px);opacity:0;transition:.2s;background:#1f2937;border:1px solid var(--line);padding:8px 14px;border-radius:999px;font-size:.8rem;z-index:50;pointer-events:none}
+.me a,.me button.link{color:#7dd3fc;text-decoration:none;background:none;cursor:pointer;font-size:.9rem;display:block;padding:6px 0;text-align:left;width:100%}
+.me .stats{display:flex;gap:12px;margin-top:10px}
+.me .stats div{flex:1;text-align:center;background:#ffffff08;border-radius:12px;padding:10px;cursor:pointer}
+.me .stats b{display:block;font-size:1.1rem}.me .stats span{font-size:.7rem;color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(12px);opacity:0;transition:.2s;background:#1f2937;border:1px solid var(--line);padding:8px 14px;border-radius:999px;font-size:.8rem;z-index:80;pointer-events:none;max-width:90%;text-align:center}
 .toast.show{opacity:1;transform:translateX(-50%)}
 .composer{display:flex;gap:8px;padding:10px 12px;border-bottom:1px solid var(--line);align-items:center}
 .composer img{width:32px;height:32px;border-radius:50%;object-fit:cover}
 .composer input{flex:1;background:#ffffff0c;border:1px solid var(--line);border-radius:999px;padding:10px 14px;outline:none}
+/* overlays */
+.sheet{position:absolute;inset:0;z-index:40;background:#0b0f14ee;display:none;flex-direction:column}
+.sheet.open{display:flex}
+.sheet .sh{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line);background:#0f141c}
+.sheet .sh b{flex:1}
+.sheet .body{flex:1;overflow:auto;padding:8px 0}
+.plist .row{display:flex;gap:12px;padding:10px 14px;align-items:center;width:100%;text-align:left;cursor:pointer}
+.plist .row img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.plist .row .meta{flex:1;min-width:0}
+.plist .row .meta b{display:block;font-size:.9rem}
+.plist .row .meta span{display:block;font-size:.72rem;color:var(--muted)}
+.plist .tag{font-size:.65rem;padding:3px 8px;border-radius:999px;background:#ffffff10;color:var(--muted)}
+.plist .tag.family{background:#f59e0b22;color:#fbbf24}
+.plist .tag.eurotik{background:#8b5cf622;color:#c4b5fd}
+.plist .tag.core{background:#3b82f622;color:#93c5fd}
+/* story viewer */
+#storyView{position:absolute;inset:0;z-index:50;background:#000;display:none;flex-direction:column}
+#storyView.open{display:flex}
+#storyView .bars{display:flex;gap:3px;padding:10px 10px 0}
+#storyView .bars i{flex:1;height:3px;background:#ffffff33;border-radius:2px;overflow:hidden}
+#storyView .bars i u{display:block;height:100%;width:0;background:#fff;border-radius:2px}
+#storyView .bars i.done u{width:100%}
+#storyView .bars i.active u{animation:none}
+#storyView .top{display:flex;align-items:center;gap:10px;padding:10px 12px;position:absolute;left:0;right:0;top:18px;z-index:2}
+#storyView .top img{width:32px;height:32px;border-radius:50%;object-fit:cover;border:1.5px solid #fff}
+#storyView .media{flex:1;object-fit:contain;width:100%;height:100%}
+#storyView .cap{position:absolute;bottom:40px;left:16px;right:16px;font-size:.95rem;text-shadow:0 1px 4px #000}
+#storyView .hit{position:absolute;inset:0;display:flex;z-index:1}
+#storyView .hit .l,#storyView .hit .r{flex:1}
+/* gram detail */
+#gramDetail .gd-media{width:100%;aspect-ratio:1;object-fit:cover;background:#111}
+#gramDetail .gd-acts{display:flex;gap:14px;padding:10px 12px;font-size:1.2rem}
+#gramDetail .gd-acts button{cursor:pointer}
+/* react who */
+.who-react{padding:8px 14px}
+.who-react .r{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
+.who-react .r img{width:36px;height:36px;border-radius:50%;object-fit:cover}
+.eventlog{font-size:.75rem;color:var(--muted);line-height:1.5;max-height:120px;overflow:auto}
 </style>
 </head>
 <body>
@@ -110,41 +177,51 @@ img{display:block;max-width:100%}
       <div class="brand" id="appTitle">Pulse</div>
       <div class="sub" id="appSub">facebook-style feed · fiction</div>
     </div>
-    <a href="../" style="font-size:.75rem;color:#7dd3fc;text-decoration:none">← VELVET</a>
+    <div style="display:flex;gap:6px;align-items:center">
+      <button class="abtn" id="btnFriends" type="button">Vrienden</button>
+      <a href="../" style="font-size:.75rem;color:#7dd3fc;text-decoration:none">← VELVET</a>
+    </div>
   </header>
   <div class="stage">
-    <!-- PULSE -->
     <section class="view on" id="v-pulse">
-      <div class="composer"><img src="../assets/generated/velvet/velvet_lara_discover.png" alt=""/><input id="pulsePost" placeholder="Deel iets in Haus Velvet…" maxlength="280"/><button id="pulseSend" style="color:#60a5fa;font-weight:600;padding:0 8px">Post</button></div>
+      <div class="composer"><img id="meAv" src="../assets/generated/kayla_hub_cast.png" alt=""/><input id="pulsePost" placeholder="Deel iets in Haus Velvet…" maxlength="280"/><button id="pulseSend" style="color:#60a5fa;font-weight:600;padding:0 8px;cursor:pointer">Post</button></div>
       <div class="stories" id="stories"></div>
       <div id="feed"></div>
     </section>
-    <!-- GRAM -->
     <section class="view" id="v-gram">
       <div class="ig-top"><b style="font-family:Outfit">Gram</b><span style="color:var(--muted);font-size:.75rem">instagram-style · fiction</span></div>
+      <div class="ig-stats" id="igStats"></div>
       <div class="stories" id="igStories"></div>
       <div class="ig-grid" id="igGrid"></div>
     </section>
-    <!-- CLIPS -->
     <section class="view" id="v-clips">
       <div class="clips" id="clips"></div>
     </section>
-    <!-- WIRE -->
     <section class="view" id="v-wire">
-      <div class="wa-head"><b>Wire</b><span style="opacity:.8;font-size:.75rem;margin-left:auto">whatsapp-style · fiction</span></div>
+      <div class="wa-head"><b>Wire</b><span style="opacity:.8;font-size:.75rem;margin-left:auto">whatsapp-style · fiction · ≠ WA</span></div>
       <div class="wa-list" id="waList"></div>
       <div id="waRoom">
-        <div class="wa-head"><button id="waBack">←</button><img id="waAv" style="width:36px;height:36px;border-radius:50%;object-fit:cover" alt=""/><b id="waName"></b></div>
+        <div class="wa-head"><button id="waBack" style="cursor:pointer">←</button><img id="waAv" style="width:36px;height:36px;border-radius:50%;object-fit:cover" alt=""/><b id="waName"></b></div>
         <div class="msgs" id="waMsgs"></div>
         <div class="wa-in"><input id="waInput" placeholder="Bericht…" maxlength="400"/><button id="waSend">➤</button></div>
       </div>
     </section>
-    <!-- ME -->
     <section class="view" id="v-me">
       <div class="me">
         <div class="card">
-          <b>René · regisseur</b>
-          <p style="color:var(--muted);font-size:.85rem;margin-top:6px;line-height:1.4">Jij speelt hier via NYXLINK + VELVET. Bots (OPEN CHATGPT, REALISM, Grok) blijven in Grok Bot — personages antwoorden in-app als fiction.</p>
+          <b id="meName">René · regisseur</b>
+          <p id="meBio" style="color:var(--muted);font-size:.85rem;margin-top:6px;line-height:1.4">Jij speelt hier via NYXLINK + VELVET. Bots blijven in Grok Bot — personages antwoorden in-app als fiction.</p>
+          <div class="stats" id="meStats"></div>
+        </div>
+        <div class="card">
+          <b>Lijsten</b>
+          <button class="link" type="button" data-list="friends">Vrienden</button>
+          <button class="link" type="button" data-list="followers">Volgers</button>
+          <button class="link" type="button" data-list="following">Volgend</button>
+        </div>
+        <div class="card">
+          <b>Drama-log (local)</b>
+          <div class="eventlog" id="eventLog">Nog geen events.</div>
         </div>
         <div class="card">
           <b>Apps in deze shell</b>
@@ -155,32 +232,71 @@ img{display:block;max-width:100%}
           <p style="margin-top:8px;font-size:.85rem;line-height:1.6">
             <a href="../">VELVET Dating Hub</a><br/>
             <a href="../portal/">Weekend portal</a><br/>
-            <a href="https://nyxersdevst.github.io/nyxers-dating-hub/">Pages root</a><br/><span style="color:var(--muted);font-size:.8rem">bed662eb-thema’s gespiegeld (Severina/Anastasia/Lotte fiction) — geen grok.com-login</span>
+            <a href="https://nyxersdevst.github.io/nyxers-dating-hub/">Pages root</a><br/><span style="color:var(--muted);font-size:.8rem">fiction cast — geen grok.com-login</span>
           </p>
         </div>
       </div>
     </section>
+
+    <!-- Friend / lists sheet -->
+    <div class="sheet" id="listSheet">
+      <div class="sh"><button type="button" id="listBack" style="cursor:pointer;font-size:1.1rem">←</button><b id="listTitle">Vrienden</b></div>
+      <div class="body plist" id="listBody"></div>
+    </div>
+
+    <!-- Who reacted -->
+    <div class="sheet" id="reactSheet">
+      <div class="sh"><button type="button" id="reactBack" style="cursor:pointer;font-size:1.1rem">←</button><b>Reacties</b></div>
+      <div class="body who-react" id="reactBody"></div>
+    </div>
+
+    <!-- Gram post detail -->
+    <div class="sheet" id="gramDetail">
+      <div class="sh"><button type="button" id="gdBack" style="cursor:pointer;font-size:1.1rem">←</button><b id="gdName">Post</b></div>
+      <div class="body" id="gdBody" style="padding:0"></div>
+    </div>
+
+    <!-- Story viewer -->
+    <div id="storyView">
+      <div class="bars" id="storyBars"></div>
+      <div class="top"><img id="storyAv" alt=""/><b id="storyName"></b><button type="button" id="storyClose" style="margin-left:auto;cursor:pointer;font-size:1.2rem">✕</button></div>
+      <div class="hit"><div class="l" id="storyPrev"></div><div class="r" id="storyNext"></div></div>
+      <img class="media" id="storyMedia" alt=""/>
+      <div class="cap" id="storyCap"></div>
+    </div>
   </div>
   <nav class="dock">
     <button class="on" data-v="pulse"><span class="ic fb">f</span>Pulse</button>
     <button data-v="gram"><span class="ic ig">◎</span>Gram</button>
     <button data-v="clips"><span class="ic tt">♪</span>Clips</button>
-    <button data-v="wire"><span class="ic wa">💬</span>Wire</button>
+    <button data-v="wire"><span class="ic wa">💬</span>Wire<span class="badge" id="wireBadge" style="display:none">0</span></button>
     <button data-v="me"><span class="ic me">☺</span>Me</button>
   </nav>
 </div>
 <div class="toast" id="toast"></div>
 <script>
-
-let PEOPLE=[];
-let FEED_ITEMS=[];
-const LS={age:'nyxlink_age21',feed:'nyxlink_feed_v2',chats:'nyxlink_chats_v2',likes:'nyxlink_likes'};
+const EMOJIS=['❤️','😂','😮','😢','😡'];
+let PEOPLE=[], FEED_ITEMS=[], NPC=[], PROFILE={name:'René',handle:'@rene',followers:2847,following:312,friends:186,bio:''};
+let REPLIES={}, DRAMA={}, MOODS={}, FOLLOWERS_SAMPLE=[];
+const LS={age:'nyxlink_age21',feed:'nyxlink_feed_v3',chats:'nyxlink_chats_v3',comments:'nyxlink_comments_v3',reactions:'nyxlink_react_v3',events:'nyxlink_events_v3',clips:'nyxlink_clips_v3',seenStories:'nyxlink_stories_seen'};
 const $=s=>document.querySelector(s);
-const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1600)};
+const $$=s=>[...document.querySelectorAll(s)];
+const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200)};
 const load=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}};
 const save=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
+const escapeHtml=s=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const titles={pulse:['Pulse','facebook-style feed · fiction'],gram:['Gram','instagram-style · fiction'],clips:['Clips','tiktok-style · fiction'],wire:['Wire','whatsapp-style · fiction'],me:['Me','jouw regie-profiel']};
-function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function seeded(n){let x=Math.sin(n)*10000;return x-Math.floor(x)}
+function pick(arr,seed){return arr[Math.floor(seeded(seed)*arr.length)%arr.length]}
+function delay(ms){return new Promise(r=>setTimeout(r,ms))}
+
+function detectMood(text){
+  const t=(text||'').toLowerCase();
+  for(const [mood,keys] of Object.entries(MOODS||{})){
+    if((keys||[]).some(k=>t.includes(k.toLowerCase()))) return mood;
+  }
+  return 'supportive';
+}
 
 async function loadData(){
   try{
@@ -189,148 +305,576 @@ async function loadData(){
     PEOPLE=(j.people||[]).map(p=>({id:p.id,name:p.name,img:p.img,line:''}));
     FEED_ITEMS=j.items||[];
   }catch(e){
-    console.warn(e);
     PEOPLE=[{id:'lianne',name:'Lianne',img:'../assets/generated/velvet/velvet_lianne_neon_sisters.png',line:''}];
     FEED_ITEMS=[];
   }
+  try{
+    const r2=await fetch('data/social_npc.json',{cache:'no-store'});
+    const n=await r2.json();
+    NPC=n.npcs||[];
+    PROFILE=Object.assign(PROFILE,n.profile||{});
+    REPLIES=n.replies||{};
+    DRAMA=n.drama||{};
+    MOODS=n.moods||{};
+    FOLLOWERS_SAMPLE=n.followers_sample||[];
+  }catch(e){console.warn('npc',e)}
 }
+
+function personByName(name){
+  if(!name)return null;
+  const n=name.toLowerCase();
+  return PEOPLE.find(p=>p.name.toLowerCase()===n)||PEOPLE.find(p=>p.id===n)||NPC.find(p=>p.name.toLowerCase()===n||p.id===n);
+}
+function npcById(id){return NPC.find(n=>n.id===id)||PEOPLE.find(p=>p.id===id)}
 
 function seedFeed(){
   let f=load(LS.feed,null);
   if(f&&f.length)return f;
-  // Build from Batch A/B/C items for pulse+gram
   const posts=FEED_ITEMS.filter(i=>['pulse','gram','story'].includes(i.channel)&&i.type!=='dm');
-  f=posts.map((p,i)=>({
-    id:p.id,uid:(p.author||'').toLowerCase(),name:p.author,avatar:p.media,media:p.media,
-    text:p.caption+(p.location?' · '+p.location:''),
-    likes:15+(i*3)%50,time:(i+1)+'u',liked:false,nsfw:p.nsfw
-  }));
+  f=posts.map((p,i)=>{
+    const author=personByName(p.author)||{id:(p.author||'x').toLowerCase(),name:p.author,img:p.media};
+    const mood=detectMood(p.caption+' '+(p.beat||''));
+    const reactors=buildReactors(i,p.id);
+    return {
+      id:p.id,uid:author.id,name:author.name,avatar:author.img||p.media,media:p.media,
+      text:p.caption+(p.location?' · '+p.location:''),
+      likes:Object.keys(reactors).length||(15+(i*3)%50),
+      time:(i+1)+'u',liked:false,nsfw:p.nsfw||'soft',mood,channel:p.channel,
+      myReaction:null,reactors,involved:extractInvolved(p)
+    };
+  });
   if(!f.length){
-    f=PEOPLE.map((p,i)=>({id:'p'+i,uid:p.id,name:p.name,avatar:p.img,media:p.img,text:'Haus weekend',likes:10,time:(i+1)+'u',liked:false}));
+    f=PEOPLE.map((p,i)=>({id:'p'+i,uid:p.id,name:p.name,avatar:p.img,media:p.img,text:'Haus weekend',likes:10,time:(i+1)+'u',liked:false,mood:'supportive',myReaction:null,reactors:{},involved:[]}));
   }
   save(LS.feed,f);return f;
 }
 
-function renderStories(el){
-  el.innerHTML=PEOPLE.map(p=>`<div class="st"><img src="${p.img}" alt=""/><span>${p.name}</span></div>`).join('');
+function extractInvolved(p){
+  const names=PEOPLE.map(x=>x.name).concat(NPC.map(x=>x.name.replace(/^Zus |^Maat /,'')));
+  const hit=[];
+  const blob=(p.caption||'')+' '+(p.beat||'')+' '+(p.to||'');
+  names.forEach(n=>{if(n&&blob.includes(n)&&n!==p.author)hit.push(n)});
+  // also pair siblings in caption "Sisters" etc — pick another cast
+  if(!hit.length && /sisters|crew|tub|spa|weekend/i.test(blob)){
+    const others=PEOPLE.filter(x=>x.name!==p.author);
+    if(others.length) hit.push(others[(p.id||'').length%others.length].name);
+  }
+  return hit.slice(0,2);
 }
+
+function buildReactors(seed,pid){
+  const pool=NPC.filter(n=>n.role==='friend').slice(0,12);
+  const out={};
+  const n=3+Math.floor(seeded(seed+99)*5);
+  for(let i=0;i<n;i++){
+    const who=pool[Math.floor(seeded(seed*17+i)*pool.length)%pool.length];
+    if(!who)continue;
+    const em=EMOJIS[Math.floor(seeded(seed*31+i+3)*EMOJIS.length)%EMOJIS.length];
+    out[who.id]=em;
+  }
+  return out;
+}
+
+function getComments(){return load(LS.comments,{})}
+function setComments(c){save(LS.comments,c)}
+function commentsFor(id){return getComments()[id]||[]}
+
+function renderStories(el){
+  const seen=load(LS.seenStories,{});
+  const stories=FEED_ITEMS.filter(i=>i.channel==='story'||i.type==='story');
+  const list=stories.length?stories.map(s=>{
+    const p=personByName(s.author)||{id:s.author,name:s.author,img:s.media};
+    return {id:s.id,uid:p.id||s.author,name:p.name||s.author,img:p.img||s.media,media:s.media,caption:s.caption};
+  }):PEOPLE.slice(0,8).map(p=>({id:'st-'+p.id,uid:p.id,name:p.name,img:p.img,media:p.img,caption:p.name+' · story'}));
+  el.innerHTML=list.map(s=>`<div class="st ${seen[s.id]?'seen':''}" data-story="${escapeHtml(s.id)}"><img src="${s.img}" alt=""/><span>${escapeHtml(s.name)}</span></div>`).join('');
+  el._stories=list;
+  el.onclick=e=>{
+    const st=e.target.closest('[data-story]');
+    if(!st)return;
+    const idx=list.findIndex(x=>x.id===st.dataset.story);
+    openStories(list,idx<0?0:idx);
+  };
+}
+
 function renderFeed(){
   const f=seedFeed();
-  $('#feed').innerHTML=f.map(p=>`
-    <article class="post" data-id="${p.id}">
-      <div class="ph"><img src="${p.avatar}" alt=""/><div><b>${p.name}</b><small>${p.time} · ${p.nsfw||'soft'} · fiction</small></div></div>
+  const cm=getComments();
+  $('#feed').innerHTML=f.map(p=>{
+    const counts=countReactions(p);
+    const my=p.myReaction;
+    const clist=cm[p.id]||[];
+    return `<article class="post" data-id="${p.id}">
+      <div class="ph"><img src="${p.avatar}" alt=""/><div><b>${escapeHtml(p.name)}</b><small>${p.time} · ${p.nsfw||'soft'} · fiction</small></div></div>
       <img class="media" src="${p.media}" alt=""/>
-      <div class="acts"><button data-like="${p.id}">${p.liked?'❤️':'🤍'}</button><button data-c="${p.uid}">💬</button><button>↗</button></div>
-      <div class="meta">${p.likes} likes · STILL · AI_SYNTHETIC · geen echte social</div>
-      <div class="cap"><b>${p.name}</b>${escapeHtml(p.text)}</div>
-    </article>`).join('');
-  $('#feed').onclick=e=>{
-    const like=e.target.closest('[data-like]');
-    if(like){const id=like.dataset.like;const feed=load(LS.feed,[]);const item=feed.find(x=>x.id===id);if(!item)return;
-      item.liked=!item.liked;item.likes+=item.liked?1:-1;save(LS.feed,feed);renderFeed();toast(item.liked?'Liked':'Unliked');return}
-    const c=e.target.closest('[data-c]');
-    if(c){openWa(c.dataset.c);nav('wire')}
-  };
+      <div class="acts">
+        <button type="button" data-toggle-react="${p.id}" title="Reageer">${my||'🤍'}</button>
+        <button type="button" data-focus-cmt="${p.id}">💬</button>
+        <button type="button" data-share="${p.id}">↗</button>
+      </div>
+      <div class="react-bar" data-bar="${p.id}">
+        ${EMOJIS.map(e=>`<button type="button" class="${my===e?'on':''}" data-react="${p.id}" data-emoji="${e}">${e}</button>`).join('')}
+      </div>
+      <div class="meta" data-who="${p.id}">${fmtReactMeta(p,counts)} · STILL · AI_SYNTHETIC</div>
+      <div class="cap"><b>${escapeHtml(p.name)}</b> ${escapeHtml(p.text)}</div>
+      <div class="comments" id="cmt-${p.id}">
+        ${clist.map(c=>`<div class="cmt"><span class="who ${c.npc?'npc':''}">${escapeHtml(c.name)}</span>${escapeHtml(c.text)}</div>`).join('')}
+        <div class="cmt-in"><input placeholder="Schrijf een reactie…" maxlength="220" data-cmt-in="${p.id}"/><button type="button" data-cmt-send="${p.id}">Plaats</button></div>
+      </div>
+    </article>`}).join('');
+  $('#feed').onclick=onFeedClick;
+  $('#feed').onkeydown=e=>{if(e.key==='Enter'&&e.target.matches('[data-cmt-in]')){e.preventDefault();sendComment(e.target.dataset.cmtIn)}};
+}
+
+function countReactions(p){
+  const c={};EMOJIS.forEach(e=>c[e]=0);
+  Object.values(p.reactors||{}).forEach(e=>{if(c[e]!=null)c[e]++});
+  if(p.myReaction)c[p.myReaction]=(c[p.myReaction]||0)+1;
+  return c;
+}
+function fmtReactMeta(p,counts){
+  const parts=EMOJIS.filter(e=>counts[e]>0).map(e=>`${e}${counts[e]}`);
+  const total=Object.values(counts).reduce((a,b)=>a+b,0)||p.likes;
+  return (parts.length?parts.join(' ')+' · ':'')+total+' reacties — tik om te zien wie';
+}
+
+function onFeedClick(e){
+  const who=e.target.closest('[data-who]');
+  if(who){showWhoReacted(who.dataset.who);return}
+  const re=e.target.closest('[data-react]');
+  if(re){setReaction(re.dataset.react,re.dataset.emoji);return}
+  const tr=e.target.closest('[data-toggle-react]');
+  if(tr){const id=tr.dataset.toggleReact;const feed=load(LS.feed,[]);const item=feed.find(x=>x.id===id);if(!item)return;
+    if(item.myReaction){setReaction(id,null)}else{setReaction(id,'❤️')}return}
+  const sh=e.target.closest('[data-share]');
+  if(sh){toast('Gedeeld in Wire — geen echte Facebook');maybeDrama(sh.dataset.share,'share');return}
+  const cs=e.target.closest('[data-cmt-send]');
+  if(cs){sendComment(cs.dataset.cmtSend);return}
+  const fc=e.target.closest('[data-focus-cmt]');
+  if(fc){const inp=$(`[data-cmt-in="${fc.dataset.focusCmt}"]`);if(inp)inp.focus()}
+}
+
+function setReaction(postId,emoji){
+  const feed=load(LS.feed,[]);
+  const item=feed.find(x=>x.id===postId);if(!item)return;
+  const prev=item.myReaction;
+  if(emoji===null||emoji===prev){item.myReaction=null;item.liked=false}
+  else{item.myReaction=emoji;item.liked=true}
+  item.likes=Object.keys(item.reactors||{}).length+(item.myReaction?1:0);
+  save(LS.feed,feed);renderFeed();
+  if(item.myReaction){toast(item.myReaction+' gezet');maybeDrama(postId,'like')}
+}
+
+async function sendComment(postId){
+  const inp=$(`[data-cmt-in="${postId}"]`);if(!inp)return;
+  const text=inp.value.trim();if(!text)return;
+  const cm=getComments();cm[postId]=cm[postId]||[];
+  cm[postId].push({name:'René',text,npc:false,ts:Date.now()});
+  setComments(cm);inp.value='';renderFeed();
+  toast('Reactie geplaatst');
+  maybeDrama(postId,'comment');
+  // NPC auto-reply 1–3s based on mood
+  const feed=load(LS.feed,[]);
+  const item=feed.find(x=>x.id===postId);
+  const mood=(item&&item.mood)||detectMood(item&&item.text)||'supportive';
+  const wait=1000+Math.floor(Math.random()*2000);
+  await delay(wait);
+  const pool=NPC.filter(n=>n.role==='friend'||n.role==='family');
+  const bias=pool.filter(n=>n.mood_bias===mood);
+  const npc=pick(bias.length?bias:pool,Date.now());
+  const templates=REPLIES[mood]||REPLIES.supportive||['Nice!'];
+  let reply=pick(templates,Date.now()+7);
+  const other=(item&&item.involved&&item.involved[0])||'haar';
+  reply=reply.replace(/\{other\}/g,other).replace(/\{author\}/g,item?item.name:'');
+  const cm2=getComments();cm2[postId]=cm2[postId]||[];
+  cm2[postId].push({name:npc.name,text:reply,npc:true,ts:Date.now()});
+  setComments(cm2);
+  // only re-render if still on pulse
+  if($('#v-pulse').classList.contains('on'))renderFeed();
+  toast(npc.name+' reageerde');
+}
+
+function showWhoReacted(postId){
+  const feed=load(LS.feed,[]);
+  const item=feed.find(x=>x.id===postId);if(!item)return;
+  const rows=[];
+  if(item.myReaction)rows.push({name:'Jij (René)',img:$('#meAv').src,em:item.myReaction});
+  Object.entries(item.reactors||{}).forEach(([id,em])=>{
+    const n=npcById(id)||{name:id,img:PEOPLE[0]?.img};
+    rows.push({name:n.name,img:n.img,em});
+  });
+  $('#reactBody').innerHTML=rows.map(r=>`<div class="r"><img src="${r.img}" alt=""/><b style="flex:1">${escapeHtml(r.name)}</b><span style="font-size:1.2rem">${r.em}</span></div>`).join('')||'<p style="padding:16px;color:var(--muted)">Nog geen reacties.</p>';
+  $('#reactSheet').classList.add('open');
+}
+
+function logEvent(msg){
+  const ev=load(LS.events,[]);
+  ev.unshift({t:Date.now(),msg});
+  save(LS.events,ev.slice(0,40));
+  renderEventLog();
+  toast(msg);
+}
+
+function renderEventLog(){
+  const ev=load(LS.events,[]);
+  const el=$('#eventLog');if(!el)return;
+  el.innerHTML=ev.length?ev.slice(0,12).map(e=>{
+    const d=new Date(e.t);
+    const hh=String(d.getHours()).padStart(2,'0');
+    const mm=String(d.getMinutes()).padStart(2,'0');
+    return `<div>${hh}:${mm} · ${escapeHtml(e.msg)}</div>`}).join(''):'Nog geen events.';
+}
+
+function resolvePost(postId){
+  const feed=load(LS.feed,[]);
+  let item=feed.find(x=>x.id===postId);
+  if(item)return item;
+  const raw=FEED_ITEMS.find(i=>i.id===postId);
+  if(raw){
+    const author=personByName(raw.author)||{id:(raw.author||'x').toLowerCase(),name:raw.author,img:raw.media};
+    return {id:raw.id,name:author.name,text:raw.caption||'',involved:extractInvolved(raw),mood:detectMood(raw.caption||'')};
+  }
+  return null;
+}
+function maybeDrama(postId,kind){
+  const chance=(DRAMA&&DRAMA.chance!=null)?DRAMA.chance:0.55;
+  const seed=String(postId).length*13+(kind==='like'?1:kind==='comment'?2:3)+((load(LS.events,[])).length);
+  if(seeded(seed)>chance)return;
+  const item=resolvePost(postId);if(!item)return;
+  const other=(item.involved&&item.involved[0])||null;
+  // need involvement OR random jealousy on any like
+  const types=(DRAMA.types||['wire_jealous','friend_tag','family_ok']);
+  let type=pick(types,seed+9);
+  if(!other&&type==='friend_tag')type='wire_jealous';
+  const author=item.name;
+  const oth=other||pick(PEOPLE.map(p=>p.name).filter(n=>n!==author),seed+3)||'Lianne';
+  const tpls=((DRAMA.templates||{})[type])||['Alles oké?'];
+  let msg=pick(tpls,seed+21).replace(/\{author\}/g,author).replace(/\{other\}/g,oth);
+
+  if(type==='wire_jealous'){
+    const jealous=NPC.filter(n=>n.mood_bias==='jealous'||n.role==='friend');
+    const who=pick(jealous,seed+5);
+    pushWire(who.id,msg,true);
+    logEvent('Wire DM van '+who.name+' (jaloers)');
+    bumpWireBadge();
+  }else if(type==='friend_tag'){
+    const friends=NPC.filter(n=>n.role==='friend'&&n.mood_bias==='gossip');
+    const who=pick(friends.length?friends:NPC,seed+8);
+    const cm=getComments();cm[postId]=cm[postId]||[];
+    cm[postId].push({name:who.name,text:msg,npc:true,ts:Date.now()});
+    setComments(cm);
+    if($('#v-pulse').classList.contains('on'))renderFeed();
+    logEvent(who.name+' commentte: tag-drama');
+  }else{
+    const fam=NPC.filter(n=>n.role==='family'||n.mood_bias==='worried');
+    const who=pick(fam.length?fam:NPC,seed+11);
+    pushWire(who.id,msg,true);
+    logEvent(who.name+' checkt in: alles oké?');
+    bumpWireBadge();
+  }
+}
+
+function pushWire(uid,text,unread){
+  const chats=load(LS.chats,{});
+  chats[uid]=chats[uid]||[];
+  chats[uid].push({who:'them',t:text,ts:Date.now(),unread:!!unread});
+  save(LS.chats,chats);
+  if($('#v-wire').classList.contains('on'))renderWa();
+}
+
+function bumpWireBadge(){
+  const chats=load(LS.chats,{});
+  let n=0;Object.values(chats).forEach(msgs=>msgs.forEach(m=>{if(m.unread)n++}));
+  const b=$('#wireBadge');
+  if(n){b.style.display='grid';b.textContent=String(n)}else b.style.display='none';
+}
+
+/* GRAM */
+function gramPosts(){
+  const feed=seedFeed();
+  const gramIds=new Set(FEED_ITEMS.filter(i=>i.channel==='gram'||i.type==='post').map(i=>i.id));
+  let g=feed.filter(p=>gramIds.has(p.id)||p.channel==='gram');
+  if(!g.length)g=feed.slice(0,12);
+  return g;
 }
 function renderGram(){
   renderStories($('#igStories'));
-  const gram=FEED_ITEMS.filter(i=>i.channel==='gram'||i.channel==='story'||i.type==='post');
-  const imgs=gram.length?gram.map(g=>g.media):PEOPLE.map(p=>p.img);
-  $('#igGrid').innerHTML=imgs.map((src,i)=>`<img src="${src}" alt="g${i}"/>`).join('');
+  const g=gramPosts();
+  $('#igStats').innerHTML=`<span><b>${PROFILE.followers.toLocaleString('nl-NL')}</b> volgers</span><span><b>${PROFILE.following}</b> volgend</span><span><b>${g.length}</b> posts</span>`;
+  $('#igGrid').innerHTML=g.map(p=>{
+    const likes=p.likes||0;
+    return `<button type="button" data-gd="${p.id}"><img src="${p.media}" alt=""/><span class="ov">♥ ${likes}</span></button>`;
+  }).join('');
+  $('#igGrid').onclick=e=>{
+    const b=e.target.closest('[data-gd]');if(!b)return;
+    openGramDetail(b.dataset.gd);
+  };
+}
+function openGramDetail(id){
+  const feed=load(LS.feed,[]);
+  const p=feed.find(x=>x.id===id)||gramPosts().find(x=>x.id===id);if(!p)return;
+  const cm=commentsFor(id);
+  $('#gdName').textContent=p.name;
+  $('#gdBody').innerHTML=`
+    <img class="gd-media" src="${p.media}" alt=""/>
+    <div class="gd-acts">
+      <button type="button" id="gdLike">${p.myReaction||'🤍'}</button>
+      <button type="button" id="gdCmt">💬</button>
+      <button type="button" id="gdShare">↗</button>
+    </div>
+    <div class="meta" style="padding:0 12px 8px;cursor:pointer" id="gdWho">${fmtReactMeta(p,countReactions(p))}</div>
+    <div class="cap" style="padding:0 12px 8px"><b>${escapeHtml(p.name)}</b> ${escapeHtml(p.text)}</div>
+    <div class="comments" style="padding:8px 12px">
+      ${cm.map(c=>`<div class="cmt"><span class="who ${c.npc?'npc':''}">${escapeHtml(c.name)}</span>${escapeHtml(c.text)}</div>`).join('')}
+      <div class="cmt-in"><input id="gdInput" placeholder="Reageer…" maxlength="220"/><button type="button" id="gdSend">Plaats</button></div>
+    </div>`;
+  $('#gramDetail').classList.add('open');
+  $('#gdLike').onclick=()=>{setReaction(id,p.myReaction?'❤️'===p.myReaction?null:'❤️':'❤️');openGramDetail(id)};
+  $('#gdWho').onclick=()=>showWhoReacted(id);
+  $('#gdShare').onclick=()=>toast('Gedeeld in Wire — geen echte Instagram');
+  $('#gdSend').onclick=async()=>{
+    const v=$('#gdInput').value.trim();if(!v)return;
+    const c=getComments();c[id]=c[id]||[];c[id].push({name:'René',text:v,npc:false,ts:Date.now()});setComments(c);
+    maybeDrama(id,'comment');
+    const mood=p.mood||'supportive';
+    await delay(1000+Math.floor(Math.random()*2000));
+    const npc=pick(NPC.filter(n=>n.role==='friend'),Date.now());
+    let reply=pick(REPLIES[mood]||REPLIES.supportive,Date.now());
+    reply=reply.replace(/\{other\}/g,(p.involved&&p.involved[0])||'haar').replace(/\{author\}/g,p.name);
+    const c2=getComments();c2[id].push({name:npc.name,text:reply,npc:true,ts:Date.now()});setComments(c2);
+    openGramDetail(id);toast(npc.name+' reageerde');
+  };
+  $('#gdCmt').onclick=()=>$('#gdInput').focus();
+}
+
+/* CLIPS */
+function clipList(){
+  const clips=FEED_ITEMS.filter(i=>i.channel==='clips'||i.type==='reel');
+  const liked=load(LS.clips,{});
+  if(clips.length)return clips.map((p,i)=>({
+    id:p.id,author:p.author,uid:(personByName(p.author)||{}).id||p.author.toLowerCase(),
+    caption:p.caption,media:p.media,likes:liked[p.id]?.likes??(40+i*7),liked:!!liked[p.id]?.liked
+  }));
+  return PEOPLE.map((p,i)=>({id:'c'+p.id,author:p.name,uid:p.id,caption:p.line||'fiction still',media:p.img,likes:20+i,liked:false}));
 }
 function renderClips(){
-  const clips=FEED_ITEMS.filter(i=>i.channel==='clips'||i.type==='reel');
-  const list=clips.length?clips:PEOPLE.map(p=>({author:p.name,id:p.id,caption:p.line||'fiction still',media:p.img}));
+  const list=clipList();
   $('#clips').innerHTML=list.map(p=>`
-    <div class="clip"><img src="${p.media||p.img}" alt=""/><div class="shade"></div>
-    <div class="info"><b>@${(p.author||p.id||'').toLowerCase()}</b><p>${escapeHtml(p.caption||p.line||'')} · STILL (geen MP4)</p></div>
-    <div class="side"><button>♥</button><button>💬</button><button>➦</button></div></div>`).join('');
+    <div class="clip" data-clip="${p.id}">
+      <div class="prog"><i></i></div>
+      <span class="playui">AUTO · STILL</span>
+      <img src="${p.media}" alt=""/><div class="shade"></div>
+      <div class="info"><b>@${escapeHtml((p.author||'').toLowerCase())}</b><p>${escapeHtml(p.caption||'')} · STILL (geen MP4)</p></div>
+      <div class="side">
+        <button type="button" data-clike="${p.id}">${p.liked?'❤️':'🤍'}</button><small data-clikes="${p.id}">${p.likes}</small>
+        <button type="button" data-ccmt="${p.id}">💬</button><small>chat</small>
+        <button type="button" data-cshare="${p.id}">➦</button><small>deel</small>
+      </div>
+    </div>`).join('');
+  $('#clips').onclick=e=>{
+    const like=e.target.closest('[data-clike]');
+    if(like){
+      const id=like.dataset.clike;const st=load(LS.clips,{});const cur=clipList().find(x=>x.id===id);
+      const liked=!((st[id]&&st[id].liked)||(cur&&cur.liked));
+      const likes=((st[id]&&st[id].likes)!=null?st[id].likes:(cur?cur.likes:0))+(liked?1:-1);
+      st[id]={liked,likes};save(LS.clips,st);renderClips();
+      if(liked){toast('❤️ Clip');maybeDrama(id,'like')}
+      return;
+    }
+    const c=e.target.closest('[data-ccmt]');
+    if(c){
+      const id=c.dataset.ccmt;
+      const author=(clipList().find(x=>x.id===id)||{}).uid;
+      if(author){openWa(author);nav('wire')}
+      return;
+    }
+    const s=e.target.closest('[data-cshare]');
+    if(s){toast('Gedeeld in Wire — geen echte TikTok');return}
+  };
 }
+
+/* STORIES */
+let storyList=[], storyIdx=0, storyTimer=null;
+function openStories(list,idx){
+  storyList=list;storyIdx=idx;
+  $('#storyView').classList.add('open');
+  showStory();
+}
+function showStory(){
+  clearTimeout(storyTimer);
+  if(storyIdx<0)storyIdx=0;
+  if(storyIdx>=storyList.length){$('#storyView').classList.remove('open');return}
+  const s=storyList[storyIdx];
+  const seen=load(LS.seenStories,{});seen[s.id]=1;save(LS.seenStories,seen);
+  $('#storyAv').src=s.img;$('#storyName').textContent=s.name;
+  $('#storyMedia').src=s.media;$('#storyCap').textContent=s.caption||'';
+  $('#storyBars').innerHTML=storyList.map((_,i)=>`<i class="${i<storyIdx?'done':i===storyIdx?'active':''}"><u style="${i===storyIdx?'animation:storyfill 4.5s linear forwards':''}"></u></i>`).join('');
+  if(!$('style#storyAnim')){const st=document.createElement('style');st.id='storyAnim';st.textContent='@keyframes storyfill{from{width:0}to{width:100%}}';document.head.appendChild(st)}
+  storyTimer=setTimeout(()=>{storyIdx++;showStory()},4500);
+}
+function closeStory(){clearTimeout(storyTimer);$('#storyView').classList.remove('open');renderStories($('#stories'));if($('#v-gram').classList.contains('on'))renderStories($('#igStories'))}
+
+/* WIRE */
 function seedChats(){
   let chats=load(LS.chats,{});
   FEED_ITEMS.filter(i=>i.channel==='wire'||i.type==='dm').forEach(dm=>{
-    const key=(dm.author||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-    // map to people id
-    const p=PEOPLE.find(x=>x.name===dm.author)||PEOPLE.find(x=>x.id===key)||PEOPLE[0];
+    const p=personByName(dm.author)||PEOPLE[0];
     if(!p)return;
-    if(!chats[p.id]){
-      chats[p.id]=[{who:'them',t:dm.caption||'Hey — fiction Wire.'}];
+    if(!chats[p.id]||!chats[p.id].length){
+      chats[p.id]=[{who:'them',t:(dm.caption||'Hey — fiction Wire.').replace(/^[^:]+:\s*/,''),ts:Date.now()-3600000}];
     }
+  });
+  // ensure family present
+  ['dana','jens','anke'].forEach(id=>{
+    if(!chats[id])chats[id]=[{who:'them',t:'Hé — Wire check-in. Geen echte WA.',ts:Date.now()-7200000}];
   });
   save(LS.chats,chats);return chats;
 }
+function wirePeople(){
+  const map=new Map();
+  PEOPLE.forEach(p=>map.set(p.id,p));
+  NPC.forEach(n=>{if(!map.has(n.id))map.set(n.id,{id:n.id,name:n.name,img:n.img})});
+  return [...map.values()];
+}
 function renderWa(){
   const chats=seedChats();
-  $('#waList').innerHTML=PEOPLE.map(p=>{
+  const people=wirePeople();
+  const rows=people.map(p=>{
     const msgs=chats[p.id]||[];const last=msgs.length?msgs[msgs.length-1].t:'Zeg hallo…';
-    return `<button class="row" data-id="${p.id}"><img src="${p.img}" alt=""/><div class="t"><b>${p.name}</b><span>${escapeHtml(last)}</span></div></button>`;
-  }).join('');
+    const unread=msgs.filter(m=>m.unread).length;
+    return {p,last,unread,ts:msgs.length?msgs[msgs.length-1].ts||0:0};
+  }).sort((a,b)=>b.ts-a.ts);
+  $('#waList').innerHTML=rows.map(({p,last,unread})=>`
+    <button class="row" data-id="${p.id}"><img src="${p.img}" alt=""/><div class="t"><b>${escapeHtml(p.name)}</b><span>${escapeHtml(last)}</span></div>${unread?`<span class="unread">${unread}</span>`:''}</button>`).join('');
   $('#waList').onclick=e=>{const b=e.target.closest('[data-id]');if(b)openWa(b.dataset.id)};
+  bumpWireBadge();
 }
 let activeWa=null;
 function openWa(id){
-  // resolve name or id
-  let p=PEOPLE.find(x=>x.id===id)||PEOPLE.find(x=>x.name.toLowerCase()===id.toLowerCase());
-  if(!p){p=PEOPLE.find(x=>id.includes(x.id))||PEOPLE[0]}
-  if(!p)return;activeWa=p.id;
+  let p=wirePeople().find(x=>x.id===id)||wirePeople().find(x=>x.name.toLowerCase()===String(id).toLowerCase());
+  if(!p)p=wirePeople()[0];if(!p)return;activeWa=p.id;
   let chats=load(LS.chats,{});
-  if(!chats[p.id]){chats[p.id]=[{who:'them',t:'Hey — '+p.name+' hier. Fiction Wire, geen echte WA.'}];save(LS.chats,chats)}
+  if(!chats[p.id]){chats[p.id]=[{who:'them',t:'Hey — '+p.name+' hier. Fiction Wire, geen echte WA.'}];}
+  chats[p.id].forEach(m=>m.unread=false);
+  save(LS.chats,chats);
   $('#waAv').src=p.img;$('#waName').textContent=p.name;
-  renderThread();$('#waRoom').classList.add('open');
+  renderThread();$('#waRoom').classList.add('open');bumpWireBadge();
 }
 function renderThread(){
   const msgs=load(LS.chats,{})[activeWa]||[];
-  $('#waMsgs').innerHTML=msgs.map(m=>`<div class="bubble ${m.who}">${escapeHtml(m.t)}</div>`).join('');
+  $('#waMsgs').innerHTML=msgs.map(m=>`<div class="bubble ${m.who}">${escapeHtml(m.t)}${m.ts?`<span class="ts">${new Date(m.ts).toLocaleTimeString('nl-NL',{hour:'2-digit',minute:'2-digit'})}</span>`:''}</div>`).join('');
   $('#waMsgs').scrollTop=99999;
 }
 function sendWa(){
   const v=$('#waInput').value.trim();if(!v||!activeWa)return;
   const chats=load(LS.chats,{});chats[activeWa]=chats[activeWa]||[];
-  chats[activeWa].push({who:'me',t:v});
-  const replies=['Haha ok 😏','Later in de spa?','Stuur ik je een still.','Alleen via NYXLINK — geen echte app.','Deal.','Anastasia schedule later.'];
-  chats[activeWa].push({who:'them',t:replies[Math.floor(Math.random()*replies.length)]});
+  chats[activeWa].push({who:'me',t:v,ts:Date.now()});
+  const replies=['Haha ok 😏','Later in de spa?','Stuur ik je een still.','Alleen via NYXLINK — geen echte app.','Deal.','Anastasia schedule later.','Wire ≠ WhatsApp, onthoud 😉'];
+  chats[activeWa].push({who:'them',t:replies[Math.floor(Math.random()*replies.length)],ts:Date.now()+1});
   save(LS.chats,chats);$('#waInput').value='';renderThread();renderWa();
 }
+
+/* LISTS */
+function openList(kind){
+  const title={friends:'Vrienden',followers:'Volgers',following:'Volgend'}[kind]||'Lijst';
+  $('#listTitle').textContent=title;
+  let rows=[];
+  if(kind==='friends'){
+    rows=NPC.filter(n=>n.role==='friend'||n.role==='family').map(n=>({
+      name:n.name,img:n.img,sub:(n.group||n.role)+' · '+n.age+'+',tag:n.group||n.role,id:n.id
+    }));
+  }else if(kind==='followers'){
+    const extra=FOLLOWERS_SAMPLE.map((name,i)=>({
+      name,img:PEOPLE[i%PEOPLE.length]?.img||NPC[0]?.img,sub:'volger · fiction',tag:'core',id:'fol'+i
+    }));
+    rows=NPC.filter(n=>n.role==='friend').map(n=>({name:n.name,img:n.img,sub:'volger · '+n.group,tag:n.group,id:n.id})).concat(extra);
+  }else{
+    rows=NPC.filter(n=>n.role==='friend').slice(0,PROFILE.following?Math.min(18,NPC.length):12).map(n=>({
+      name:n.name,img:n.img,sub:'jij volgt · fiction',tag:n.group,id:n.id
+    }));
+  }
+  $('#listBody').innerHTML=rows.map(r=>`
+    <button class="row" type="button" data-open-wire="${r.id||''}">
+      <img src="${r.img}" alt=""/>
+      <div class="meta"><b>${escapeHtml(r.name)}</b><span>${escapeHtml(r.sub)}</span></div>
+      <span class="tag ${r.tag||''}">${escapeHtml(r.tag||'friend')}</span>
+    </button>`).join('');
+  $('#listBody').onclick=e=>{
+    const b=e.target.closest('[data-open-wire]');if(!b||!b.dataset.openWire)return;
+    $('#listSheet').classList.remove('open');
+    if(NPC.some(n=>n.id===b.dataset.openWire)||PEOPLE.some(p=>p.id===b.dataset.openWire)){
+      openWa(b.dataset.openWire);nav('wire');
+    }
+  };
+  $('#listSheet').classList.add('open');
+}
+
+function renderMe(){
+  $('#meName').textContent=(PROFILE.name||'René')+' · regisseur';
+  $('#meBio').textContent=PROFILE.bio||$('#meBio').textContent;
+  $('#meStats').innerHTML=`
+    <div data-list="friends"><b>${PROFILE.friends||NPC.length}</b><span>vrienden</span></div>
+    <div data-list="followers"><b>${(PROFILE.followers||0).toLocaleString('nl-NL')}</b><span>volgers</span></div>
+    <div data-list="following"><b>${PROFILE.following||0}</b><span>volgend</span></div>`;
+  $('#meStats').onclick=e=>{const d=e.target.closest('[data-list]');if(d)openList(d.dataset.list)};
+  $$('#v-me [data-list]').forEach(b=>b.onclick=()=>openList(b.dataset.list));
+  renderEventLog();
+}
+
 function nav(name){
   document.querySelectorAll('.dock button').forEach(b=>b.classList.toggle('on',b.dataset.v===name));
   document.querySelectorAll('.view').forEach(v=>v.classList.toggle('on',v.id==='v-'+name));
   const [t,s]=titles[name];$('#appTitle').textContent=t;$('#appSub').textContent=s;
   if(name!=='wire')$('#waRoom').classList.remove('open');
+  $('#listSheet').classList.remove('open');
+  $('#reactSheet').classList.remove('open');
+  $('#gramDetail').classList.remove('open');
   if(name==='pulse')renderFeed();
   if(name==='gram')renderGram();
   if(name==='clips')renderClips();
   if(name==='wire')renderWa();
+  if(name==='me')renderMe();
   history.replaceState(null,'','#'+name);
 }
+
 async function boot(){
   await loadData();
-  // clear old seed once so batch loads
-  if(!localStorage.getItem('nyxlink_feed_v2_seeded')){
+  // migrate once
+  if(!localStorage.getItem('nyxlink_feed_v3_seeded')){
     localStorage.removeItem('nyxlink_feed');
+    localStorage.removeItem('nyxlink_feed_v2');
     localStorage.removeItem(LS.feed);
-    localStorage.setItem('nyxlink_feed_v2_seeded','1');
+    localStorage.setItem('nyxlink_feed_v3_seeded','1');
   }
-  renderStories($('#stories'));renderFeed();renderGram();renderClips();renderWa();
+  const meImg=PEOPLE.find(p=>p.id==='rene')?.img||PEOPLE[0]?.img;
+  if(meImg)$('#meAv').src=meImg;
+  renderStories($('#stories'));renderFeed();renderGram();renderClips();renderWa();renderMe();
   document.querySelectorAll('.dock button').forEach(b=>b.onclick=()=>nav(b.dataset.v));
   $('#waBack').onclick=()=>{$('#waRoom').classList.remove('open');activeWa=null};
   $('#waSend').onclick=sendWa;$('#waInput').onkeydown=e=>{if(e.key==='Enter')sendWa()};
   $('#pulseSend').onclick=()=>{
     const t=$('#pulsePost').value.trim();if(!t)return;
     const feed=load(LS.feed,[]);
-    const av=PEOPLE[0]?.img||'';
-    feed.unshift({id:'u'+Date.now(),uid:'rene',name:'René',avatar:av,media:av,text:t,likes:1,time:'nu',liked:true,nsfw:'soft'});
+    const av=$('#meAv').src;
+    feed.unshift({id:'u'+Date.now(),uid:'rene',name:'René',avatar:av,media:av,text:t,likes:1,time:'nu',liked:true,myReaction:'❤️',nsfw:'soft',mood:detectMood(t),reactors:{},involved:[]});
     save(LS.feed,feed);$('#pulsePost').value='';renderFeed();toast('Gepost in Pulse');
   };
+  $('#btnFriends').onclick=()=>openList('friends');
+  $('#listBack').onclick=()=>$('#listSheet').classList.remove('open');
+  $('#reactBack').onclick=()=>$('#reactSheet').classList.remove('open');
+  $('#gdBack').onclick=()=>{$('#gramDetail').classList.remove('open');if($('#v-gram').classList.contains('on'))renderGram()};
+  $('#storyClose').onclick=closeStory;
+  $('#storyPrev').onclick=()=>{storyIdx--;showStory()};
+  $('#storyNext').onclick=()=>{storyIdx++;showStory()};
   const hash=(location.hash||'#pulse').slice(1);
   if(['pulse','gram','clips','wire','me'].includes(hash)) nav(hash);
 }
+
 function unlock(){$('#gate').classList.add('hidden');$('#app').style.visibility='visible';boot()}
 if(localStorage.getItem(LS.age)==='1')unlock();
 else{
   $('#yes').onclick=()=>{localStorage.setItem(LS.age,'1');unlock()};
   $('#no').onclick=()=>{document.body.innerHTML='<p style="padding:40px;text-align:center;color:#8b98a8">NYXLINK is 21+ only.</p>'};
 }
-
 </script>
 </body>
 </html>
