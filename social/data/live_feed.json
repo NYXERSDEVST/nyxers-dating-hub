@@ -1,0 +1,394 @@
+{
+  "version": "1.0",
+  "updated": "2026-09-20",
+  "gates": [
+    "21+",
+    "fiction_only",
+    "no_real_social_accounts",
+    "staging",
+    "no_auto_canon"
+  ],
+  "people": [
+    {
+      "id": "lianne",
+      "name": "Lianne",
+      "img": "../assets/generated/velvet/velvet_lianne_neon_sisters.png"
+    },
+    {
+      "id": "siobhan",
+      "name": "Siobhán",
+      "img": "../assets/generated/velvet/velvet_siobhan_discover.png"
+    },
+    {
+      "id": "lara",
+      "name": "Lára",
+      "img": "../assets/generated/velvet/velvet_lara_discover.png"
+    },
+    {
+      "id": "kass",
+      "name": "Kass",
+      "img": "../assets/generated/velvet/velvet_kass_discover.png"
+    },
+    {
+      "id": "bela",
+      "name": "Běla",
+      "img": "../assets/generated/velvet/velvet_bela_discover.png"
+    },
+    {
+      "id": "lina",
+      "name": "Lina",
+      "img": "../assets/generated/velvet/velvet_lina_discover.png"
+    },
+    {
+      "id": "christel",
+      "name": "Christel",
+      "img": "../assets/generated/velvet/velvet_christel_discover.png"
+    },
+    {
+      "id": "mara",
+      "name": "Mara",
+      "img": "../assets/generated/velvet/velvet_mara_discover.png"
+    },
+    {
+      "id": "heike",
+      "name": "Heike",
+      "img": "../assets/generated/velvet/velvet_heike_discover.png"
+    },
+    {
+      "id": "saskia",
+      "name": "Saskia",
+      "img": "../assets/generated/velvet/velvet_saskia_discover.png"
+    },
+    {
+      "id": "sabine",
+      "name": "Sabine",
+      "img": "../assets/generated/sabine_discover.png"
+    },
+    {
+      "id": "fatima",
+      "name": "Fatima",
+      "img": "../assets/generated/fatima_discover.png"
+    },
+    {
+      "id": "severina",
+      "name": "Severina",
+      "img": "../assets/generated/velvet/placeholders/heike_placeholder.png"
+    },
+    {
+      "id": "anastasia",
+      "name": "Anastasia",
+      "img": "../assets/generated/velvet/placeholders/mara_placeholder.png"
+    },
+    {
+      "id": "lotte",
+      "name": "Lotte",
+      "img": "../assets/generated/velvet/placeholders/lina_placeholder.png"
+    },
+    {
+      "id": "romy",
+      "name": "Romy",
+      "img": "../assets/generated/velvet/placeholders/romy_placeholder.png"
+    }
+  ],
+  "items": [
+    {
+      "id": "NX-A01",
+      "channel": "gram",
+      "type": "post",
+      "author": "Lianne",
+      "to": null,
+      "caption": "Zondag soft. Bank, oversized hoodie, neon low. Velvet-avond later — eerst dit. 🖤",
+      "media": "../assets/generated/velvet/velvet_lianne_neon_sisters.png",
+      "location": "Almelo nieuwbouw (fictie)",
+      "nsfw": "soft",
+      "beat": "woning bank / Velvet soft",
+      "source": "batch"
+    },
+    {
+      "id": "NX-A03",
+      "channel": "pulse",
+      "type": "post",
+      "author": "René",
+      "to": null,
+      "caption": "DE weekend. Eurotik Haus opening in ’t vizier. Fatbike + crew. Meer later.",
+      "media": "../assets/generated/kayla_hub_cast.png",
+      "location": "onderweg DE (fictie)",
+      "nsfw": "soft",
+      "beat": "short status opening Eurotik DE",
+      "source": "batch"
+    },
+    {
+      "id": "NX-A04",
+      "channel": "gram",
+      "type": "post",
+      "author": "Siobhán",
+      "to": null,
+      "caption": "Sisters neon. Schwarz/gold. Noch wach. ✨",
+      "media": "../assets/generated/velvet/velvet_siobhan_discover.png",
+      "location": "DE (fictie)",
+      "nsfw": "soft",
+      "beat": "Sisters neon still",
+      "source": "batch"
+    },
+    {
+      "id": "NX-A07",
+      "channel": "gram",
+      "type": "post",
+      "author": "Kim",
+      "to": null,
+      "caption": "Grey hoodie. Messy pony. Dat is ’m.",
+      "media": "../assets/generated/velvet/placeholders/freya_placeholder.png",
+      "location": "thuis (fictie)",
+      "nsfw": "soft",
+      "beat": "hoodie look-lock",
+      "source": "batch"
+    },
+    {
+      "id": "NX-A05",
+      "channel": "story",
+      "type": "story",
+      "author": "Romy",
+      "to": null,
+      "caption": "Loft weekend teaser 👀 24u",
+      "media": "../assets/generated/velvet/placeholders/romy_placeholder.png",
+      "location": "loft (fictie)",
+      "nsfw": "soft",
+      "beat": "weekend loft teaser",
+      "source": "batch"
+    },
+    {
+      "id": "NX-A06",
+      "channel": "story",
+      "type": "story",
+      "author": "Mila",
+      "to": null,
+      "caption": "Tracksuit. Street. Geen filter.",
+      "media": "../assets/generated/velvet/placeholders/nora_placeholder.png",
+      "location": "straat NL (fictie)",
+      "nsfw": "soft",
+      "beat": "tracksuit street",
+      "source": "batch"
+    },
+    {
+      "id": "NX-A02",
+      "channel": "clips",
+      "type": "reel",
+      "author": "Lianne",
+      "to": null,
+      "caption": "LED’s. Bass. Witte Golf ergens in DE. Ik keek mee. 📹",
+      "media": "../assets/generated/velvet/velvet_lianne_neon_sisters.png",
+      "location": "DE industrieterrein carmeet (fictie)",
+      "nsfw": "soft",
+      "beat": "carmeet Realtime World",
+      "source": "batch"
+    },
+    {
+      "id": "NX-A08",
+      "channel": "wire",
+      "type": "dm",
+      "author": "Lianne",
+      "to": "René",
+      "caption": "Lianne→René: “Rough cut mag later. Eerst jij. Hou haar vast. App als Markus appt. Wij drie. 🖤”",
+      "media": "../assets/generated/velvet/velvet_lianne_neon_sisters.png",
+      "location": "",
+      "nsfw": "soft",
+      "beat": "DM tease (text only)",
+      "source": "batch"
+    },
+    {
+      "id": "NX-B01",
+      "channel": "gram",
+      "type": "post",
+      "author": "Lára",
+      "to": null,
+      "caption": "Boutique open. Pink neon. Where adult boredom ends. 💕",
+      "media": "../assets/generated/velvet/velvet_lara_discover.png",
+      "location": "Haus Velvet DE",
+      "nsfw": "soft",
+      "beat": "boutique pink neon",
+      "source": "batch"
+    },
+    {
+      "id": "NX-B02",
+      "channel": "gram",
+      "type": "post",
+      "author": "Kass",
+      "to": null,
+      "caption": "Sauna BTS. Mic aan. Steam rising.",
+      "media": "../assets/generated/velvet/velvet_kass_discover.png",
+      "location": "Haus Velvet sauna",
+      "nsfw": "soft",
+      "beat": "sauna interview BTS",
+      "source": "batch"
+    },
+    {
+      "id": "NX-B03",
+      "channel": "clips",
+      "type": "reel",
+      "author": "Běla",
+      "to": null,
+      "caption": "Hot tub crew. Champagne. Laugh track optional. 🍾",
+      "media": "../assets/generated/velvet/velvet_bela_discover.png",
+      "location": "spa",
+      "nsfw": "soft",
+      "beat": "hot tub crew",
+      "source": "batch"
+    },
+    {
+      "id": "NX-B04",
+      "channel": "story",
+      "type": "story",
+      "author": "Lina",
+      "to": null,
+      "caption": "Robes → private cinema. 24u",
+      "media": "../assets/generated/velvet/velvet_lina_discover.png",
+      "location": "hallway",
+      "nsfw": "soft",
+      "beat": "hallway robes",
+      "source": "batch"
+    },
+    {
+      "id": "NX-B05",
+      "channel": "gram",
+      "type": "post",
+      "author": "Christel",
+      "to": null,
+      "caption": "Marble + champagne. Opening weekend.",
+      "media": "../assets/generated/velvet/velvet_christel_discover.png",
+      "location": "spa lounge",
+      "nsfw": "soft",
+      "beat": "spa marble",
+      "source": "batch"
+    },
+    {
+      "id": "NX-B06",
+      "channel": "clips",
+      "type": "reel",
+      "author": "Mara",
+      "to": null,
+      "caption": "BBW crew in the tub. Mollig & proud.",
+      "media": "../assets/generated/velvet/velvet_mara_discover.png",
+      "location": "spa",
+      "nsfw": "soft",
+      "beat": "BBW hot tub",
+      "source": "batch"
+    },
+    {
+      "id": "NX-B07",
+      "channel": "gram",
+      "type": "post",
+      "author": "Heike",
+      "to": null,
+      "caption": "Shopping bags. Satisfyer aisle. Fiction only.",
+      "media": "../assets/generated/velvet/velvet_heike_discover.png",
+      "location": "boutique",
+      "nsfw": "soft",
+      "beat": "boutique bags",
+      "source": "batch"
+    },
+    {
+      "id": "NX-B08",
+      "channel": "story",
+      "type": "story",
+      "author": "Saskia",
+      "to": null,
+      "caption": "Private cinema + popcorn 🍿",
+      "media": "../assets/generated/velvet/velvet_saskia_discover.png",
+      "location": "cinema",
+      "nsfw": "soft",
+      "beat": "private cinema",
+      "source": "batch"
+    },
+    {
+      "id": "NX-B09",
+      "channel": "pulse",
+      "type": "post",
+      "author": "Haus",
+      "to": null,
+      "caption": "HAUS VELVET — opening weekend DE. Wellness · boutique · cams. 21+ fiction.",
+      "media": "../assets/generated/velvet/velvet_lara_discover.png",
+      "location": "Glühstadt (fictie)",
+      "nsfw": "soft",
+      "beat": "opening weekend",
+      "source": "batch"
+    },
+    {
+      "id": "NX-B10",
+      "channel": "wire",
+      "type": "dm",
+      "author": "Kass",
+      "to": "Lára",
+      "caption": "Kass→Lára: Set call 16:00. Sauna BTS first, boutique later.",
+      "media": "../assets/generated/velvet/velvet_kass_discover.png",
+      "location": "",
+      "nsfw": "soft",
+      "beat": "set call",
+      "source": "batch"
+    },
+    {
+      "id": "NX-C01",
+      "channel": "pulse",
+      "type": "post",
+      "author": "Severina",
+      "to": null,
+      "caption": "Hyperreal stills pipeline warm. Severina hier — fiction cast lock.",
+      "media": "../assets/generated/velvet/placeholders/heike_placeholder.png",
+      "location": "studio",
+      "nsfw": "soft",
+      "beat": "bed662eb cast",
+      "source": "bed662eb catalog"
+    },
+    {
+      "id": "NX-C02",
+      "channel": "gram",
+      "type": "post",
+      "author": "Anastasia",
+      "to": null,
+      "caption": "Anastasia schedule: ochtendcontrole done. Stand-up next. Fiction automation mirror.",
+      "media": "../assets/generated/velvet/placeholders/mara_placeholder.png",
+      "location": "hub",
+      "nsfw": "soft",
+      "beat": "Anastasia project",
+      "source": "bed662eb / Anastasia automation titles"
+    },
+    {
+      "id": "NX-C03",
+      "channel": "gram",
+      "type": "post",
+      "author": "Lotte",
+      "to": null,
+      "caption": "Lotte · B07 fiction. Soft look. Geen echte pornoster.",
+      "media": "../assets/generated/velvet/placeholders/lina_placeholder.png",
+      "location": "NL",
+      "nsfw": "soft",
+      "beat": "B07 Lotte",
+      "source": "bed662eb instructions + B07-010"
+    },
+    {
+      "id": "NX-C04",
+      "channel": "clips",
+      "type": "reel",
+      "author": "Lianne",
+      "to": null,
+      "caption": "Almelo night. LED wash. (fiction carmeet beat)",
+      "media": "../assets/generated/velvet/velvet_lianne_neon_sisters.png",
+      "location": "Almelo",
+      "nsfw": "soft",
+      "beat": "Mansory/Almelo vibe",
+      "source": "bed662eb chat titles"
+    },
+    {
+      "id": "NX-C05",
+      "channel": "wire",
+      "type": "dm",
+      "author": "Anastasia",
+      "to": "René",
+      "caption": "Anastasia→René: Wire-map staat. Geen echte WA — alleen NYXLINK.",
+      "media": "../assets/generated/velvet/placeholders/mara_placeholder.png",
+      "location": "",
+      "nsfw": "soft",
+      "beat": "WhatsApp map mirror",
+      "source": "WhatsApp Chat Map Structure title"
+    }
+  ]
+}

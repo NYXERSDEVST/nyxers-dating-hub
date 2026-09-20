@@ -154,7 +154,8 @@ img{display:block;max-width:100%}
           <b>Links</b>
           <p style="margin-top:8px;font-size:.85rem;line-height:1.6">
             <a href="../">VELVET Dating Hub</a><br/>
-            <a href="https://nyxersdevst.github.io/nyxers-dating-hub/">Pages root</a>
+            <a href="../portal/">Weekend portal</a><br/>
+            <a href="https://nyxersdevst.github.io/nyxers-dating-hub/">Pages root</a><br/><span style="color:var(--muted);font-size:.8rem">bed662eb-thema’s gespiegeld (Severina/Anastasia/Lotte fiction) — geen grok.com-login</span>
           </p>
         </div>
       </div>
@@ -170,36 +171,43 @@ img{display:block;max-width:100%}
 </div>
 <div class="toast" id="toast"></div>
 <script>
-const PEOPLE=[
-  {id:'lara',name:'Lára',img:'../assets/generated/velvet/velvet_lara_discover.png',line:'Spa shift almost done 💦'},
-  {id:'kass',name:'Kass',img:'../assets/generated/velvet/velvet_kass_discover.png',line:'Cam loft warm vandaag'},
-  {id:'bela',name:'Běla',img:'../assets/generated/velvet/velvet_bela_discover.png',line:'Boutique window look'},
-  {id:'lina',name:'Lina',img:'../assets/generated/velvet/velvet_lina_discover.png',line:'Street → spa in 5'},
-  {id:'christel',name:'Christel',img:'../assets/generated/velvet/velvet_christel_discover.png',line:'BTS mic on'},
-  {id:'mara',name:'Mara',img:'../assets/generated/velvet/velvet_mara_discover.png',line:'BBW crew check-in'},
-  {id:'heike',name:'Heike',img:'../assets/generated/velvet/velvet_heike_discover.png',line:'Sauna promo day'},
-  {id:'saskia',name:'Saskia',img:'../assets/generated/velvet/velvet_saskia_discover.png',line:'Private cinema tonight'},
-  {id:'lianne',name:'Lianne',img:'../assets/generated/velvet/velvet_lianne_neon_sisters.png',line:'Neon sisters ✨'},
-  {id:'siobhan',name:'Siobhán',img:'../assets/generated/velvet/velvet_siobhan_discover.png',line:'Twente energy'},
-  {id:'fatima',name:'Fatima',img:'../assets/generated/fatima_discover.png',line:'Nightlife loading'},
-  {id:'sabine',name:'Sabine',img:'../assets/generated/sabine_discover.png',line:'Soft light Sunday'},
-];
-const LS={age:'nyxlink_age21',feed:'nyxlink_feed',chats:'nyxlink_chats',likes:'nyxlink_likes'};
+
+let PEOPLE=[];
+let FEED_ITEMS=[];
+const LS={age:'nyxlink_age21',feed:'nyxlink_feed_v2',chats:'nyxlink_chats_v2',likes:'nyxlink_likes'};
 const $=s=>document.querySelector(s);
 const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1600)};
 const load=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}};
 const save=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
 const titles={pulse:['Pulse','facebook-style feed · fiction'],gram:['Gram','instagram-style · fiction'],clips:['Clips','tiktok-style · fiction'],wire:['Wire','whatsapp-style · fiction'],me:['Me','jouw regie-profiel']};
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+
+async function loadData(){
+  try{
+    const r=await fetch('data/live_feed.json',{cache:'no-store'});
+    const j=await r.json();
+    PEOPLE=(j.people||[]).map(p=>({id:p.id,name:p.name,img:p.img,line:''}));
+    FEED_ITEMS=j.items||[];
+  }catch(e){
+    console.warn(e);
+    PEOPLE=[{id:'lianne',name:'Lianne',img:'../assets/generated/velvet/velvet_lianne_neon_sisters.png',line:''}];
+    FEED_ITEMS=[];
+  }
+}
 
 function seedFeed(){
   let f=load(LS.feed,null);
   if(f&&f.length)return f;
-  f=PEOPLE.slice().reverse().map((p,i)=>({
-    id:'p'+i,uid:p.id,name:p.name,avatar:p.img,media:p.img,
-    text:p.line+' · Haus Velvet / Eurotik fiction',
-    likes:12+(p.name.charCodeAt(0)%40),time:(i+1)+'u',
-    liked:false
+  // Build from Batch A/B/C items for pulse+gram
+  const posts=FEED_ITEMS.filter(i=>['pulse','gram'].includes(i.channel)&&i.type!=='dm');
+  f=posts.map((p,i)=>({
+    id:p.id,uid:(p.author||'').toLowerCase(),name:p.author,avatar:p.media,media:p.media,
+    text:p.caption+(p.location?' · '+p.location:''),
+    likes:15+(i*3)%50,time:(i+1)+'u',liked:false,nsfw:p.nsfw
   }));
+  if(!f.length){
+    f=PEOPLE.map((p,i)=>({id:'p'+i,uid:p.id,name:p.name,avatar:p.img,media:p.img,text:'Haus weekend',likes:10,time:(i+1)+'u',liked:false}));
+  }
   save(LS.feed,f);return f;
 }
 
@@ -210,10 +218,10 @@ function renderFeed(){
   const f=seedFeed();
   $('#feed').innerHTML=f.map(p=>`
     <article class="post" data-id="${p.id}">
-      <div class="ph"><img src="${p.avatar}" alt=""/><div><b>${p.name}</b><small>${p.time} · Haus Velvet</small></div></div>
+      <div class="ph"><img src="${p.avatar}" alt=""/><div><b>${p.name}</b><small>${p.time} · ${p.nsfw||'soft'} · fiction</small></div></div>
       <img class="media" src="${p.media}" alt=""/>
       <div class="acts"><button data-like="${p.id}">${p.liked?'❤️':'🤍'}</button><button data-c="${p.uid}">💬</button><button>↗</button></div>
-      <div class="meta">${p.likes} likes · STILL · AI_SYNTHETIC</div>
+      <div class="meta">${p.likes} likes · STILL · AI_SYNTHETIC · geen echte social</div>
       <div class="cap"><b>${p.name}</b>${escapeHtml(p.text)}</div>
     </article>`).join('');
   $('#feed').onclick=e=>{
@@ -226,27 +234,47 @@ function renderFeed(){
 }
 function renderGram(){
   renderStories($('#igStories'));
-  $('#igGrid').innerHTML=PEOPLE.map(p=>`<img src="${p.img}" alt="${p.name}"/>`).join('');
+  const gram=FEED_ITEMS.filter(i=>i.channel==='gram'||i.type==='post');
+  const imgs=gram.length?gram.map(g=>g.media):PEOPLE.map(p=>p.img);
+  $('#igGrid').innerHTML=imgs.map((src,i)=>`<img src="${src}" alt="g${i}"/>`).join('');
 }
 function renderClips(){
-  $('#clips').innerHTML=PEOPLE.map(p=>`
-    <div class="clip"><img src="${p.img}" alt=""/><div class="shade"></div>
-    <div class="info"><b>@${p.id}</b><p>${escapeHtml(p.line)} · fiction still (geen MP4)</p></div>
+  const clips=FEED_ITEMS.filter(i=>i.channel==='clips'||i.type==='reel');
+  const list=clips.length?clips:PEOPLE.map(p=>({author:p.name,id:p.id,caption:p.line||'fiction still',media:p.img}));
+  $('#clips').innerHTML=list.map(p=>`
+    <div class="clip"><img src="${p.media||p.img}" alt=""/><div class="shade"></div>
+    <div class="info"><b>@${(p.author||p.id||'').toLowerCase()}</b><p>${escapeHtml(p.caption||p.line||'')} · STILL (geen MP4)</p></div>
     <div class="side"><button>♥</button><button>💬</button><button>➦</button></div></div>`).join('');
 }
+function seedChats(){
+  let chats=load(LS.chats,{});
+  FEED_ITEMS.filter(i=>i.channel==='wire'||i.type==='dm').forEach(dm=>{
+    const key=(dm.author||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+    // map to people id
+    const p=PEOPLE.find(x=>x.name===dm.author)||PEOPLE.find(x=>x.id===key)||PEOPLE[0];
+    if(!p)return;
+    if(!chats[p.id]){
+      chats[p.id]=[{who:'them',t:dm.caption||'Hey — fiction Wire.'}];
+    }
+  });
+  save(LS.chats,chats);return chats;
+}
 function renderWa(){
-  const chats=load(LS.chats,{});
+  const chats=seedChats();
   $('#waList').innerHTML=PEOPLE.map(p=>{
-    const msgs=chats[p.id]||[];const last=msgs.length?msgs[msgs.length-1].t:p.line;
+    const msgs=chats[p.id]||[];const last=msgs.length?msgs[msgs.length-1].t:'Zeg hallo…';
     return `<button class="row" data-id="${p.id}"><img src="${p.img}" alt=""/><div class="t"><b>${p.name}</b><span>${escapeHtml(last)}</span></div></button>`;
   }).join('');
   $('#waList').onclick=e=>{const b=e.target.closest('[data-id]');if(b)openWa(b.dataset.id)};
 }
 let activeWa=null;
 function openWa(id){
-  const p=PEOPLE.find(x=>x.id===id);if(!p)return;activeWa=id;
+  // resolve name or id
+  let p=PEOPLE.find(x=>x.id===id)||PEOPLE.find(x=>x.name.toLowerCase()===id.toLowerCase());
+  if(!p){p=PEOPLE.find(x=>id.includes(x.id))||PEOPLE[0]}
+  if(!p)return;activeWa=p.id;
   let chats=load(LS.chats,{});
-  if(!chats[id]){chats[id]=[{who:'them',t:'Hey — '+p.name+' hier. Fiction Wire, geen echte WA.'}];save(LS.chats,chats)}
+  if(!chats[p.id]){chats[p.id]=[{who:'them',t:'Hey — '+p.name+' hier. Fiction Wire, geen echte WA.'}];save(LS.chats,chats)}
   $('#waAv').src=p.img;$('#waName').textContent=p.name;
   renderThread();$('#waRoom').classList.add('open');
 }
@@ -259,8 +287,7 @@ function sendWa(){
   const v=$('#waInput').value.trim();if(!v||!activeWa)return;
   const chats=load(LS.chats,{});chats[activeWa]=chats[activeWa]||[];
   chats[activeWa].push({who:'me',t:v});
-  const p=PEOPLE.find(x=>x.id===activeWa);
-  const replies=['Haha ok 😏','Later in de spa?','Stuur ik je een still.','Alleen via NYXLINK he — geen echte app.','Deal.'];
+  const replies=['Haha ok 😏','Later in de spa?','Stuur ik je een still.','Alleen via NYXLINK — geen echte app.','Deal.','Anastasia schedule later.'];
   chats[activeWa].push({who:'them',t:replies[Math.floor(Math.random()*replies.length)]});
   save(LS.chats,chats);$('#waInput').value='';renderThread();renderWa();
 }
@@ -273,9 +300,16 @@ function nav(name){
   if(name==='gram')renderGram();
   if(name==='clips')renderClips();
   if(name==='wire')renderWa();
+  history.replaceState(null,'','#'+name);
 }
-function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-function boot(){
+async function boot(){
+  await loadData();
+  // clear old seed once so batch loads
+  if(!localStorage.getItem('nyxlink_feed_v2_seeded')){
+    localStorage.removeItem('nyxlink_feed');
+    localStorage.removeItem(LS.feed);
+    localStorage.setItem('nyxlink_feed_v2_seeded','1');
+  }
   renderStories($('#stories'));renderFeed();renderGram();renderClips();renderWa();
   document.querySelectorAll('.dock button').forEach(b=>b.onclick=()=>nav(b.dataset.v));
   $('#waBack').onclick=()=>{$('#waRoom').classList.remove('open');activeWa=null};
@@ -283,9 +317,12 @@ function boot(){
   $('#pulseSend').onclick=()=>{
     const t=$('#pulsePost').value.trim();if(!t)return;
     const feed=load(LS.feed,[]);
-    feed.unshift({id:'u'+Date.now(),uid:'rene',name:'René',avatar:'../assets/generated/velvet/velvet_lara_discover.png',media:'../assets/generated/velvet/velvet_lara_discover.png',text:t,likes:1,time:'nu',liked:true});
+    const av=PEOPLE[0]?.img||'';
+    feed.unshift({id:'u'+Date.now(),uid:'rene',name:'René',avatar:av,media:av,text:t,likes:1,time:'nu',liked:true,nsfw:'soft'});
     save(LS.feed,feed);$('#pulsePost').value='';renderFeed();toast('Gepost in Pulse');
   };
+  const hash=(location.hash||'#pulse').slice(1);
+  if(['pulse','gram','clips','wire','me'].includes(hash)) nav(hash);
 }
 function unlock(){$('#gate').classList.add('hidden');$('#app').style.visibility='visible';boot()}
 if(localStorage.getItem(LS.age)==='1')unlock();
@@ -293,6 +330,7 @@ else{
   $('#yes').onclick=()=>{localStorage.setItem(LS.age,'1');unlock()};
   $('#no').onclick=()=>{document.body.innerHTML='<p style="padding:40px;text-align:center;color:#8b98a8">NYXLINK is 21+ only.</p>'};
 }
+
 </script>
 </body>
 </html>
