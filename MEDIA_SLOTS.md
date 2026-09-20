@@ -33,3 +33,31 @@ Drop / prefer under `assets/generated/velvet/`:
 | velvet_siobhan_* | Siobhán | velvet_siobhan_discover / golf_street / bedroom (album interim) |
 
 Mood refs (`mood_*.png`) = style_only — never cast faces. No fabricated MP4s.
+
+## Eurotik Haus DE + DE/NL extras (2026-09-20 cast expand)
+
+Placeholders under `assets/generated/velvet/placeholders/` (fiction-labeled · not faces).
+mood_*.png = style_only — never cast faces. Staging · not auto-canon.
+
+| Slot | Character | File |
+|------|-----------|------|
+| velvet_lara_discover | Lára | velvet_lara_discover.png (REALISM) |
+| velvet_kass_discover | Kass | velvet_kass_discover.png (REALISM) |
+| velvet_bela_discover | Běla | velvet_bela_discover.png (REALISM) |
+| velvet_lina_discover | Lina | velvet_lina_discover.png (REALISM) |
+| velvet_christel_discover | Christel | velvet_christel_discover.png (REALISM) |
+| velvet_mara_discover | Mara | velvet_mara_discover.png (REALISM) |
+| velvet_heike_discover | Heike | velvet_heike_discover.png (REALISM) |
+| velvet_saskia_discover | Saskia | velvet_saskia_discover.png (REALISM) |
+| romy_ph | Romy | placeholders/romy_placeholder.png |
+| kassandra_ph | Kassandra | placeholders/kassandra_placeholder.png |
+| nora_ph | Nora | placeholders/nora_placeholder.png |
+| freya_ph | Freya | placeholders/freya_placeholder.png |
+| noa_ph | Noa | placeholders/noa_placeholder.png |
+| fenja_ph | Fenja | placeholders/fenja_placeholder.png |
+| jule_ph | Jule | placeholders/jule_placeholder.png |
+| dana_ph | Dana | placeholders/dana_placeholder.png |
+| anke_ph | Anke | placeholders/anke_placeholder.png |
+| britta_ph | Britta | placeholders/britta_placeholder.png |
+| imke_ph | Imke | placeholders/imke_placeholder.png |
+| merel_ph | Merel | placeholders/merel_placeholder.png |
