@@ -1,5 +1,5 @@
 /* NYXERS Dating Hub — offline shell cache */
-const CACHE = 'nyxers-dating-hub-v2';
+const CACHE = 'nyxers-dating-hub-v2-realism1';
 const ASSETS = [
   './',
   './index.html',
@@ -8,7 +8,14 @@ const ASSETS = [
   './icons/icon-512.png',
   './assets/sabine_ref_01_robe_bedroom.jpg',
   './assets/fatima_ref_01_squat_dark_car.png',
-  './assets/lianne_ref_marktplaats_aerox.jpg'
+  './assets/lianne_ref_marktplaats_aerox.jpg',
+  './assets/generated/sabine_discover.png',
+  './assets/generated/fatima_discover.png',
+  './assets/generated/lianne_discover.png',
+  './assets/generated/kayla_hub_cast.png',
+  './assets/generated/sabine_chat_bg.png',
+  './assets/generated/fatima_chat_bg.png',
+  './assets/generated/lianne_chat_bg.png'
 ];
 
 self.addEventListener('install', (e) => {

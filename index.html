@@ -108,7 +108,7 @@
     .hero {
       position: relative; border-radius: var(--radius); overflow: hidden;
       min-height: 280px; margin: 8px 0 18px;
-      background: #111 url('assets/sabine_ref_01_robe_bedroom.jpg') center/cover;
+      background: #111 url('assets/generated/sabine_discover.png') center/cover;
     }
     .hero::after {
       content: ""; position: absolute; inset: 0;
@@ -260,6 +260,14 @@
     .chat-messages {
       flex: 1; overflow-y: auto; padding: 14px 14px 80px;
       display: flex; flex-direction: column; gap: 10px;
+      background-color: #0a0a0a;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .chat-messages.has-bg {
+      background-blend-mode: darken;
+      box-shadow: inset 0 0 0 100vmax rgba(10,10,10,.72);
     }
     .bubble {
       max-width: 78%; padding: 10px 14px; border-radius: 16px;
@@ -455,7 +463,7 @@
       </div>
       <div class="grid" id="home-preview"></div>
       <div class="disclaimer">
-        Fiction · 21+ · Geen echte personen · Media-generatie vereist SuperAgent / xAI later. Lokaal: likes, chats &amp; studio-queue in localStorage.
+        Fiction · 21+ · Geen echte personen · REALISM stills (AI_SYNTHETIC staging). Geen MP4s in deze build. Lokaal: likes, chats &amp; studio-queue in localStorage.
       </div>
     </section>
 
@@ -492,7 +500,7 @@
       </div>
       <div class="video-float" id="video-float" title="Video preview">
         <div class="ph" id="video-float-inner">📹</div>
-        <span class="live">LIVE</span>
+        <span class="live">STILL</span>
       </div>
       <div class="chat-messages" id="chat-messages"></div>
       <div class="quick-replies" id="quick-replies">
@@ -591,43 +599,73 @@
     {
       id: 'sabine', name: 'Sabine', age: 28, tag: 'Dutch · soft &amp; bold',
       filters: ['all','popular','naughty'], online: true, emoji: '🌹',
-      img: 'assets/sabine_ref_01_robe_bedroom.jpg',
-      bio: 'Sabine is fictief — warm, speels en graag dichtbij. Curvy. Houdt van late-night chats en soft light.',
+      img: 'assets/generated/sabine_discover.png',
+      chatBg: 'assets/generated/sabine_chat_bg.png',
+      gallery: [
+        'assets/generated/sabine_gallery_1.png',
+        'assets/generated/sabine_gallery_2.png',
+        'assets/generated/sabine_gallery_3.png',
+        'assets/generated/sabine_discover.png'
+      ],
+      bio: 'Sabine is fictief (21+) — warm, speels en graag dichtbij. Curvy. Houdt van late-night chats en soft light. AI_SYNTHETIC staging.',
       naughty: true, popular: true, isNew: false
     },
     {
       id: 'fatima', name: 'Fatima', age: 26, tag: 'Bold · nightlife',
       filters: ['all','popular','naughty'], online: true, emoji: '✨',
-      img: 'assets/fatima_ref_01_squat_dark_car.png',
-      bio: 'Fatima is fictief — zelfverzekerd, flirty en altijd klaar voor een foto-request. Plussize / curvy vibe.',
+      img: 'assets/generated/fatima_discover.png',
+      chatBg: 'assets/generated/fatima_chat_bg.png',
+      gallery: [
+        'assets/generated/fatima_gallery_1.png',
+        'assets/generated/fatima_gallery_2.png',
+        'assets/generated/fatima_gallery_3.png',
+        'assets/generated/fatima_discover.png'
+      ],
+      bio: 'Fatima is fictief (21+) — zelfverzekerd, flirty en altijd klaar voor een foto-request. Plussize / curvy vibe. AI_SYNTHETIC staging.',
       naughty: true, popular: true, isNew: false
     },
     {
       id: 'lianne', name: 'Lianne', age: 27, tag: 'Outdoor · scooters',
       filters: ['all','popular','new'], online: true, emoji: '🛵',
-      img: 'assets/lianne_ref_marktplaats_aerox.jpg',
-      bio: 'Lianne is fictief — actief, speels, een beetje naughty. Curvy default. Chat NL/EN.',
+      img: 'assets/generated/lianne_discover.png',
+      chatBg: 'assets/generated/lianne_chat_bg.png',
+      gallery: [
+        'assets/generated/lianne_gallery_1.png',
+        'assets/generated/lianne_gallery_2.png',
+        'assets/generated/lianne_gallery_3.png',
+        'assets/generated/lianne_discover.png'
+      ],
+      bio: 'Lianne is fictief (21+) — actief, speels, een beetje naughty. Curvy default. Chat NL/EN. AI_SYNTHETIC staging (gallery_3 soft derivative).',
+      naughty: false, popular: true, isNew: true
+    },
+    {
+      id: 'kayla', name: 'Kayla', age: 24, tag: 'Hub cast · fiction',
+      filters: ['all','new','popular'], online: true, emoji: '🌙',
+      img: 'assets/generated/kayla_hub_cast.png',
+      chatBg: null,
+      gallery: ['assets/generated/kayla_hub_cast.png'],
+      bio: 'Kayla is fictief (21+) — optionele hub-cast. Geen echte model. Soft realism still · AI_SYNTHETIC staging.',
       naughty: false, popular: true, isNew: true
     },
     {
       id: 'romy', name: 'Romy', age: 29, tag: 'Soft · cozy',
       filters: ['all','new'], online: false, emoji: '🍓',
-      img: null,
-      bio: 'Romy is fictief — cozy evenings, voice notes, en gallery slots gemarkeerd NSFW. Placeholder tot assets.',
+      img: null, chatBg: null, gallery: [],
+      bio: 'Romy is fictief (21+) — cozy evenings, voice notes, en gallery slots gemarkeerd NSFW. Placeholder tot assets.',
       naughty: false, popular: false, isNew: true
     },
     {
       id: 'kassandra', name: 'Kassandra', age: 31, tag: 'Dominant · tease',
       filters: ['all','naughty','popular'], online: true, emoji: '🖤',
-      img: null,
-      bio: 'Kassandra is fictief — teasing, confident, NSFW-capable chat. Curvy / plussize.',
+      img: null, chatBg: null, gallery: [],
+      bio: 'Kassandra is fictief (21+) — teasing, confident, NSFW-capable chat. Curvy / plussize.',
       naughty: true, popular: true, isNew: false
     },
     {
       id: 'kimberley', name: 'Kimberley', age: 25, tag: 'Playful · new',
       filters: ['all','new','naughty'], online: true, emoji: '💋',
-      img: null,
-      bio: 'Kimberley is fictief — nieuw in de hub, speels en explicit-ready. Plussize default.',
+      img: null, chatBg: null, gallery: [],
+      bio: 'Kimberley is fictief (21+) — nieuw in de hub, speels en explicit-ready. Plussize default.',
       naughty: true, popular: false, isNew: true
     }
   ];
@@ -821,8 +859,12 @@
       ? `<img src="${c.img}" alt="${c.name}" />`
       : `<div class="placeholder">${c.emoji}</div>`;
     const gal = [];
-    if (c.img) {
-      gal.push(`<div class="gallery-slot"><img src="${c.img}" alt="" /><span class="nsfw-label">NSFW slot</span></div>`);
+    const gals = Array.isArray(c.gallery) ? c.gallery.filter(Boolean) : [];
+    gals.forEach((src, i) => {
+      gal.push(`<div class="gallery-slot"><img src="${src}" alt="${c.name} gallery ${i+1}" loading="lazy" /><span class="nsfw-label">NSFW · 21+</span></div>`);
+    });
+    if (c.img && !gals.includes(c.img)) {
+      gal.unshift(`<div class="gallery-slot"><img src="${c.img}" alt="${c.name}" loading="lazy" /><span class="nsfw-label">Discover · 21+</span></div>`);
     }
     for (let i = gal.length; i < 6; i++) {
       gal.push(`<div class="gallery-slot">📷 NSFW<br/>slot ${i+1}<br/><small>pending gen</small></div>`);
@@ -842,7 +884,7 @@
         <button class="action-btn" id="act-skip"><span class="ico">⏭️</span>Skip</button>
       </div>
       <p class="bio">${c.bio}</p>
-      <div class="section-title"><h2>Gallery</h2><span class="pill">NSFW slots</span></div>
+      <div class="section-title"><h2>Gallery</h2><span class="pill">NSFW · 21+</span></div>
       <div class="gallery-grid">${gal.join('')}</div>
     `;
     document.getElementById('act-chat').onclick = () => openChat(id);
@@ -879,10 +921,19 @@
       av.outerHTML = `<div id="chat-av" class="chat-avatar ph">${c.emoji}</div>`;
     }
     const vf = document.getElementById('video-float-inner');
+    // Still-image preview only — no MP4 / I2V yet (prompt stubs only)
     if (c.img) {
-      vf.outerHTML = `<img id="video-float-inner" src="${c.img}" alt="preview" />`;
+      vf.outerHTML = `<img id="video-float-inner" src="${c.img}" alt="still preview 21+" />`;
     } else {
       vf.outerHTML = `<div class="ph" id="video-float-inner">${c.emoji}</div>`;
+    }
+    const box = document.getElementById('chat-messages');
+    if (c.chatBg) {
+      box.style.backgroundImage = `url('${c.chatBg}')`;
+      box.classList.add('has-bg');
+    } else {
+      box.style.backgroundImage = '';
+      box.classList.remove('has-bg');
     }
     renderMessages(id);
     showScreen('chat');
@@ -922,15 +973,17 @@
     const low = userText.toLowerCase();
     setTimeout(() => {
       if (/photo|foto|pic|send me|stuur/.test(low)) {
+        const pool = (Array.isArray(c.gallery) && c.gallery.length) ? c.gallery : (c.img ? [c.img] : []);
+        const pick = pool.length ? pool[Math.floor(Math.random() * pool.length)] : null;
         pushMsg(id, {
           from: 'her',
           media: true,
-          mediaSrc: c.img || null,
-          text: c.img ? 'Hier… alleen voor jou 🔥 (NSFW fiction)' : 'Gallery slot klaar — echte gen via SuperAgent later 📸',
+          mediaSrc: pick,
+          text: pick ? 'Hier… alleen voor jou 🔥 (NSFW fiction · 21+)' : 'Gallery slot klaar — echte gen via SuperAgent later 📸',
           t: timeNow()
         });
       } else if (/video|bel|call|voice/.test(low)) {
-        pushMsg(id, { from: 'her', text: 'Video preview zweeft rechtsboven 😉 Voice stub actief — echte stream later.', t: timeNow() });
+        pushMsg(id, { from: 'her', text: 'Nog geen MP4 — still-preview rechtsboven 😉 I2V komt later (prompt stub).', t: timeNow() });
       } else {
         const replies = [
           'Mmm… vertel meer 😏',
@@ -977,7 +1030,7 @@
     else showScreen('discover');
   };
   document.getElementById('chat-call').onclick = () => toast('Voice stub — SuperAgent later');
-  document.getElementById('video-float').onclick = () => toast('Floating video preview · stream stub');
+  document.getElementById('video-float').onclick = () => toast('Still preview · geen MP4 (I2V stub later)');
 
   /* Likes / Chats list */
   function renderLikes(chatMode) {
