@@ -1,10 +1,17 @@
-const CACHE='velvet-nyxers-v5-eurotik-discover';
-const ASSETS=['./', './index.html', './manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', './assets/generated/fatima_discover.png', './assets/generated/kayla_hub_cast.png', './assets/generated/velvet/velvet_lianne_neon_sisters.png', './assets/generated/velvet/velvet_caoimhe_niamh_sisters.png', './assets/generated/velvet/velvet_siobhan_discover.png', './assets/generated/sabine_discover.png', './assets/generated/velvet/velvet_lara_discover.png', './assets/generated/velvet/velvet_kass_discover.png', './assets/generated/velvet/velvet_bela_discover.png', './assets/generated/velvet/velvet_lina_discover.png', './assets/generated/velvet/velvet_christel_discover.png', './assets/generated/velvet/velvet_mara_discover.png', './assets/generated/velvet/velvet_heike_discover.png', './assets/generated/velvet/velvet_saskia_discover.png'];
+const CACHE='velvet-nyxers-v6-social-fix';
+const ASSETS=['./','./index.html','./manifest.webmanifest'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
 self.addEventListener('fetch',e=>{
   if(e.request.method!=='GET')return;
-  e.respondWith(caches.match(e.request).then(h=>h||fetch(e.request).then(r=>{
-    const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return r;
-  }).catch(()=>caches.match('./index.html'))));
+  const url=new URL(e.request.url);
+  if(url.pathname.includes('/social/')){
+    e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)));
+    return;
+  }
+  if(url.pathname.endsWith('.html')||url.pathname.endsWith('.json')||url.pathname.endsWith('/')){
+    e.respondWith(fetch(e.request).then(r=>{const c=r.clone();caches.open(CACHE).then(cache=>cache.put(e.request,c));return r;}).catch(()=>caches.match(e.request).then(h=>h||caches.match('./index.html'))));
+    return;
+  }
+  e.respondWith(caches.match(e.request).then(h=>h||fetch(e.request).then(r=>{const c=r.clone();caches.open(CACHE).then(cache=>cache.put(e.request,c));return r;})));
 });
