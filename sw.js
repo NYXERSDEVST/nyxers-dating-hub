@@ -1,48 +1,10 @@
-/* NYXERS Dating Hub — offline shell cache */
-const CACHE = 'nyxers-dating-hub-v2-realism1';
-const ASSETS = [
-  './',
-  './index.html',
-  './manifest.webmanifest',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
-  './assets/sabine_ref_01_robe_bedroom.jpg',
-  './assets/fatima_ref_01_squat_dark_car.png',
-  './assets/lianne_ref_marktplaats_aerox.jpg',
-  './assets/generated/sabine_discover.png',
-  './assets/generated/fatima_discover.png',
-  './assets/generated/lianne_discover.png',
-  './assets/generated/kayla_hub_cast.png',
-  './assets/generated/sabine_chat_bg.png',
-  './assets/generated/fatima_chat_bg.png',
-  './assets/generated/lianne_chat_bg.png'
-];
-
-self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)).then(() => self.skipWaiting()));
-});
-
-self.addEventListener('activate', (e) => {
-  e.waitUntil(
-    caches.keys().then((keys) =>
-      Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))
-    ).then(() => self.clients.claim())
-  );
-});
-
-self.addEventListener('fetch', (e) => {
-  const req = e.request;
-  if (req.method !== 'GET') return;
-  e.respondWith(
-    caches.match(req).then((hit) => {
-      if (hit) return hit;
-      return fetch(req).then((res) => {
-        const copy = res.clone();
-        if (res.ok && new URL(req.url).origin === self.location.origin) {
-          caches.open(CACHE).then((c) => c.put(req, copy));
-        }
-        return res;
-      }).catch(() => caches.match('./index.html'));
-    })
-  );
+const CACHE='velvet-nyxers-v1';
+const ASSETS=['./', './index.html', './manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', './assets/generated/fatima_discover.png', './assets/generated/kayla_hub_cast.png', './assets/generated/lianne_chat_bg_v2.png', './assets/generated/lianne_discover_v2.png', './assets/generated/sabine_discover.png'];
+self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()))});
+self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
+self.addEventListener('fetch',e=>{
+  if(e.request.method!=='GET')return;
+  e.respondWith(caches.match(e.request).then(h=>h||fetch(e.request).then(r=>{
+    const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return r;
+  }).catch(()=>caches.match('./index.html'))));
 });
