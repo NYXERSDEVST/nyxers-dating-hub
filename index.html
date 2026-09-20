@@ -133,6 +133,25 @@ img{display:block;max-width:100%}
   background:#1a1028;border:1px solid var(--line);padding:10px 16px;border-radius:999px;font-size:.85rem;z-index:80;pointer-events:none}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 .notice{font-size:.72rem;color:var(--muted);text-align:center;padding:4px 8px 10px}
+
+/* LIVE GRID (mood: dark cam discover) */
+.view-toggle{display:flex;gap:6px;margin:0 0 12px}
+.view-toggle button{flex:1;padding:10px;border-radius:14px;background:#ffffff0c;border:1px solid var(--line);color:var(--muted);font-size:.8rem;font-weight:600}
+.view-toggle button.on{background:linear-gradient(135deg,#ff4d8d33,#9b6dff33);border-color:#ff4d8d66;color:#fff}
+.live-grid{display:none;grid-template-columns:1fr 1fr;gap:10px;padding-bottom:16px}
+.live-grid.show{display:grid}
+.live-card{border-radius:16px;overflow:hidden;background:#12091c;border:1px solid var(--line);text-align:left;position:relative}
+.live-card img{width:100%;aspect-ratio:.78;object-fit:cover}
+.live-card .star{position:absolute;top:8px;right:8px;width:28px;height:28px;border-radius:50%;background:#0007;display:grid;place-items:center;font-size:.85rem}
+.live-card .body{padding:8px 9px 10px}
+.live-card .row1{display:flex;justify-content:space-between;align-items:center;gap:4px;font-size:.78rem;font-weight:600}
+.live-card .tags{color:var(--rose2);font-size:.68rem;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.live-card .meta2{color:var(--muted);font-size:.65rem;margin-top:4px}
+.live-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#7dffb3;margin-right:4px;box-shadow:0 0 6px #7dffb3}
+.stack.hidden,.actions.hidden{display:none!important}
+.neon-banner{margin:0 0 12px;padding:14px 16px;border-radius:18px;background:linear-gradient(120deg,#ff2d7a44,#6b2dff33);
+  border:1px solid #ff4d8d44;font-family:"Cormorant Garamond",serif;font-size:1.25rem;letter-spacing:.06em;text-align:center;color:#ffd0e4}
+
 </style>
 </head>
 <body>
@@ -150,12 +169,18 @@ img{display:block;max-width:100%}
     <div class="logo">VELVET</div>
     <div class="badge">NYXERS · 21+</div>
   </header>
-  <p class="notice">Fictie · AI-synthetic stills · geen live video in deze build</p>
+  <p class="notice">Fictie · AI-synthetic stills · curvy cast · geen echte pornosterren · geen live video in deze build</p>
 
   <div class="screens">
     <section class="screen active" id="sc-home">
+      <div class="neon-banner">SISTERS · CURVY · AFTER DARK</div>
       <div class="filters" id="filters"></div>
+      <div class="view-toggle">
+        <button class="on" id="viewSwipe">Swipe</button>
+        <button id="viewGrid">Live grid</button>
+      </div>
       <div class="stack" id="stack"></div>
+      <div class="live-grid" id="liveGrid"></div>
       <div class="actions">
         <button class="fab pass" id="btnPass" title="Pass">✕</button>
         <button class="fab like" id="btnLike" title="Like">♥</button>
@@ -259,13 +284,37 @@ function boot(){
   $('#crSend').onclick=sendMsg;$('#crInput').onkeydown=e=>{if(e.key==='Enter')sendMsg()};
   $('#crGal').onclick=()=>{if(activeChat)openGallery(CHARACTERS.find(c=>c.id===activeChat))};
   $('#sheetClose').onclick=()=>$('#sheet').classList.remove('open');
+  
+  let viewMode='swipe';
+  $('#viewSwipe').onclick=()=>{viewMode='swipe';$('#viewSwipe').classList.add('on');$('#viewGrid').classList.remove('on');syncView();};
+  $('#viewGrid').onclick=()=>{viewMode='grid';$('#viewGrid').classList.add('on');$('#viewSwipe').classList.remove('on');syncView();};
+  function syncView(){
+    $('#stack').classList.toggle('hidden', viewMode!=='swipe');
+    document.querySelector('.actions').classList.toggle('hidden', viewMode!=='swipe');
+    $('#liveGrid').classList.toggle('show', viewMode==='grid');
+    if(viewMode==='grid') renderLiveGrid();
+  }
+  function renderLiveGrid(){
+    const list=filtered();
+    $('#liveGrid').innerHTML=list.map(c=>{
+      const tag=(c.naughty?'#naughty ':'')+(c.isNew?'#new ':'')+'#curvy #21plus';
+      const viewers=12+((c.name.charCodeAt(0)*7)%80);
+      return `<button class="live-card" data-id="${c.id}">
+        <img src="${c.img||''}" alt="${c.name}"/><span class="star">☆</span>
+        <div class="body"><div class="row1"><span>${c.name}</span><span>${c.age}</span></div>
+        <div class="tags">${tag}</div>
+        <div class="meta2">${c.online?'<span class="live-dot"></span>online · ':''}${viewers} looking · STILL</div></div></button>`;
+    }).join('');
+    $('#liveGrid').onclick=e=>{const b=e.target.closest('[data-id]');if(!b)return;const c=CHARACTERS.find(x=>x.id===b.dataset.id);if(c)openChat(c)};
+  }
+
   rebuild();renderLikes();renderChats();
   if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});
 }
 
 function filtered(){return CHARACTERS.filter(c=>{
   if(filter==='all')return true;if(filter==='popular')return c.popular;if(filter==='naughty')return c.naughty;if(filter==='new')return c.isNew;return true})}
-function rebuild(){deck=filtered().slice();renderStack()}
+function rebuild(){deck=filtered().slice();renderStack();if(viewMode==='grid')renderLiveGrid()}
 function renderStack(){
   const st=$('#stack');st.innerHTML='';
   if(!deck.length){st.innerHTML='<div style="place-self:center;color:var(--muted);padding:40px;text-align:center">Geen matches in deze filter.</div>';current=null;return}
