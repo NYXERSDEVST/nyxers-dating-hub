@@ -20,3 +20,16 @@
 | kayla_hub_cast | Kayla (fictie 21+) | still | Optional hub-cast only — geen echte modelnaam | new fiction if needed |
 
 Hard: AI_SYNTHETIC not auto-canon until René OK. Geen echte pornosterren.
+
+
+## VELVET fiction stills (2026-09-20 SEVERINA)
+
+Drop / prefer under `assets/generated/velvet/`:
+
+| Slot | Character | File |
+|------|-----------|------|
+| velvet_lianne_neon | Lianne V2 | velvet_lianne_neon_sisters.png (preferred discover) |
+| velvet_caoimhe_niamh | Caoimhe + Niamh | velvet_caoimhe_niamh_sisters.png |
+| velvet_siobhan_* | Siobhán | velvet_siobhan_discover / golf_street / bedroom (album interim) |
+
+Mood refs (`mood_*.png`) = style_only — never cast faces. No fabricated MP4s.

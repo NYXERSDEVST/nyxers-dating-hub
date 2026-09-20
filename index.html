@@ -169,7 +169,7 @@ img{display:block;max-width:100%}
     <div class="logo">VELVET</div>
     <div class="badge">NYXERS · 21+</div>
   </header>
-  <p class="notice">Fictie · AI-synthetic stills · curvy cast · geen echte pornosterren · geen live video in deze build</p>
+  <p class="notice">Fictie · AI-synthetic stills · Lianne/Siobhán/Caoimhe/Niamh velvet stills · geen echte pornosterren · geen live video in deze build</p>
 
   <div class="screens">
     <section class="screen active" id="sc-home">
@@ -249,18 +249,33 @@ const CHARACTERS=[
    gallery:['assets/generated/fatima_gallery_1.png','assets/generated/fatima_gallery_2.png','assets/generated/fatima_gallery_3.png','assets/generated/fatima_discover.png'],
    bio:'Zelfverzekerd, flirty, plussize vibe. Fictief 21+.',naughty:true,popular:true,isNew:false,
    lines:['Jij ziet eruit alsof je avontuur aankan.','Nachtlicht staat me goed, vind je niet?','Vraag een still — ik kies de pose.']},
-  {id:'lianne',name:'Lianne',age:22,tag:'V2 · dark pony · tattoos',filters:['all','popular','new'],online:true,
-   img:'assets/generated/lianne_discover_v2.png',chatBg:'assets/generated/lianne_chat_bg_v2.png',
-   gallery:['assets/generated/lianne_discover_v2.png','assets/generated/lianne_gallery_v2_1.png','assets/generated/lianne_gallery_v2_2.png','assets/generated/lianne_gallery_v2_3.png','assets/generated/lianne_v2_closeup.png','assets/generated/lianne_v2_scooter.png','assets/generated/lianne_v2_gym.png','assets/generated/lianne_v2_robe.png'],
-   bio:'Look V2: donkere pony, nek/arm tattoos, curvy. Fictief 21+ · AI face.',naughty:false,popular:true,isNew:true,
-   lines:['Nieuwe look. Wat denk je?','Scooter of gym — jij kiest de vibe.','Pony blijft. Tattoos ook.']},
+  {id:'lianne',name:'Lianne',age:22,tag:'V2 · neon sisters · tattoos',filters:['all','popular','new'],online:true,
+   img:'assets/generated/velvet/velvet_lianne_neon_sisters.png',chatBg:'assets/generated/lianne_chat_bg_v2.png',
+   gallery:['assets/generated/velvet/velvet_lianne_neon_sisters.png','assets/generated/lianne_discover_v2.png','assets/generated/lianne_gallery_v2_1.png','assets/generated/lianne_gallery_v2_2.png','assets/generated/lianne_gallery_v2_3.png','assets/generated/lianne_v2_closeup.png','assets/generated/lianne_v2_scooter.png','assets/generated/lianne_v2_gym.png','assets/generated/lianne_v2_robe.png'],
+   bio:'Look V2: donkere pony, nek/arm tattoos, curvy · pink neon sisters still preferred. Fictief 21+ · AI_SYNTHETIC staging.',naughty:true,popular:true,isNew:true,
+   lines:['Nieuwe neon look. Wat denk je?','Sisters in crime — jij mag meekijken.','Pony blijft. Tattoos ook.']},
+  {id:'siobhan',name:'Siobhán',age:24,tag:'Roerdink · Twente · street',filters:['all','popular','new','naughty'],online:true,
+   img:'assets/generated/velvet/velvet_siobhan_discover.png',chatBg:null,
+   gallery:['assets/generated/velvet/velvet_siobhan_discover.png','assets/generated/velvet/velvet_siobhan_golf_street.png','assets/generated/velvet/velvet_siobhan_bedroom.png'],
+   bio:'Siobhán Roerdink (*sjie-VAWN*) · 24 · Hengelo/Twente · jet-black hair, heavy ink, white Golf. Fictief 21+ · AI_SYNTHETIC. Neon fiction_still nog pending.',naughty:true,popular:true,isNew:true,
+   lines:['Hoi — Siobhán. Twente energy.','Golf of bedroom — jij kiest.','Lianne kent me. René ook.']},
+  {id:'caoimhe',name:'Caoimhe',age:23,tag:'Bruinsma · sisters after dark',filters:['all','popular','new','naughty'],online:true,
+   img:'assets/generated/velvet/velvet_caoimhe_niamh_sisters.png',chatBg:null,
+   gallery:['assets/generated/velvet/velvet_caoimhe_niamh_sisters.png'],
+   bio:'Caoimhe Bruinsma (*KWEE-va*) · 23 · rood haar, curvy · sisters still met Niamh. Fictief 21+ · AI_SYNTHETIC staging.',naughty:true,popular:true,isNew:true,
+   lines:['Caoimhe hier — met Niamh in het neon.','After dark is onze shift.','Curvy. Confident. Unapologetic.']},
+  {id:'niamh',name:'Niamh',age:24,tag:'Kruiswijk · sisters after dark',filters:['all','popular','new','naughty'],online:true,
+   img:'assets/generated/velvet/velvet_caoimhe_niamh_sisters.png',chatBg:null,
+   gallery:['assets/generated/velvet/velvet_caoimhe_niamh_sisters.png'],
+   bio:'Niamh Kruiswijk (*NEEV*) · 24 · blond, curvy · sisters still met Caoimhe. Fictief 21+ · AI_SYNTHETIC staging.',naughty:true,popular:true,isNew:true,
+   lines:['Niamh — blond half van the sisters.','Pink neon staat ons goed.','Vraag een still — wij poseren samen.']},
   {id:'kayla',name:'Kayla',age:24,tag:'Hub cast · fiction',filters:['all','new','popular'],online:true,
    img:'assets/generated/kayla_hub_cast.png',chatBg:null,gallery:['assets/generated/kayla_hub_cast.png'],
    bio:'Optionele hub-cast. Soft realism still · fictief 21+.',naughty:false,popular:true,isNew:true,
    lines:['Hoi — ik hang hier in de hub.','Nog geen volle gallery, maar ik ben er.']}
 ];
 
-let filter='all', deck=[], current=null, activeChat=null;
+let filter='all', viewMode='swipe', deck=[], current=null, activeChat=null;
 const $=s=>document.querySelector(s);
 const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)};
 const load=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}};
@@ -285,7 +300,6 @@ function boot(){
   $('#crGal').onclick=()=>{if(activeChat)openGallery(CHARACTERS.find(c=>c.id===activeChat))};
   $('#sheetClose').onclick=()=>$('#sheet').classList.remove('open');
   
-  let viewMode='swipe';
   $('#viewSwipe').onclick=()=>{viewMode='swipe';$('#viewSwipe').classList.add('on');$('#viewGrid').classList.remove('on');syncView();};
   $('#viewGrid').onclick=()=>{viewMode='grid';$('#viewGrid').classList.add('on');$('#viewSwipe').classList.remove('on');syncView();};
   function syncView(){
