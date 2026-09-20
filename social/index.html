@@ -199,7 +199,7 @@ function seedFeed(){
   let f=load(LS.feed,null);
   if(f&&f.length)return f;
   // Build from Batch A/B/C items for pulse+gram
-  const posts=FEED_ITEMS.filter(i=>['pulse','gram'].includes(i.channel)&&i.type!=='dm');
+  const posts=FEED_ITEMS.filter(i=>['pulse','gram','story'].includes(i.channel)&&i.type!=='dm');
   f=posts.map((p,i)=>({
     id:p.id,uid:(p.author||'').toLowerCase(),name:p.author,avatar:p.media,media:p.media,
     text:p.caption+(p.location?' · '+p.location:''),
@@ -234,7 +234,7 @@ function renderFeed(){
 }
 function renderGram(){
   renderStories($('#igStories'));
-  const gram=FEED_ITEMS.filter(i=>i.channel==='gram'||i.type==='post');
+  const gram=FEED_ITEMS.filter(i=>i.channel==='gram'||i.channel==='story'||i.type==='post');
   const imgs=gram.length?gram.map(g=>g.media):PEOPLE.map(p=>p.img);
   $('#igGrid').innerHTML=imgs.map((src,i)=>`<img src="${src}" alt="g${i}"/>`).join('');
 }
