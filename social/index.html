@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1"/>
+<meta name="theme-color" content="#0b0f14"/>
+<title>NYXLINK — fiction social</title>
+<link rel="manifest" href="manifest.webmanifest"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0b0f14;--card:#151b24;--line:#ffffff12;--text:#f2f5f8;--muted:#8b98a8;--blue:#3b82f6;--ig:#e1306c;--wa:#25d366;--tt:#00f2ea;--safe:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;overflow:hidden}
+button,input,textarea{font:inherit;border:0;background:none;color:inherit}
+img{display:block;max-width:100%}
+.shell{max-width:430px;margin:0 auto;height:100%;display:flex;flex-direction:column;position:relative;background:#0b0f14}
+.banner{flex-shrink:0;padding:8px 12px;font-size:.68rem;letter-spacing:.04em;text-align:center;background:#1a2330;color:var(--muted);border-bottom:1px solid var(--line)}
+.banner b{color:#7dd3fc}
+#gate{position:fixed;inset:0;z-index:90;display:flex;align-items:center;justify-content:center;padding:24px;background:radial-gradient(circle at 50% 20%,#1e3a5f88,#0b0f14 70%)}
+#gate.hidden{display:none}
+.gate-card{width:100%;max-width:360px;padding:26px;border-radius:22px;background:#151b24;border:1px solid var(--line);text-align:center}
+.gate-card h1{font-family:Outfit,sans-serif;font-size:1.8rem;margin-bottom:8px}
+.gate-card p{color:var(--muted);font-size:.9rem;line-height:1.45;margin-bottom:18px}
+.btn{width:100%;padding:13px;border-radius:999px;font-weight:600;margin:5px 0}
+.btn-p{background:linear-gradient(135deg,#3b82f6,#8b5cf6);color:#fff}
+.btn-g{background:#ffffff10;border:1px solid var(--line)}
+.appbar{flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-bottom:1px solid var(--line);background:#0f141c}
+.appbar .brand{font-family:Outfit,sans-serif;font-weight:700;font-size:1.15rem}
+.appbar .sub{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.dock{flex-shrink:0;display:grid;grid-template-columns:repeat(5,1fr);gap:2px;padding:6px 6px calc(6px + var(--safe));border-top:1px solid var(--line);background:#0f141cee;backdrop-filter:blur(10px)}
+.dock button{display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 2px;font-size:.62rem;color:var(--muted)}
+.dock button.on{color:#fff}
+.dock .ic{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;font-size:.95rem;background:#ffffff08}
+.dock button.on .ic.fb{background:#3b82f633;color:#60a5fa}
+.dock button.on .ic.ig{background:#e1306c33;color:#f472b6}
+.dock button.on .ic.tt{background:#00f2ea22;color:#5eead4}
+.dock button.on .ic.wa{background:#25d36622;color:#4ade80}
+.dock button.on .ic.me{background:#8b5cf633;color:#c4b5fd}
+.stage{flex:1;min-height:0;position:relative;overflow:hidden}
+.view{position:absolute;inset:0;overflow:auto;opacity:0;pointer-events:none;transform:translateY(6px);transition:.2s}
+.view.on{opacity:1;pointer-events:auto;transform:none}
+/* FEED */
+.stories{display:flex;gap:10px;padding:12px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line)}
+.stories::-webkit-scrollbar{display:none}
+.st{flex:0 0 auto;width:64px;text-align:center}
+.st img{width:56px;height:56px;border-radius:50%;object-fit:cover;padding:2px;border:2px solid #3b82f6;margin:0 auto}
+.st span{display:block;font-size:.65rem;color:var(--muted);margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.post{border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:4px}
+.post .ph{display:flex;align-items:center;gap:10px;padding:10px 12px}
+.post .ph img{width:36px;height:36px;border-radius:50%;object-fit:cover}
+.post .ph b{font-size:.9rem}.post .ph small{display:block;color:var(--muted);font-size:.7rem}
+.post .media{width:100%;aspect-ratio:1;object-fit:cover;background:#1a2330}
+.post .acts{display:flex;gap:14px;padding:8px 12px;font-size:1.15rem}
+.post .cap{padding:0 12px 6px;font-size:.88rem;line-height:1.4;color:#e5e7eb}
+.post .cap b{margin-right:6px}
+.post .meta{padding:0 12px;font-size:.75rem;color:var(--muted)}
+/* GRAM */
+.ig-top{display:flex;justify-content:space-between;align-items:center;padding:8px 12px}
+.ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.ig-grid img{width:100%;aspect-ratio:1;object-fit:cover}
+/* CLIPS */
+.clips{height:100%;scroll-snap-type:y mandatory;overflow-y:auto}
+.clip{height:100%;scroll-snap-align:start;position:relative;background:#000}
+.clip img{width:100%;height:100%;object-fit:cover}
+.clip .shade{position:absolute;inset:0;background:linear-gradient(transparent 50%,#000c 95%)}
+.clip .info{position:absolute;left:12px;right:70px;bottom:24px}
+.clip .info b{font-size:1rem}.clip .info p{font-size:.85rem;margin-top:6px;color:#e5e7eb}
+.clip .side{position:absolute;right:10px;bottom:80px;display:flex;flex-direction:column;gap:16px;align-items:center}
+.clip .side button{width:44px;height:44px;border-radius:50%;background:#ffffff22;display:grid;place-items:center}
+/* WIRE */
+.wa-head{background:#075e54;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.wa-list .row{display:flex;gap:12px;padding:12px;border-bottom:1px solid var(--line);align-items:center;width:100%;text-align:left}
+.wa-list .row img{width:48px;height:48px;border-radius:50%;object-fit:cover}
+.wa-list .row .t{flex:1;min-width:0}
+.wa-list .row .t b{display:block}.wa-list .row .t span{display:block;color:var(--muted);font-size:.8rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#waRoom{display:none;flex-direction:column;position:absolute;inset:0;z-index:20;background:#0b141a}
+#waRoom.open{display:flex}
+#waRoom .msgs{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:8px;background:#0b141a url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" opacity=".04"><circle cx="2" cy="2" r="1" fill="%23fff"/></svg>')}
+.bubble{max-width:78%;padding:8px 12px;border-radius:12px;font-size:.9rem;line-height:1.35}
+.bubble.them{align-self:flex-start;background:#1f2c34}
+.bubble.me{align-self:flex-end;background:#005c4b}
+.wa-in{display:flex;gap:8px;padding:8px 10px calc(8px + var(--safe));background:#1f2c34}
+.wa-in input{flex:1;background:#2a3942;border-radius:999px;padding:10px 14px;outline:none}
+.wa-in button{padding:0 14px;border-radius:999px;background:var(--wa);color:#053;font-weight:700}
+/* ME */
+.me{padding:16px}
+.me .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:10px}
+.me a{color:#7dd3fc;text-decoration:none}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(12px);opacity:0;transition:.2s;background:#1f2937;border:1px solid var(--line);padding:8px 14px;border-radius:999px;font-size:.8rem;z-index:50;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(-50%)}
+.composer{display:flex;gap:8px;padding:10px 12px;border-bottom:1px solid var(--line);align-items:center}
+.composer img{width:32px;height:32px;border-radius:50%;object-fit:cover}
+.composer input{flex:1;background:#ffffff0c;border:1px solid var(--line);border-radius:999px;padding:10px 14px;outline:none}
+</style>
+</head>
+<body>
+<div id="gate">
+  <div class="gate-card">
+    <h1>NYXLINK</h1>
+    <p>Fictief social platform (Pulse · Gram · Clips · Wire). 21+ · AI_SYNTHETIC · <b>geen</b> echte Facebook/Instagram/WhatsApp/TikTok-accounts — alles speelt hier op de site.</p>
+    <button class="btn btn-p" id="yes">Ik ben 21+</button>
+    <button class="btn btn-g" id="no">Verlaten</button>
+  </div>
+</div>
+
+<div class="shell" id="app" style="visibility:hidden">
+  <div class="banner">SIMULATED SOCIAL · fiction cast · <b>geen echte logins</b> · chat met bots via dit platform</div>
+  <header class="appbar">
+    <div>
+      <div class="brand" id="appTitle">Pulse</div>
+      <div class="sub" id="appSub">facebook-style feed · fiction</div>
+    </div>
+    <a href="../" style="font-size:.75rem;color:#7dd3fc;text-decoration:none">← VELVET</a>
+  </header>
+  <div class="stage">
+    <!-- PULSE -->
+    <section class="view on" id="v-pulse">
+      <div class="composer"><img src="../assets/generated/velvet/velvet_lara_discover.png" alt=""/><input id="pulsePost" placeholder="Deel iets in Haus Velvet…" maxlength="280"/><button id="pulseSend" style="color:#60a5fa;font-weight:600;padding:0 8px">Post</button></div>
+      <div class="stories" id="stories"></div>
+      <div id="feed"></div>
+    </section>
+    <!-- GRAM -->
+    <section class="view" id="v-gram">
+      <div class="ig-top"><b style="font-family:Outfit">Gram</b><span style="color:var(--muted);font-size:.75rem">instagram-style · fiction</span></div>
+      <div class="stories" id="igStories"></div>
+      <div class="ig-grid" id="igGrid"></div>
+    </section>
+    <!-- CLIPS -->
+    <section class="view" id="v-clips">
+      <div class="clips" id="clips"></div>
+    </section>
+    <!-- WIRE -->
+    <section class="view" id="v-wire">
+      <div class="wa-head"><b>Wire</b><span style="opacity:.8;font-size:.75rem;margin-left:auto">whatsapp-style · fiction</span></div>
+      <div class="wa-list" id="waList"></div>
+      <div id="waRoom">
+        <div class="wa-head"><button id="waBack">←</button><img id="waAv" style="width:36px;height:36px;border-radius:50%;object-fit:cover" alt=""/><b id="waName"></b></div>
+        <div class="msgs" id="waMsgs"></div>
+        <div class="wa-in"><input id="waInput" placeholder="Bericht…" maxlength="400"/><button id="waSend">➤</button></div>
+      </div>
+    </section>
+    <!-- ME -->
+    <section class="view" id="v-me">
+      <div class="me">
+        <div class="card">
+          <b>René · regisseur</b>
+          <p style="color:var(--muted);font-size:.85rem;margin-top:6px;line-height:1.4">Jij speelt hier via NYXLINK + VELVET. Bots (OPEN CHATGPT, REALISM, Grok) blijven in Grok Bot — personages antwoorden in-app als fiction.</p>
+        </div>
+        <div class="card">
+          <b>Apps in deze shell</b>
+          <p style="color:var(--muted);font-size:.85rem;margin-top:6px;line-height:1.45">Pulse ≈ Facebook feed<br/>Gram ≈ Instagram grid<br/>Clips ≈ TikTok vertical<br/>Wire ≈ WhatsApp chats<br/><br/>Geen OAuth. Geen echte accounts. Data = localStorage op dit device.</p>
+        </div>
+        <div class="card">
+          <b>Links</b>
+          <p style="margin-top:8px;font-size:.85rem;line-height:1.6">
+            <a href="../">VELVET Dating Hub</a><br/>
+            <a href="https://nyxersdevst.github.io/nyxers-dating-hub/">Pages root</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <nav class="dock">
+    <button class="on" data-v="pulse"><span class="ic fb">f</span>Pulse</button>
+    <button data-v="gram"><span class="ic ig">◎</span>Gram</button>
+    <button data-v="clips"><span class="ic tt">♪</span>Clips</button>
+    <button data-v="wire"><span class="ic wa">💬</span>Wire</button>
+    <button data-v="me"><span class="ic me">☺</span>Me</button>
+  </nav>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+const PEOPLE=[
+  {id:'lara',name:'Lára',img:'../assets/generated/velvet/velvet_lara_discover.png',line:'Spa shift almost done 💦'},
+  {id:'kass',name:'Kass',img:'../assets/generated/velvet/velvet_kass_discover.png',line:'Cam loft warm vandaag'},
+  {id:'bela',name:'Běla',img:'../assets/generated/velvet/velvet_bela_discover.png',line:'Boutique window look'},
+  {id:'lina',name:'Lina',img:'../assets/generated/velvet/velvet_lina_discover.png',line:'Street → spa in 5'},
+  {id:'christel',name:'Christel',img:'../assets/generated/velvet/velvet_christel_discover.png',line:'BTS mic on'},
+  {id:'mara',name:'Mara',img:'../assets/generated/velvet/velvet_mara_discover.png',line:'BBW crew check-in'},
+  {id:'heike',name:'Heike',img:'../assets/generated/velvet/velvet_heike_discover.png',line:'Sauna promo day'},
+  {id:'saskia',name:'Saskia',img:'../assets/generated/velvet/velvet_saskia_discover.png',line:'Private cinema tonight'},
+  {id:'lianne',name:'Lianne',img:'../assets/generated/velvet/velvet_lianne_neon_sisters.png',line:'Neon sisters ✨'},
+  {id:'siobhan',name:'Siobhán',img:'../assets/generated/velvet/velvet_siobhan_discover.png',line:'Twente energy'},
+  {id:'fatima',name:'Fatima',img:'../assets/generated/fatima_discover.png',line:'Nightlife loading'},
+  {id:'sabine',name:'Sabine',img:'../assets/generated/sabine_discover.png',line:'Soft light Sunday'},
+];
+const LS={age:'nyxlink_age21',feed:'nyxlink_feed',chats:'nyxlink_chats',likes:'nyxlink_likes'};
+const $=s=>document.querySelector(s);
+const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1600)};
+const load=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}};
+const save=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
+const titles={pulse:['Pulse','facebook-style feed · fiction'],gram:['Gram','instagram-style · fiction'],clips:['Clips','tiktok-style · fiction'],wire:['Wire','whatsapp-style · fiction'],me:['Me','jouw regie-profiel']};
+
+function seedFeed(){
+  let f=load(LS.feed,null);
+  if(f&&f.length)return f;
+  f=PEOPLE.slice().reverse().map((p,i)=>({
+    id:'p'+i,uid:p.id,name:p.name,avatar:p.img,media:p.img,
+    text:p.line+' · Haus Velvet / Eurotik fiction',
+    likes:12+(p.name.charCodeAt(0)%40),time:(i+1)+'u',
+    liked:false
+  }));
+  save(LS.feed,f);return f;
+}
+
+function renderStories(el){
+  el.innerHTML=PEOPLE.map(p=>`<div class="st"><img src="${p.img}" alt=""/><span>${p.name}</span></div>`).join('');
+}
+function renderFeed(){
+  const f=seedFeed();
+  $('#feed').innerHTML=f.map(p=>`
+    <article class="post" data-id="${p.id}">
+      <div class="ph"><img src="${p.avatar}" alt=""/><div><b>${p.name}</b><small>${p.time} · Haus Velvet</small></div></div>
+      <img class="media" src="${p.media}" alt=""/>
+      <div class="acts"><button data-like="${p.id}">${p.liked?'❤️':'🤍'}</button><button data-c="${p.uid}">💬</button><button>↗</button></div>
+      <div class="meta">${p.likes} likes · STILL · AI_SYNTHETIC</div>
+      <div class="cap"><b>${p.name}</b>${escapeHtml(p.text)}</div>
+    </article>`).join('');
+  $('#feed').onclick=e=>{
+    const like=e.target.closest('[data-like]');
+    if(like){const id=like.dataset.like;const feed=load(LS.feed,[]);const item=feed.find(x=>x.id===id);if(!item)return;
+      item.liked=!item.liked;item.likes+=item.liked?1:-1;save(LS.feed,feed);renderFeed();toast(item.liked?'Liked':'Unliked');return}
+    const c=e.target.closest('[data-c]');
+    if(c){openWa(c.dataset.c);nav('wire')}
+  };
+}
+function renderGram(){
+  renderStories($('#igStories'));
+  $('#igGrid').innerHTML=PEOPLE.map(p=>`<img src="${p.img}" alt="${p.name}"/>`).join('');
+}
+function renderClips(){
+  $('#clips').innerHTML=PEOPLE.map(p=>`
+    <div class="clip"><img src="${p.img}" alt=""/><div class="shade"></div>
+    <div class="info"><b>@${p.id}</b><p>${escapeHtml(p.line)} · fiction still (geen MP4)</p></div>
+    <div class="side"><button>♥</button><button>💬</button><button>➦</button></div></div>`).join('');
+}
+function renderWa(){
+  const chats=load(LS.chats,{});
+  $('#waList').innerHTML=PEOPLE.map(p=>{
+    const msgs=chats[p.id]||[];const last=msgs.length?msgs[msgs.length-1].t:p.line;
+    return `<button class="row" data-id="${p.id}"><img src="${p.img}" alt=""/><div class="t"><b>${p.name}</b><span>${escapeHtml(last)}</span></div></button>`;
+  }).join('');
+  $('#waList').onclick=e=>{const b=e.target.closest('[data-id]');if(b)openWa(b.dataset.id)};
+}
+let activeWa=null;
+function openWa(id){
+  const p=PEOPLE.find(x=>x.id===id);if(!p)return;activeWa=id;
+  let chats=load(LS.chats,{});
+  if(!chats[id]){chats[id]=[{who:'them',t:'Hey — '+p.name+' hier. Fiction Wire, geen echte WA.'}];save(LS.chats,chats)}
+  $('#waAv').src=p.img;$('#waName').textContent=p.name;
+  renderThread();$('#waRoom').classList.add('open');
+}
+function renderThread(){
+  const msgs=load(LS.chats,{})[activeWa]||[];
+  $('#waMsgs').innerHTML=msgs.map(m=>`<div class="bubble ${m.who}">${escapeHtml(m.t)}</div>`).join('');
+  $('#waMsgs').scrollTop=99999;
+}
+function sendWa(){
+  const v=$('#waInput').value.trim();if(!v||!activeWa)return;
+  const chats=load(LS.chats,{});chats[activeWa]=chats[activeWa]||[];
+  chats[activeWa].push({who:'me',t:v});
+  const p=PEOPLE.find(x=>x.id===activeWa);
+  const replies=['Haha ok 😏','Later in de spa?','Stuur ik je een still.','Alleen via NYXLINK he — geen echte app.','Deal.'];
+  chats[activeWa].push({who:'them',t:replies[Math.floor(Math.random()*replies.length)]});
+  save(LS.chats,chats);$('#waInput').value='';renderThread();renderWa();
+}
+function nav(name){
+  document.querySelectorAll('.dock button').forEach(b=>b.classList.toggle('on',b.dataset.v===name));
+  document.querySelectorAll('.view').forEach(v=>v.classList.toggle('on',v.id==='v-'+name));
+  const [t,s]=titles[name];$('#appTitle').textContent=t;$('#appSub').textContent=s;
+  if(name!=='wire')$('#waRoom').classList.remove('open');
+  if(name==='pulse')renderFeed();
+  if(name==='gram')renderGram();
+  if(name==='clips')renderClips();
+  if(name==='wire')renderWa();
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function boot(){
+  renderStories($('#stories'));renderFeed();renderGram();renderClips();renderWa();
+  document.querySelectorAll('.dock button').forEach(b=>b.onclick=()=>nav(b.dataset.v));
+  $('#waBack').onclick=()=>{$('#waRoom').classList.remove('open');activeWa=null};
+  $('#waSend').onclick=sendWa;$('#waInput').onkeydown=e=>{if(e.key==='Enter')sendWa()};
+  $('#pulseSend').onclick=()=>{
+    const t=$('#pulsePost').value.trim();if(!t)return;
+    const feed=load(LS.feed,[]);
+    feed.unshift({id:'u'+Date.now(),uid:'rene',name:'René',avatar:'../assets/generated/velvet/velvet_lara_discover.png',media:'../assets/generated/velvet/velvet_lara_discover.png',text:t,likes:1,time:'nu',liked:true});
+    save(LS.feed,feed);$('#pulsePost').value='';renderFeed();toast('Gepost in Pulse');
+  };
+}
+function unlock(){$('#gate').classList.add('hidden');$('#app').style.visibility='visible';boot()}
+if(localStorage.getItem(LS.age)==='1')unlock();
+else{
+  $('#yes').onclick=()=>{localStorage.setItem(LS.age,'1');unlock()};
+  $('#no').onclick=()=>{document.body.innerHTML='<p style="padding:40px;text-align:center;color:#8b98a8">NYXLINK is 21+ only.</p>'};
+}
+</script>
+</body>
+</html>
