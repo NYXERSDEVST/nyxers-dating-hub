@@ -1,6 +1,6 @@
 {
   "version": "7-mega",
-  "updated": "2026-09-20",
+  "updated": "2026-09-21 08:36 CEST",
   "gates": [
     "21+",
     "fiction_only",
@@ -12,7 +12,7 @@
     {
       "id": "lianne",
       "name": "Lianne",
-      "img": "../assets/generated/velvet/velvet_lianne_neon_sisters.png"
+      "img": "../assets/generated/velvet/toppers/lianne_topper_01_discover.png"
     },
     {
       "id": "siobhan",
@@ -87,22 +87,22 @@
     {
       "id": "romy",
       "name": "Romy",
-      "img": "../assets/generated/velvet/placeholders/romy_placeholder.png"
+      "img": "../assets/generated/velvet/toppers/romy_topper_01_discover.png"
     },
     {
       "id": "kim",
       "name": "Kim",
-      "img": "../assets/generated/velvet/placeholders/freya_placeholder.png"
+      "img": "../assets/generated/velvet/toppers/kim_topper_01_discover.png"
     },
     {
       "id": "rene",
       "name": "René",
-      "img": "../assets/generated/kayla_hub_cast.png"
+      "img": "../assets/generated/velvet/toppers/rene_topper_01_discover.png"
     },
     {
       "id": "mila",
       "name": "Mila",
-      "img": "../assets/generated/velvet/placeholders/nora_placeholder.png"
+      "img": "../assets/generated/velvet/toppers/mila_topper_01_discover.png"
     },
     {
       "id": "haus",
@@ -213,7 +213,7 @@
       "author": "Lianne",
       "to": null,
       "caption": "Zondag soft. Bank, oversized hoodie, neon low. Velvet-avond later — eerst dit. 🖤",
-      "media": "../assets/generated/velvet/velvet_lianne_neon_sisters.png",
+      "media": "../assets/generated/velvet/toppers/lianne_topper_01_discover.png",
       "location": "Almelo nieuwbouw (fictie)",
       "nsfw": "soft",
       "beat": "woning bank / Velvet soft",
@@ -226,7 +226,7 @@
       "author": "Lianne",
       "to": null,
       "caption": "LED’s. Bass. Witte Golf ergens in DE. Ik keek mee. 📹",
-      "media": "../assets/generated/velvet/velvet_lianne_neon_sisters.png",
+      "media": "../assets/generated/velvet/toppers/lianne_topper_02_hoodie.png",
       "location": "DE industrieterrein carmeet (fictie)",
       "nsfw": "soft",
       "beat": "carmeet Realtime World",
@@ -239,7 +239,7 @@
       "author": "René",
       "to": null,
       "caption": "DE weekend. Eurotik Haus opening in ’t vizier. Fatbike + crew. Meer later.",
-      "media": "../assets/generated/kayla_hub_cast.png",
+      "media": "../assets/generated/velvet/toppers/rene_topper_01_discover.png",
       "location": "onderweg DE (fictie)",
       "nsfw": "soft",
       "beat": "short status opening Eurotik DE",
@@ -265,7 +265,7 @@
       "author": "Romy",
       "to": null,
       "caption": "Loft weekend teaser 👀 24u",
-      "media": "../assets/generated/velvet/placeholders/romy_placeholder.png",
+      "media": "../assets/generated/velvet/toppers/romy_topper_01_discover.png",
       "location": "loft (fictie)",
       "nsfw": "soft",
       "beat": "weekend loft teaser",
@@ -278,7 +278,7 @@
       "author": "Mila",
       "to": null,
       "caption": "Tracksuit. Street. Geen filter.",
-      "media": "../assets/generated/velvet/placeholders/nora_placeholder.png",
+      "media": "../assets/generated/velvet/toppers/mila_topper_01_discover.png",
       "location": "straat NL (fictie)",
       "nsfw": "soft",
       "beat": "tracksuit street",
@@ -291,7 +291,7 @@
       "author": "Kim",
       "to": null,
       "caption": "Grey hoodie. Messy pony. Dat is ’m.",
-      "media": "../assets/generated/velvet/placeholders/freya_placeholder.png",
+      "media": "../assets/generated/velvet/toppers/kim_topper_01_discover.png",
       "location": "thuis (fictie)",
       "nsfw": "soft",
       "beat": "hoodie look-lock",
@@ -304,7 +304,7 @@
       "author": "Lianne",
       "to": "René",
       "caption": "Lianne→René: “Rough cut mag later. Eerst jij. Hou haar vast. App als Markus appt. Wij drie. 🖤”",
-      "media": "../assets/generated/velvet/velvet_lianne_neon_sisters.png",
+      "media": "../assets/generated/velvet/toppers/lianne_topper_03_night.png",
       "location": "",
       "nsfw": "soft",
       "beat": "DM tease (text only)",
@@ -486,7 +486,7 @@
       "author": "Lianne",
       "to": null,
       "caption": "Almelo night. LED wash. (fiction carmeet beat)",
-      "media": "../assets/generated/velvet/velvet_lianne_neon_sisters.png",
+      "media": "../assets/generated/velvet/toppers/lianne_topper_04_portrait.png",
       "location": "Almelo",
       "nsfw": "soft",
       "beat": "Mansory/Almelo vibe",

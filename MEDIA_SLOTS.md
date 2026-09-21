@@ -61,3 +61,18 @@ mood_*.png = style_only — never cast faces. Staging · not auto-canon.
 | britta_ph | Britta | placeholders/britta_placeholder.png |
 | imke_ph | Imke | placeholders/imke_placeholder.png |
 | merel_ph | Merel | placeholders/merel_placeholder.png |
+
+
+## VELVET toppers (2026-09-21 SEVERINA)
+
+Drop / prefer under `assets/generated/velvet/toppers/`:
+
+| Slug | Count | Preferred discover |
+|------|-------|--------------------|
+| lianne | 6 | `lianne_topper_01_discover.png` |
+| rene | 6 | `rene_topper_01_discover.png` |
+| kim | 6 | `kim_topper_01_discover.png` |
+| romy | 6 | `romy_topper_01_discover.png` |
+| mila | 6 | `mila_topper_01_discover.png` |
+
+Staging · AI_SYNTHETIC · not auto-canon · 21+ fiction.

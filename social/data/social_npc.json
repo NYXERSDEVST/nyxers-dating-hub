@@ -1,6 +1,6 @@
 {
   "version": "7-mega",
-  "updated": "2026-09-20",
+  "updated": "2026-09-21 08:36 CEST",
   "build": "nyxlink-build-v7-mega",
   "gates": [
     "21+",
@@ -16,7 +16,16 @@
     "followers": 3120,
     "following": 348,
     "friends": 214,
-    "bio": "Regisseur · Haus Velvet · fiction only · staging"
+    "bio": "Regisseur · Haus Velvet · fiction only · staging",
+    "img": "../assets/generated/velvet/toppers/rene_topper_01_discover.png",
+    "photoset": [
+      "../assets/generated/velvet/toppers/rene_topper_01_discover.png",
+      "../assets/generated/velvet/toppers/rene_topper_02_fatbike.png",
+      "../assets/generated/velvet/toppers/rene_topper_03_field.png",
+      "../assets/generated/velvet/toppers/rene_topper_04_mella.png",
+      "../assets/generated/velvet/toppers/rene_topper_05_park.png",
+      "../assets/generated/velvet/toppers/rene_topper_06_stairs.png"
+    ]
   },
   "npcs": [
     {
@@ -27,14 +36,14 @@
       "mood_bias": "supportive",
       "age": 28,
       "status": "geopend",
-      "img": "../assets/generated/velvet/velvet_lianne_neon_sisters.png",
+      "img": "../assets/generated/velvet/toppers/lianne_topper_01_discover.png",
       "photoset": [
-        "../assets/generated/velvet/velvet_lianne_neon_sisters.png",
-        "../assets/generated/lianne_discover.png",
-        "../assets/generated/lianne_discover_v2.png",
-        "../assets/generated/lianne_gallery_1.png",
-        "../assets/generated/lianne_gallery_v2_1.png",
-        "../assets/generated/lianne_v2_closeup.png"
+        "../assets/generated/velvet/toppers/lianne_topper_01_discover.png",
+        "../assets/generated/velvet/toppers/lianne_topper_02_hoodie.png",
+        "../assets/generated/velvet/toppers/lianne_topper_03_night.png",
+        "../assets/generated/velvet/toppers/lianne_topper_04_portrait.png",
+        "../assets/generated/velvet/toppers/lianne_topper_05_bed.png",
+        "../assets/generated/velvet/toppers/lianne_topper_06_cafe.png"
       ],
       "links": [
         {
@@ -426,12 +435,14 @@
       "mood_bias": "gossip",
       "age": 24,
       "status": "single",
-      "img": "../assets/generated/velvet/placeholders/romy_placeholder.png",
+      "img": "../assets/generated/velvet/toppers/romy_topper_01_discover.png",
       "photoset": [
-        "../assets/generated/velvet/placeholders/romy_placeholder.png",
-        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23f43f5e%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%239f1239%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ERomy%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
-        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%239f1239%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23f43f5e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ERomy%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
-        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23f43f5e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3ERomy%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+        "../assets/generated/velvet/toppers/romy_topper_01_discover.png",
+        "../assets/generated/velvet/toppers/romy_topper_02_street.png",
+        "../assets/generated/velvet/toppers/romy_topper_03_gym.png",
+        "../assets/generated/velvet/toppers/romy_topper_04_shell.png",
+        "../assets/generated/velvet/toppers/romy_topper_05_scooter.png",
+        "../assets/generated/velvet/toppers/romy_topper_06_cafe.png"
       ],
       "links": [
         {
@@ -452,12 +463,14 @@
       "mood_bias": "supportive",
       "age": 25,
       "status": "relatie",
-      "img": "../assets/generated/velvet/placeholders/freya_placeholder.png",
+      "img": "../assets/generated/velvet/toppers/kim_topper_01_discover.png",
       "photoset": [
-        "../assets/generated/velvet/placeholders/freya_placeholder.png",
-        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23a855f7%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%236b21a8%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EKim%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
-        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%236b21a8%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23a855f7%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EKim%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
-        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23a855f7%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EKim%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+        "../assets/generated/velvet/toppers/kim_topper_01_discover.png",
+        "../assets/generated/velvet/toppers/kim_topper_02_hoodie.png",
+        "../assets/generated/velvet/toppers/kim_topper_03_street.png",
+        "../assets/generated/velvet/toppers/kim_topper_04_cafe.png",
+        "../assets/generated/velvet/toppers/kim_topper_05_park.png",
+        "../assets/generated/velvet/toppers/kim_topper_06_mirror.png"
       ],
       "links": [
         {
@@ -478,12 +491,14 @@
       "mood_bias": "jealous",
       "age": 23,
       "status": "single",
-      "img": "../assets/generated/velvet/placeholders/nora_placeholder.png",
+      "img": "../assets/generated/velvet/toppers/mila_topper_01_discover.png",
       "photoset": [
-        "../assets/generated/velvet/placeholders/nora_placeholder.png",
-        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23ec4899%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%239d174d%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EMila%20%C2%B7%20set%202%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
-        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%239d174d%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23ec4899%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EMila%20%C2%B7%20set%203%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E",
-        "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22800%22%20viewBox%3D%220%200%20640%20800%22%3E%0A%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231e293b%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23ec4899%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%3Crect%20width%3D%22640%22%20height%3D%22800%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22320%22%20cy%3D%22300%22%20r%3D%2290%22%20fill%3D%22%23ffffff22%22/%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22520%22%20text-anchor%3D%22middle%22%20fill%3D%22%23fff%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%3EMila%20%C2%B7%20set%204%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22560%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff99%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2218%22%3EFICTION%2021%2B%3C/text%3E%0A%20%20%3Ctext%20x%3D%22320%22%20y%3D%22740%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff66%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2214%22%3ENYXLINK%20%C2%B7%20AI_SYNTHETIC%3C/text%3E%0A%3C/svg%3E"
+        "../assets/generated/velvet/toppers/mila_topper_01_discover.png",
+        "../assets/generated/velvet/toppers/mila_topper_02_street.png",
+        "../assets/generated/velvet/toppers/mila_topper_03_gym.png",
+        "../assets/generated/velvet/toppers/mila_topper_04_closeup.png",
+        "../assets/generated/velvet/toppers/mila_topper_05_park.png",
+        "../assets/generated/velvet/toppers/mila_topper_06_cafe.png"
       ],
       "links": [
         {
